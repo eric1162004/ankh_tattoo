@@ -20,7 +20,7 @@ export default function Home() {
         image={"img/pic1.png"}
         speed={-20}
       >
-        <div className="flex flex-col h-full justify-center md:w-1/2 p-5 md:p-20 backdrop-blur-sm backdrop-brightness-50 shapedividers_com-2821">
+        <div className="flex flex-col h-full justify-center md:w-1/2 p-5 md:p-20 backdrop-blur-sm backdrop-brightness-50">
           <h1 className="title ">FINE LINE TATTOO ARTIST</h1>
           <p className="paragraph ">
             I offer fine line tattooing, which is different in comparison to a
@@ -93,12 +93,7 @@ export default function Home() {
 
             {/* Get A Quote */}
             <GetAQuote className="mb-0 " />
-            <div className="flex justify-center gap-3 mt-8">
-              <img className="w-20 " src="img/flower.svg" />
-              <img className="w-14" src="img/flower.svg" />
-              <img className="w-20 " src="img/flower.svg" />
-              <img className="w-14" src="img/flower.svg" />
-            </div>
+           
           </div>
         </div>
       </div>
