@@ -64,34 +64,36 @@ export default function Home() {
       </VideoBackgroundDiv>
 
       {/* My Story Section */}
-      <div className="flex justify-center bg-primary-dark">
-        <div className="w-full p-5 py-10 backdrop-brightness-50 backdrop-opacity-50">
-          <p className="title">MY STORY</p>
-          <p className="paragraph md:w-2/3">
-            Born and raised in Northern China, I have developed my love for art
-            since the age of 5 and have trained as an illustrator for more than
-            a couple decades. I moved to Vancouver, Canada in 2012 to pursue my
-            passion for drawing in the form of animation while attending Emily
-            Carr University. During my undergraduate studies, I established a
-            passion for the human body and its significance in expressing
-            one&apos;s identity and spirit. After graduation, I decided to
-            pursue this passion via temporary tattoos using henna paste and
-            jagua gel. After pursuing temporary tattooing, I was able to meet
-            Mackenzie Evanjeline who offered to train me in the art of permanent
-            tattooing. I have since been tattooing under The Northern Tattoo
-            collective and I am excited to share my passion and work with the
-            world.
-          </p>
+      <div className="bg-primary-dark">
+        <div className="flex justify-center backdrop-brightness-50 backdrop-opacity-50">
+          <div className="md:w-4/5 p-5 py-10 ">
+            <p className="title">MY STORY</p>
+            <p className="paragraph md:w-2/3">
+              Born and raised in Northern China, I have developed my love for
+              art since the age of 5 and have trained as an illustrator for more
+              than a couple decades. I moved to Vancouver, Canada in 2012 to
+              pursue my passion for drawing in the form of animation while
+              attending Emily Carr University. During my undergraduate studies,
+              I established a passion for the human body and its significance in
+              expressing one&apos;s identity and spirit. After graduation, I
+              decided to pursue this passion via temporary tattoos using henna
+              paste and jagua gel. After pursuing temporary tattooing, I was
+              able to meet Mackenzie Evanjeline who offered to train me in the
+              art of permanent tattooing. I have since been tattooing under The
+              Northern Tattoo collective and I am excited to share my passion
+              and work with the world.
+            </p>
 
-          <div className="flex flex-wrap my-5 gap-5">
-            <img src="img/pic2.png" />
-            <img src="img/pic2.png" />
-            <img src="img/pic2.png" />
-            <img src="img/pic2.png" />
+            <div className="grid md:grid-cols-4 my-5 gap-5">
+              <img src="img/pic2.png" />
+              <img src="img/pic2.png" />
+              <img src="img/pic2.png" />
+              <img src="img/pic2.png" />
+            </div>
+
+            {/* Get A Quote */}
+            <GetAQuote className="mb-0" />
           </div>
-
-          {/* Get A Quote */}
-          <GetAQuote className="mb-0" />
         </div>
       </div>
     </div>
