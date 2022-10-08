@@ -41,7 +41,7 @@ export default function Home() {
 
       {/* Rest... */}
       {[...Array(10)].map((e, i) => (
-        <h1 className="text-xl text-white font-thin">Hello World!</h1>
+        <h1 className="text-xl text-white font-thin" key={i}>Hello World!</h1>
       ))}
     </div>
   );
