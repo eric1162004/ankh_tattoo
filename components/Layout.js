@@ -17,7 +17,7 @@ const Layout = ({ children }) => {
       </div>
       <a href="https://www.instagram.com/ankh.miki">
         <img
-          className="fixed bottom-5 right-5 w-10 md:bottom-10 md:right-10"
+          className="fixed bottom-5 right-5 w-10 md:w-12 md:bottom-14 md:right-10"
           src="img/ig_logo.png"
         />
       </a>
