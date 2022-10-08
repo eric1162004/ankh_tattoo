@@ -2,7 +2,6 @@ import React from "react";
 
 import VideoBackgroundDiv from "../components/VideoBackgroundDiv";
 import ImageParallaxDiv from "../components/ImageParallaxDiv ";
-import Button from "./../components/Button";
 import GetAQuote from "./../components/GetAQuote";
 
 export default function Home() {
@@ -21,7 +20,7 @@ export default function Home() {
         image={"img/pic1.png"}
         speed={-20}
       >
-        <div className="flex flex-col h-full justify-center md:w-1/2 p-5 md:p-20 backdrop-blur-sm backdrop-brightness-50">
+        <div className="flex flex-col h-full justify-center md:w-1/2 p-5 md:p-20 backdrop-blur-sm backdrop-brightness-50 shapedividers_com-2821">
           <h1 className="title ">FINE LINE TATTOO ARTIST</h1>
           <p className="paragraph ">
             I offer fine line tattooing, which is different in comparison to a
@@ -66,7 +65,8 @@ export default function Home() {
       {/* My Story Section */}
       <div className="bg-primary-dark">
         <div className="flex justify-center backdrop-brightness-50 backdrop-opacity-50">
-          <div className="md:w-4/5 p-5 py-10 ">
+          <div className="md:w-4/5 p-5 ">
+            <img className="w-48 -my-5" src="img/separator.svg" />
             <p className="title">MY STORY</p>
             <p className="paragraph md:w-2/3">
               Born and raised in Northern China, I have developed my love for
@@ -92,7 +92,13 @@ export default function Home() {
             </div>
 
             {/* Get A Quote */}
-            <GetAQuote className="mb-0" />
+            <GetAQuote className="mb-0 " />
+            <div className="flex justify-center gap-3 mt-8">
+              <img className="w-20 " src="img/flower.svg" />
+              <img className="w-14" src="img/flower.svg" />
+              <img className="w-20 " src="img/flower.svg" />
+              <img className="w-14" src="img/flower.svg" />
+            </div>
           </div>
         </div>
       </div>

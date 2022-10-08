@@ -15,7 +15,12 @@ const Layout = ({ children }) => {
       <div className="shrink-0">
         <Footer />
       </div>
-      <img className="fixed bottom-4 right-4 w-10 md:bottom-10 md:right-10" src="img/ig_logo.png"/>
+      <a href="https://www.instagram.com/ankh.miki">
+        <img
+          className="fixed bottom-5 right-5 w-10 md:bottom-10 md:right-10"
+          src="img/ig_logo.png"
+        />
+      </a>
     </div>
   );
 };

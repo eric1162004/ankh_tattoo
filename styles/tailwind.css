@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .title {
+    @apply md:text-xl my-2 capitalize font-bold tracking-widest;
+  }
+  .paragraph {
+    @apply md:leading-loose;
+  }
+  .priceLabel {
+    @apply text-4xl md:text-6xl capitalize font-bold;
+  }
+}
