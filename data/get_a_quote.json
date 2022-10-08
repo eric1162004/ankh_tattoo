@@ -1,0 +1,50 @@
+{
+    "hourlyRate": [
+        {
+            "title": "$300/ hour - Bespoke tattoos",
+            "details": [
+                "Up to a 30 minute zoom call.",
+                "Limited availability (1 per month).",
+                "Bottomless edits (last edit must be submitted 72 hours before the tattoo day. If any edits are submitted with shorter notice, the appointment will be rescheduled in order for the adjustments to be made).",
+                "Fully drawn art is provided afterwards.",
+                "Suitable for people who want to work with an artist closely. The process is more involved for the client."
+            ]
+        },
+        {
+            "title": "$230/ hour - Freehand tattoos",
+            "details": [
+                "Suitable for individuals who have seen my work (check out my Instagram) and are comfortable with not seeing the final design before the tattoo session starts. This allows me to keep the cost down and provide more tattoos in my limited schedule.",
+                "Design is roughly drawn in with surgical markers then details added after."
+            ]
+        },
+        {
+            "title": "$200/ hour - Flash tattoos",
+            "details": [
+                "Pre-drawn designs inspired by my everyday encounters and thoughts.",
+                "They are repeatable but can only be booked within a couple weeks of release. Afterwards, they will be replaced by new ones."
+            ]
+        }
+    ],
+    "initialDeposit": [
+        {
+            "title": "",
+            "details": "In order to confirm a booking, an initial deposit equal to the first hours' rate is required unless the the tattoo is expected to take more than one session (see the paragraph below for information on large pieces). Deposits cover the administration fee, and booking fee for all my pieces and are therefore non-refundable. Your deposit goes towards the first hour of your tattoo session unless you choose to cancel. Please note that deposits for flashes and custom pieces cannot be transferred to another piece. "
+        },
+        {
+            "title": "Large tattoo deposits (full sleeve, full back, leg sleeve):",
+            "details": "For multi session projects, deposits are 50% of the tattoo’s lowest estimated value since I take on additional business risk in the form of lost income. This is because last minute cancellations for multi-session full-day projects are nearly impossible to fill in time (Yes, I have had no shows for full 8 hour tattoos). For example: If you requested a full sleeve the estimated time to complete a full sleeve is 3 to 5 sessions (6-8 hours each), in this case, the deposit would cover the first 2-3 sessions and you would only pay the remaining time that was required to complete the piece. Large pieces like this can have an initial time investment of up to 40 hours for just the design which is why I require more upfront. <br/> You can only refund the deposit for multi session pieces if I have not started the design yet. This refund doesn't include the administration fee which is still non-refundable."
+        },
+        {
+            "title": "What if I change my mind about what I want?",
+            "details": "Deposits are non-refundable except for pieces larger than 6 x 6 where the deposit includes more than the administration fee (if the art has not been started). Please make sure you know what you want before proceeding with booking a tattoo. If you change your mind after booking (for example: wanting a different concept with new art), you will need to put down a new deposit because the request is a new piece."
+        },
+        {
+            "title": "Re-scheduling a booking",
+            "details": "If you choose to reschedule a tattoo, please give at least 48 hours notice otherwise you will need to pay another deposit."
+        },
+        {
+            "title": "Canceling a booking",
+            "details": "If you cancel a booking, your deposit (administration fee) is non-refundable. For more information about canceled bookings and the options available, please see the tattoo FAQ page."
+        }
+    ]
+}

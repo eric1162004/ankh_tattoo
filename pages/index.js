@@ -3,6 +3,7 @@ import React from "react";
 import VideoBackgroundDiv from "../components/VideoBackgroundDiv";
 import ImageParallaxDiv from "../components/ImageParallaxDiv ";
 import Button from "./../components/Button";
+import GetAQuote from './../components/GetAQuote';
 
 export default function Home() {
   return (
@@ -82,9 +83,9 @@ export default function Home() {
           <img src="img/pic2.png"/>
           <img src="img/pic2.png"/>
         </div>
-        <div className="mt-10 w-full text-center">
-          <Button href="#">GET A QUOTE</Button>
-        </div>
+
+        {/* Get A Quote */}
+        <GetAQuote className="mb-0"/>
       </div>
     </div>
   );
