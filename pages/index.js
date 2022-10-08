@@ -2,7 +2,6 @@ import React from "react";
 
 import VideoBackgroundDiv from "../components/VideoBackgroundDiv";
 import ImageParallaxDiv from "../components/ImageParallaxDiv ";
-import tattoo_faq from "./tattoo_faq";
 import Button from "./../components/Button";
 
 export default function Home() {
@@ -29,7 +28,7 @@ export default function Home() {
             three round liners emphasizing form and outline over color, shading,
             and texture. These tattoos have incredible levels of detail built-in
             and create softer lines allowing for more options in the design
-            process. If you're going to have a permanent piece of art on your
+            process. If you&apos;re going to have a permanent piece of art on your
             body, why not make it the highest quality.
           </p>
         </div>
@@ -68,7 +67,7 @@ export default function Home() {
           couple decades. I moved to Vancouver, Canada in 2012 to pursue my
           passion for drawing in the form of animation while attending Emily
           Carr University. During my undergraduate studies, I established a
-          passion for the human body and its significance in expressing one's
+          passion for the human body and its significance in expressing one&apos;s
           identity and spirit. After graduation, I decided to pursue this
           passion via temporary tattoos using henna paste and jagua gel. After
           pursuing temporary tattooing, I was able to meet Mackenzie Evanjeline
