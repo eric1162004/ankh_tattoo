@@ -12,7 +12,7 @@ function VideoBackgroundDiv({ children, video, height=80, className = "" }) {
         loop
       ></video>
 
-      <div className="absolute">{children}</div>
+      <div className="absolute w-full h-full">{children}</div>
     </div>
   );
 }

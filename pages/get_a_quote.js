@@ -6,7 +6,9 @@ import data from "../data/get_a_quote.json";
 export default function get_a_quote() {
   console.log(data.hourlyRate);
   return (
-    <div className="p-5 backdrop-brightness-75">
+    <div>
+    <div className="flex justify-center m-5 p-5 backdrop-brightness-50 backdrop-opacity-50 rounded-sm">
+    <div className="md:w-2/3">
       {/* Page title */}
       <div className="flex flex-col w-full text-center">
         <h1 className="title text-2xl my-0 tracking-wider">BOOKING A TATTOO</h1>
@@ -14,10 +16,10 @@ export default function get_a_quote() {
       </div>
 
       {/* Hourly Rate */}
-      <h1 className="title text-2xl pt-2">Hourly Rate:</h1>
+      <h1 className="title text-2xl md:text-xl pt-2">Hourly Rate:</h1>
       {data.hourlyRate.map((section, index) => (
         <div key={index}>
-          <p className="title py-1">{section.title}</p>
+          <p className="title md:text-lg py-1">{section.title}</p>
           <ul className="list-inside">
             {section.details.map((item, index) => (
               <li className="list-disc" key={index}>
@@ -29,7 +31,7 @@ export default function get_a_quote() {
       ))}
 
       {/* Initial Deposit */}
-      <h1 className="title text-2xl py-2 mt-5">Initial Deposit</h1>
+      <h1 className="title text-2xl md:text-xl py-2 mt-5">Initial Deposit</h1>
       {data.initialDeposit.map((section, index) => (
         <div key={index}>
           <p className="title py-1">{section.title}</p>
@@ -43,6 +45,8 @@ export default function get_a_quote() {
 
       {/* Get a quote button */}
       <GetAQuote/>
+    </div>
+    </div>
     </div>
   );
 }
