@@ -73,7 +73,7 @@ const Navbar = () => {
             className={`w-full md:block md:w-auto`}
             id="mobile-menu"
           >
-            <ul className="flex flex-col mt-4 md:hidden">
+            <ul className={`flex flex-col mt-4 md:hidden ${open ? "block" : "hidden"}`}>
               {links.map(link => (
                 <li key={link.name}>
                   <a
