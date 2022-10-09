@@ -26,7 +26,7 @@ export default function tattoo_faq() {
         </div>
       </ImageParallaxDiv>
 
-      <div className="flex justify-center m-5 p-5 backdrop-brightness-50 backdrop-opacity-50 rounded-sm">
+      <div className="flex justify-center p-5 backdrop-brightness-50 backdrop-opacity-50 rounded-sm">
         <div className="md:w-2/3">
           <h1 className="title ">FAQ</h1>
           <p className="paragraph">
@@ -38,10 +38,14 @@ export default function tattoo_faq() {
           <h1 className="title ">Frequently asked questions</h1>
 
           <div className="tabs">
-            <a className="tab tab-bordered">Tab 1</a>
-            <a className="tab tab-bordered tab-active">Tab 2</a>
-            <a className="tab tab-bordered">Tab 3</a>
+            <a className="tab tab-bordered">Price</a>
+            <a className="tab tab-bordered tab-active px-2 md:px-6">
+              Booking & Appointments
+            </a>
+            <a className="tab tab-bordered">General info</a>
           </div>
+
+
         </div>
       </div>
     </div>

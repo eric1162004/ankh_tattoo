@@ -4,12 +4,15 @@
 
 @layer components {
   .title {
-    @apply md:text-xl my-2 capitalize font-bold tracking-widest;
+    @apply text-xl md:text-2xl my-2 capitalize font-bold tracking-widest;
   }
   .paragraph {
     @apply md:leading-loose;
   }
   .priceLabel {
-    @apply text-4xl md:text-6xl capitalize font-bold;
+    @apply text-4xl md:text-4xl capitalize font-bold;
+  }
+  .tab-active {
+    @apply text-primary-light font-semibold underline underline-offset-4 transition-all
   }
 }

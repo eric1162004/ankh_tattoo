@@ -39,12 +39,13 @@ export default function Home() {
         <div className="flex justify-end h-full">
           <div className="md:w-1/2 h-full w-full backdrop-blur-sm backdrop-brightness-50 flex items-center justify-center">
             <div className="h-2/3 w-2/3">
-              <div>
+                <div className="divider bg-primary"></div> 
+              <div className="py-2">
                 <h1 className="title">MY TATTOO RATE</h1>
                 <p>Including tax</p>
               </div>
-              <div className="grid grid-cols-1 gap-y-4 divide-y ">
-                <div>
+              <div className="grid grid-cols-1 gap-y-3 py-2">
+                <div className="">
                   <p className="priceLabel">$300/hr</p>
                   <p>Bespoke tattoo</p>
                 </div>
@@ -54,7 +55,7 @@ export default function Home() {
                 </div>
                 <div>
                   <p className="priceLabel">$200/hr</p>
-                  <p>Flash tatto</p>
+                  <p>Flash tattoo</p>
                 </div>
               </div>
             </div>
@@ -67,6 +68,11 @@ export default function Home() {
         <div className="flex justify-center backdrop-brightness-50 backdrop-opacity-50">
           <div className="md:w-4/5 p-5 ">
             <img className="w-48 -my-5" src="img/separator.svg" />
+            <div className="avatar">
+              <div className="w-24 rounded-full">
+                <img src="img/miki_profile_pic.jpg" />
+              </div>
+            </div>
             <p className="title">MY STORY</p>
             <p className="paragraph md:w-2/3">
               Born and raised in Northern China, I have developed my love for
@@ -93,7 +99,6 @@ export default function Home() {
 
             {/* Get A Quote */}
             <GetAQuote className="mb-0 " />
-           
           </div>
         </div>
       </div>
