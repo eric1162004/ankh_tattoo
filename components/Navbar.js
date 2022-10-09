@@ -23,7 +23,7 @@ const Navbar = () => {
           </a>
         </Link>
         {/* menu toggle button */}
-        <label className="btn btn-circle swap swap-rotate">
+        <label className="btn btn-circle swap swap-rotate md:hidden">
           <input type="checkbox" onChange={() => setOpen(!open)} />
 
           <svg
