@@ -1,10 +1,12 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useState, useRef } from "react";
+import { CSSTransition } from "react-transition-group";
 
 const Navbar = () => {
-  const router = useRouter()
+  const router = useRouter();
   const checkBoxRef = useRef();
+  const menuFlyOutRef = useRef();
   const [open, setOpen] = useState(false);
 
   const links = [
@@ -26,8 +28,15 @@ const Navbar = () => {
           </a>
         </Link>
         {/* menu toggle button */}
-        <label data-theme="mytheme" className="btn btn-circle bg-transparent border-0 swap swap-rotate md:hidden ">
-          <input ref={checkBoxRef} type="checkbox" onChange={() => setOpen(!open)} />
+        <label
+          data-theme="mytheme"
+          className="btn btn-circle bg-transparent border-0 swap swap-rotate md:hidden"
+        >
+          <input
+            ref={checkBoxRef}
+            type="checkbox"
+            onChange={() => setOpen(!open)}
+          />
 
           <svg
             className="swap-off fill-current"
@@ -48,29 +57,58 @@ const Navbar = () => {
             <polygon points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49" />
           </svg>
         </label>
-        {/* menu list */}
-        <div
-          className={`${open ? "block" : "hidden"} w-full md:block md:w-auto`}
-          id="mobile-menu"
+
+        {/* menuFlyoutRef for mobile view */}
+        <CSSTransition
+          in={open}
+          nodeRef={menuFlyOutRef}
+          timeout={1000}
+          classNames="menu-transition"
+          unmountOnExit
+          onEnter={() => setOpen(true)}
+          onExited={() => setOpen(false)}
         >
-          <ul className="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 text-base md:text-sm">
-            {links.map(link => (
-              <li key={link.name}>
+          <div
+            ref={menuFlyOutRef}
+            className={`w-full md:block md:w-auto`}
+            id="mobile-menu"
+          >
+            <ul className="flex flex-col mt-4 md:hidden">
+              {links.map(link => (
+                <li key={link.name}>
                   <a
                     className="block py-4 pl-3 pr-4 font-medium text-white uppercase rounded hover:text-slate-300 md:p-0"
                     aria-current="page"
-                    onClick={ () => {
-                      setOpen(open => !open)
+                    onClick={() => {
+                      setOpen(open => !open);
                       checkBoxRef.current.checked = false;
-                      router.push(link.link)
+                      router.push(link.link);
                     }}
                   >
                     {link.name}
                   </a>
-              </li>
-            ))}
-          </ul>
-        </div>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </CSSTransition>
+
+        {/* menuFlyout for desktop view */}
+        <ul className="hidden md:block md:flex mt-4 md:flex-row md:space-x-8 md:mt-0 text-base md:text-sm">
+          {links.map(link => (
+            <li key={link.name}>
+              <a
+                className="block py-4 pl-3 pr-4 font-medium text-white uppercase rounded hover:text-slate-300 md:p-0"
+                aria-current="page"
+                onClick={() => {
+                  router.push(link.link);
+                }}
+              >
+                {link.name}
+              </a>
+            </li>
+          ))}
+        </ul>
       </div>
     </nav>
   );

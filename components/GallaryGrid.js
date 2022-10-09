@@ -19,7 +19,7 @@ export default function GallaryGrid() {
       <div className="grid-cols-5 p-5 space-y-2 lg:space-y-0 lg:grid lg:gap-3 lg:grid-rows-3">
         {images.map((e, i) =>
           i % 7 == 0 ? (
-            <div className="w-full col-span-2 row-span-2 rounded">
+            <div className="w-full col-span-2 row-span-2 rounded" key={i}>
               <img
                 className="block object-cover object-center w-full h-full rounded-lg"
                 src={e.src}
@@ -27,7 +27,7 @@ export default function GallaryGrid() {
               />
             </div>
           ) : (
-            <div className="w-full rounded">
+            <div className="w-full rounded" key={i}>
               <img
                 className="block object-cover object-center w-full h-full rounded-lg"
                 src={e.src}

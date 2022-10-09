@@ -1,0 +1,34 @@
+/* This fires as soon as the element enters the DOM*/
+.menu-transition-enter {
+    /*We give the list the initial dimension of the list button*/
+    /* top: 0; */
+    /* width: 120px; */
+    max-height: 0px;
+    color: transparent;
+    /* background-color: #5a564c; */
+  }
+  /* This is where we can add the transition*/
+  .menu-transition-enter-active {
+    /* top: 45px; */
+    /* width: 200px; */
+    max-height: 600px;
+    /* background-color: #9e8949; */
+    transition: all 400ms;
+  }
+  /* This fires as soon as the this.state.showList is false */
+  .menu-transition-exit {
+    /* top: 45px; */
+    /* width: 200px; */
+    max-height: 500px;
+    /* background-color: #9e8949; */
+  }
+  /* fires as element leaves the DOM*/
+  .menu-transition-exit-active {
+    /* top: 0; */
+    /* width: 120px; */
+    max-height: 0px;
+    /* color: transparent; */
+    /* background-color: #5a564c; */
+    transition: all 400ms;
+  }
+  

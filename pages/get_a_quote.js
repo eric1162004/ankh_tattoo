@@ -5,7 +5,7 @@ import data from "../data/get_a_quote.json";
 
 export default function Get_a_quote() {
   return (
-    <div className="flex justify-center m-5 p-5 backdrop-brightness-50 backdrop-opacity-50 rounded-sm">
+    <div className="flex justify-center m-0 p-5 py-10 backdrop-brightness-50 backdrop-opacity-50 rounded-sm">
       <div className="md:w-2/3">
         {/* Page title */}
         <div className="flex flex-col w-full text-center">
