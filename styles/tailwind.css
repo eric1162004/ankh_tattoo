@@ -3,6 +3,12 @@
 @tailwind utilities;
 
 @layer components {
+  .font-normal {
+    @apply text-slate-100 text-base md:text-base 
+  }
+  .text-hover {
+    hover:text-slate-300
+  }
   .title {
     @apply text-xl md:text-2xl my-2 capitalize font-bold tracking-widest;
   }
@@ -12,5 +18,7 @@
   .priceLabel {
     @apply text-4xl md:text-4xl capitalize font-bold;
   }
-
+  .iconSize {
+    @apply w-10 h-10 md:w-11 md:h-11
+  }
 }

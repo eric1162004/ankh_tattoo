@@ -9,6 +9,7 @@ export default function Home() {
     <div className="">
       {/* Image1 background */}
       <ImageParallaxDiv
+        className=""
         backgroundStyle=""
         image={"img/banner1.png"}
         speed={-20}

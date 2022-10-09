@@ -2,8 +2,8 @@ import Button from "./Button";
 
 const GetAQuote = ({ className = "" }) => {
   return (
-    <div className={"w-full text-center " + className}>
-      <a href="#" className="btn btn-lg btn-ghost gap-2 font-normal text-2xl tracking-widest">
+    <div className={"w-full py-5 text-center " + className}>
+      <a href="#" className="btn my-2 font-normal text-2xl tracking-widest">
         GET A QUOTE
       </a>
       <div className="flex justify-center gap-3 mt-2">

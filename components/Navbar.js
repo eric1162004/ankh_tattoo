@@ -17,7 +17,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="z-50 p-2 text-2xl bg-primary sm:py-1 md:text-xl">
+    <nav className="z-50 p-2 text-2xl bg-primary sm:py-1 md:text-xl bg-opacity-90">
       <div className="flex flex-wrap items-center justify-between md:mx-5">
         {/* brand logo */}
         <Link href="/">
@@ -77,7 +77,7 @@ const Navbar = () => {
               {links.map(link => (
                 <li key={link.name}>
                   <a
-                    className="block py-4 pl-3 pr-4 font-medium text-white uppercase rounded hover:text-slate-300 md:p-0"
+                    className="block py-4 pl-3 pr-4 font-normal uppercase text-hover md:p-0"
                     aria-current="page"
                     onClick={() => {
                       setOpen(open => !open);
