@@ -11,7 +11,7 @@ export default function MyApp({ Component, pageProps }) {
       <Layout>
         <Head>
           <link rel="icon" type="image/x-icon" href="/img/fav_icon.png"></link>
-          <title>Fine Line Tattoo | Inked by Miki</title>
+          <title>Vancouver Tattoo | Miki</title>
         </Head>
         <Component {...pageProps} />
       </Layout>
