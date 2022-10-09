@@ -1,7 +1,7 @@
 import { CSSTransition } from "react-transition-group";
 import React, { useState, useRef } from "react";
 
-const test = () => {
+const Test = () => {
   const [showButton, setShowButton] = useState(true);
   const [showMessage, setShowMessage] = useState(false);
   const nodeRef = useRef(null);
