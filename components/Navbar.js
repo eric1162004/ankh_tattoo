@@ -17,7 +17,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="z-50 p-2 text-2xl bg-primary sm:py-1 md:text-xl bg-opacity-90">
+    <nav className="z-50 p-2 text-2xl bg-primary sm:py-2 md:text-xl bg-opacity-90">
       <div className="flex flex-wrap items-center justify-between md:mx-5">
         {/* brand logo */}
         <Link href="/">
