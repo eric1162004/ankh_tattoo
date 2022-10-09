@@ -36,4 +36,4 @@ const Test = () => {
   );
 };
 
-export default test;
+export default Test;
