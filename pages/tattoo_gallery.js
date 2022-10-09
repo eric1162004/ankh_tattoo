@@ -1,7 +1,7 @@
 import React from 'react'
 import GallaryGrid from '../components/GallaryGrid'
 
-export default function tattoo_gallery() {
+export default function Tattoo_gallery() {
   return (
     <GallaryGrid/>
   )

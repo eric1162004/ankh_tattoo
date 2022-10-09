@@ -4,7 +4,7 @@ import ImageParallaxDiv from "./../components/ImageParallaxDiv ";
 import data from "../data/faq.json";
 import GetAQuote from "./../components/GetAQuote";
 
-export default function tattoo_faq() {
+export default function Tattoo_faq() {
   const [category, setCategory] = useState("price");
 
   return (
