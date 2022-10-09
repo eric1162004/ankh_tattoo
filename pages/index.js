@@ -39,7 +39,7 @@ export default function Home() {
         <div className="flex justify-end h-full">
           <div className="md:w-1/2 h-full w-full backdrop-blur-sm backdrop-brightness-50 flex items-center justify-center">
             <div className="h-2/3 w-2/3">
-                <div className="divider bg-primary"></div> 
+                <div className="divider"></div> 
               <div className="py-2">
                 <h1 className="title">MY TATTOO RATE</h1>
                 <p>Including tax</p>
@@ -58,6 +58,8 @@ export default function Home() {
                   <p>Flash tattoo</p>
                 </div>
               </div>
+              <div className="divider"></div> 
+
             </div>
           </div>
         </div>

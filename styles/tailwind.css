@@ -12,7 +12,5 @@
   .priceLabel {
     @apply text-4xl md:text-4xl capitalize font-bold;
   }
-  .tab-active {
-    @apply text-primary-light font-semibold underline underline-offset-4 transition-all
-  }
+
 }

@@ -4,7 +4,6 @@ import GetAQuote from "../components/GetAQuote";
 import data from "../data/get_a_quote.json";
 
 export default function get_a_quote() {
-  console.log(data.hourlyRate);
   return (
     <div className="flex justify-center m-5 p-5 backdrop-brightness-50 backdrop-opacity-50 rounded-sm">
       <div className="md:w-2/3">

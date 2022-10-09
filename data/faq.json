@@ -1,0 +1,40 @@
+{
+    "price": [
+        {
+            "question": "How much does a tattoo cost?",
+            "answer": "The cost can vary and honestly depends on the details, subject matter, and size. All tattoo inquiries are quoted before being charged."
+        },
+        {
+            "question": "How much is the deposit? Is it refundable? Is it able to be transferred to another project if I change my mind?",
+            "answer": "All deposits go towards of the total cost of the tattoo. Once a deposit is placed, our admin will book and schedule your appointment. Please note that we are not able to hold a time slot without a deposit. This deposit is neither refundable nor transferable to another project as it goes to covering the time prepping for the tattoo (administration fee as well as the time designing the tattoo). The only exception to this is in the case of multi session tattoos. If any appointment is cancelled without a 48-hour notice, another deposit will be needed to book another time slot."
+        },
+        {
+            "question": "At what point does the clock start for a session?",
+            "answer": "For bespoke and flash projects, as soon as a stencil is applied on the skin, the clock starts. For freehand projects, as soon as the drawing process starts, the clock starts."
+        }
+    ],
+    "booking": [
+        {
+            "question": "How does it work with consultation and the design process? Can I book a time to see you before my tattoo day to chat?",
+            "answer": "All bespoke tattoos include a 30 minute zoom video call where we can talk about your design in detail. I will also provide multiple versions and we can make revisions as needed leading up to your appointment."
+        },
+        {
+            "question": "I want to cancel a tattoo, what are my options?",
+            "answer": "For bespoke tattoos, if art has been started, no refund will be provided but the art will be provided. The art cannot be commercially used unless extra terms and conditions are discussed."
+        },
+        {
+            "question": "What happens to no-show and late appointments?",
+            "answer": "For bespoke tattoos, if art has been started, no refund will be provided but the art will be provided. The art cannot be commercially used unless extra terms and conditions are discussed."
+        }
+    ],
+    "info": [
+        {
+            "question": "What if I need a touchup?",
+            "answer": "No worries! I offer two complementary touch up sessions with no time limit (for life). Just email the shop (inquiries@thenortherntattoo.com) a request. We will book you in for a touch up. Having said this, it is still extremely important that the tattoo is well cared for because fine line tattoos are more delicate and more prone to fallouts if not taken care of."
+        }, 
+        {
+            "question": "What kind of tattoos do you do?",
+            "answer": "I am currently specialized in black and grey fine line tattoos. I am open to any subject matters associated with nature. However, I do not tattoo anything that is designed by another artist unless approved by them, I do not tattoo languages that I do not personally speak, or anything that is hurtful and insulting to others."
+        }
+    ]
+}
