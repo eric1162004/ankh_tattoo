@@ -1,15 +1,18 @@
 import Link from "next/link";
-import { useState } from "react";
+import { useRouter } from "next/router";
+import { useState, useRef } from "react";
 
 const Navbar = () => {
+  const router = useRouter()
+  const checkBoxRef = useRef();
+  const [open, setOpen] = useState(false);
+
   const links = [
     { name: "MIKI SHEIR", link: "/" },
     { name: "TATTOO GALLERY", link: "/tattoo_gallery" },
     { name: "TATTOO FAQ", link: "/tattoo_faq" },
     { name: "GET A QUOTE", link: "/get_a_quote" },
   ];
-
-  const [open, setOpen] = useState(false);
 
   return (
     <nav className="z-50 p-2 text-2xl bg-primary sm:py-1 md:text-xl">
@@ -24,7 +27,7 @@ const Navbar = () => {
         </Link>
         {/* menu toggle button */}
         <label data-theme="mytheme" className="btn btn-circle bg-transparent border-0 swap swap-rotate md:hidden ">
-          <input type="checkbox" onChange={() => setOpen(!open)} />
+          <input ref={checkBoxRef} type="checkbox" onChange={() => setOpen(!open)} />
 
           <svg
             className="swap-off fill-current"
@@ -48,20 +51,22 @@ const Navbar = () => {
         {/* menu list */}
         <div
           className={`${open ? "block" : "hidden"} w-full md:block md:w-auto`}
-          onClick={() => setOpen(!open)}
           id="mobile-menu"
         >
           <ul className="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 text-base md:text-sm">
             {links.map(link => (
               <li key={link.name}>
-                <Link href={link.link}>
                   <a
                     className="block py-4 pl-3 pr-4 font-medium text-white uppercase rounded hover:text-slate-300 md:p-0"
                     aria-current="page"
+                    onClick={ () => {
+                      setOpen(open => !open)
+                      checkBoxRef.current.checked = false;
+                      router.push(link.link)
+                    }}
                   >
                     {link.name}
                   </a>
-                </Link>
               </li>
             ))}
           </ul>

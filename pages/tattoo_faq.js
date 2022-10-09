@@ -33,19 +33,20 @@ export default function Tattoo_faq() {
 
       <div className="flex justify-center p-5 backdrop-brightness-50 backdrop-opacity-50">
         <div className="md:w-2/3 ">
-          <h1 className="title ">FAQ</h1>
+          <h1 className="title py-2">FAQ</h1>
           <p className="paragraph md:w-2/3 mb-4">
             Please review the questions below before sending a tattoo inquiry.
             Please note that if you choose to send an inquiry, a response can
             take up to 5 business days.
           </p>
 
-          <h1 className="title ">Frequently asked questions</h1>
+          <h1 className="title py-2">Frequently asked questions</h1>
 
-          <div className="tabs">
+          <div className="tabs py-2">
             <a
               className={
-                "tab tab-bordered " + (category === "price" ? "tab-active" : "")
+                "text-base tab tab-bordered " +
+                (category === "price" ? "tab-active" : "")
               }
               onClick={() => setCategory("price")}
             >
@@ -53,7 +54,7 @@ export default function Tattoo_faq() {
             </a>
             <a
               className={
-                "tab tab-bordered " +
+                "text-base tab tab-bordered " +
                 (category === "booking" ? "tab-active" : "")
               }
               onClick={() => setCategory("booking")}
@@ -62,7 +63,7 @@ export default function Tattoo_faq() {
             </a>
             <a
               className={
-                "tab tab-bordered " +
+                "text-base tab tab-bordered " +
                 (category === "general" ? "tab-active" : "")
               }
               onClick={() => setCategory("info")}
@@ -74,9 +75,9 @@ export default function Tattoo_faq() {
           {data[category].map((item, index) => (
             <div className="collapse collapse-arrow" key={index}>
               <input type="checkbox" />
-              <div className="collapse-title">{item.question}</div>
+              <div className="collapse-title ">{item.question}</div>
               <div
-                className="collapse-content"
+                className="collapse-content font-bold"
                 dangerouslySetInnerHTML={{ __html: item.answer }}
               />
             </div>
