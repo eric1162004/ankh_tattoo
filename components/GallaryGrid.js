@@ -14,7 +14,7 @@ let generatedImages = Array(50)
 });
 
 export default function GallaryGrid() {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
   const [currImg, setCurrImg] = useState(0);
 
   const gotoPrevImg = () => {
