@@ -1,18 +1,37 @@
 import React, { useState } from "react";
+import ImgsViewer from "react-images-viewer";
+
+let generatedImages = Array(50)
+.fill(1)
+.map(() => {
+  const height = Math.floor(Math.random() * (600 - 300) + 300);
+  const width = Math.floor(Math.random() * (700 - 200) + 200);
+  return {
+    src: `https://via.placeholder.com/${width}x${height}`,
+    width: width * 10,
+    height: height * 10,
+  };
+});
 
 export default function GallaryGrid() {
-  let generatedImages = Array(50)
-    .fill(1)
-    .map(() => {
-      const height = Math.floor(Math.random() * (600 - 300) + 300);
-      const width = Math.floor(Math.random() * (700 - 200) + 200);
-      return {
-        src: `https://via.placeholder.com/${width}x${height}`,
-        width: width * 10,
-        height: height * 10,
-      };
-    });
+  const [isOpen, setIsOpen] = useState(true);
+  const [currImg, setCurrImg] = useState(0);
+
+  const gotoPrevImg = () => {
+    setCurrImg(currImg - 1);
+  };
+  const gotoNextImg = () => {
+    setCurrImg(currImg + 1);
+  };
+
+
   const [images] = useState(generatedImages);
+
+  const onImgClick = imgIndex => {
+    setIsOpen(!isOpen);
+    setCurrImg(imgIndex);
+    console.log(imgIndex);
+  };
 
   return (
     <div className="container mx-auto">
@@ -24,6 +43,7 @@ export default function GallaryGrid() {
                 className="block object-cover object-center w-full h-full rounded-lg"
                 src={e.src}
                 key={i}
+                onClick={() => onImgClick(i)}
               />
             </div>
           ) : (
@@ -32,11 +52,20 @@ export default function GallaryGrid() {
                 className="block object-cover object-center w-full h-full rounded-lg"
                 src={e.src}
                 key={i}
+                onClick={() => onImgClick(i)}
               />
             </div>
           )
         )}
       </div>
+      <ImgsViewer
+        imgs={images}
+        isOpen={isOpen}
+        currImg={currImg}
+        onClickPrev={() => gotoPrevImg()}
+        onClickNext={() => gotoNextImg()}
+        onClose={() => setIsOpen()}
+      />
     </div>
   );
 }
