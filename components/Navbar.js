@@ -13,7 +13,7 @@ const Navbar = () => {
     { name: "MIKI SHEIR", link: "/" },
     { name: "TATTOO GALLERY", link: "/tattoo_gallery" },
     { name: "TATTOO FAQ", link: "/tattoo_faq" },
-    { name: "GET A QUOTE", link: "/get_a_quote" },
+    { name: "Contact us", link: "/contact_us" },
   ];
 
   return (

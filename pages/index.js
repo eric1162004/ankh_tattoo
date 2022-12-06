@@ -22,15 +22,16 @@ export default function Home() {
         speed={-20}
       >
         <div className="flex flex-col h-full justify-center md:w-1/2 p-5 md:p-20 backdrop-blur-sm backdrop-brightness-50">
-          <h1 className="title ">FINE LINE TATTOO ARTIST</h1>
+          <h1 className="title ">Fine-line Tattoo</h1>
           <p className="paragraph ">
-            I offer fine line tattooing, which is different in comparison to a
-            traditional tattoo. Fine line tattoos utilize a single needle and
-            three round liners emphasizing form and outline over color, shading,
-            and texture. These tattoos have incredible levels of detail built-in
-            and create softer lines allowing for more options in the design
-            process. If you&apos;re going to have a permanent piece of art on
-            your body, why not make it the highest quality.
+            Fineline tattoo is subtle, delicate, and thin-line tattoo. Unlike
+            traditional tattoos, which create thicker and bolder design,
+            fine-line tattoos are created by just a single tattoo needle or
+            combinations of small needles. This style of tattoo allows artist to
+            create soft, tiny and minimalistic tattoos with intricately detailed
+            design by using ultra-thin line incorporating with color, shading,
+            and texture. It’s a growing trend in past decade to make delicate
+            hidden tattoos, with super skinny lines and minimalist designs.
           </p>
         </div>
       </ImageParallaxDiv>
@@ -40,27 +41,15 @@ export default function Home() {
         <div className="flex justify-end h-full">
           <div className="md:w-1/2 h-full w-full backdrop-blur-sm backdrop-brightness-50 flex items-center justify-center">
             <div className="h-2/3 w-2/3">
-                <div className="divider"></div> 
+              <div className="divider"></div>
               <div className="py-2">
-                <h1 className="title">MY TATTOO RATE</h1>
-                <p>Including tax</p>
+                <h1 className="title">Tattoo rate</h1>
+                <p className="paragraph ">Charge by piece</p>
+                <p className="paragraph ">Start from $125</p>
+                <p className="paragraph ">Accept black & grey, white and color tattoo request. </p>
+                <p className="paragraph ">Accept booking around 2-8 weeks in advance. </p>
               </div>
-              <div className="grid grid-cols-1 gap-y-3 py-2">
-                <div className="">
-                  <p className="priceLabel">$300/hr</p>
-                  <p>Bespoke tattoo</p>
-                </div>
-                <div>
-                  <p className="priceLabel">$230/hr</p>
-                  <p>Freehand tattoo</p>
-                </div>
-                <div>
-                  <p className="priceLabel">$200/hr</p>
-                  <p>Flash tattoo</p>
-                </div>
-              </div>
-              <div className="divider"></div> 
-
+              <div className="divider"></div>
             </div>
           </div>
         </div>
@@ -76,21 +65,21 @@ export default function Home() {
                 <img src="img/miki_profile_pic.jpg" />
               </div>
             </div>
-            <p className="title">MY STORY</p>
+            <p className="title">My Story</p>
             <p className="paragraph md:w-2/3">
-              Born and raised in Northern China, I have developed my love for
-              art since the age of 5 and have trained as an illustrator for more
-              than a couple decades. I moved to Vancouver, Canada in 2012 to
-              pursue my passion for drawing in the form of animation while
-              attending Emily Carr University. During my undergraduate studies,
-              I established a passion for the human body and its significance in
-              expressing one&apos;s identity and spirit. After graduation, I
-              decided to pursue this passion via temporary tattoos using henna
-              paste and jagua gel. After pursuing temporary tattooing, I was
-              able to meet Mackenzie Evanjeline who offered to train me in the
-              art of permanent tattooing. I have since been tattooing under The
-              Northern Tattoo collective and I am excited to share my passion
-              and work with the world.
+              I am Miki, a tattoo artist in Ankh tattoo studio. I was born and
+              raised in Hong Kong, and I moved to Vancouver since 2005. From an
+              early age, I have always been passionate about art, drawing and
+              designing. While working in the studio as brows artist, I got a
+              chance to learning tattoo under mentorship of Nancy Liang. With
+              the experience working in detail with machine, I was fascinated
+              and extremely interested in the fine-line tattoo style, which
+              create incredibly detailed minimalistic tattoo. Continuing
+              advancing in past 3 years, I found my passion in micro-realistic
+              style and love working on small dainty tattoo with incredible
+              details and with color as highlight brightening up the piece. I
+              also like to play with geometric design to create perfect line and
+              shape on body.
             </p>
 
             <div className="grid md:grid-cols-4 my-5 gap-5">

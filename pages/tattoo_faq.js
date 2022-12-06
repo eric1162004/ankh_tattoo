@@ -17,15 +17,13 @@ export default function Tattoo_faq() {
       >
         <div className="flex h-full justify-center items-center p-5 backdrop-blur-sm backdrop-brightness-50">
           <div className="md:w-2/3">
-            <h1 className="title ">FREQUENT QUESTIONS</h1>
+            <h1 className="title underline">FAQ</h1>
             <p className="paragraph md:w-2/3">
-              Getting a tattoo is a big decision and like any big decision,
-              tattoos comes with a lot of questions. Sometimes an artist/client
-              relationship lasts a lifetime. Your tattoo certainly does! So the
-              last thing I want is any negativity involved in your tattoo
-              experience. See the FAQ section below for answers to some of the
-              more frequent questions. If you still have questions feel free to
-              send them in the form of an inquiry using the book a tattoo form.
+              Tattoo is permanent and it’s a big decision and commitment in
+              life. You may have a lot of question and concern before making the
+              decision. Please read the FAQ section below to find the answer of
+              most frequently asked question, and feel free to contact me about
+              your concern.
             </p>
           </div>
         </div>
