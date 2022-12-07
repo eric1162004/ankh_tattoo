@@ -17,14 +17,12 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="z-50 p-2 text-2xl bg-primary sm:py-2 md:text-xl bg-opacity-90">
-      <div className="flex flex-wrap items-center justify-between md:mx-5">
+    <nav className="z-50 p-2 text-2xl bg-primary sm:py-2 md:text-xl text-black">
+      <div className="flex flex-wrap items-center justify-between md:mx-3">
         {/* brand logo */}
         <Link href="/">
           <a className="flex items-center">
-            <span className="self-center m-1 font-semibold md:m-1 whitespace-nowrap md:tracking-widest">
-              ANKH.Miki
-            </span>
+            <img className="object-contain" src="img/logoblack.png" width={120}/>
           </a>
         </Link>
         {/* menu toggle button */}
@@ -77,7 +75,7 @@ const Navbar = () => {
               {links.map(link => (
                 <li key={link.name}>
                   <a
-                    className="block py-4 pl-3 pr-4 font-normal uppercase text-hover md:p-0"
+                    className="block text-black py-4 pl-3 pr-4 font-normal uppercase text-hover md:p-0"
                     aria-current="page"
                     onClick={() => {
                       setOpen(open => !open);
@@ -98,7 +96,7 @@ const Navbar = () => {
           {links.map(link => (
             <li key={link.name}>
               <a
-                className="block py-4 pl-3 pr-4 font-medium text-white uppercase rounded hover:text-slate-300 md:p-0"
+                className="block py-4 pl-3 pr-4 font-medium text-black uppercase rounded hover:text-slate-300 md:p-0"
                 aria-current="page"
                 onClick={() => {
                   router.push(link.link);

@@ -27,7 +27,7 @@ const Layout = ({ children }) => {
   }, [getPageYOffset]);
 
   return (
-    <div className="flex flex-col h-screen font-normal">
+    <div className="flex flex-col h-screen font-normal bg-primary">
 
       {/* Navbar */}
       {/* <div className="shrink-0"> */}

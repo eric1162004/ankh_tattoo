@@ -4,7 +4,7 @@
 
 @layer components {
   .font-normal {
-    @apply text-slate-100 text-base md:text-base 
+    @apply text-black text-base md:text-base 
   }
   .text-hover {
     hover:text-slate-300

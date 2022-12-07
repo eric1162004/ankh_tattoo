@@ -7,13 +7,18 @@ import GetAQuote from "./../components/GetAQuote";
 export default function Home() {
   return (
     <div className="">
-      {/* Image1 background */}
+      {/* background with logo */}
       <ImageParallaxDiv
         className=""
         backgroundStyle=""
-        image={"img/banner1.png"}
+        image={"img/backgroundWithLogo.jpg"}
         speed={-20}
-      ></ImageParallaxDiv>
+      >
+      <div className="flex flex-col h-full items-center justify-center">
+        <img className="object-contain" src="img/logoblack.png" width={250} />
+        <p className="title text-primary">VANCOUVER FINELINE TATOO</p>
+      </div>
+      </ImageParallaxDiv>
 
       {/* Image2 background */}
       <ImageParallaxDiv
@@ -46,8 +51,12 @@ export default function Home() {
                 <h1 className="title">Tattoo rate</h1>
                 <p className="paragraph ">Charge by piece</p>
                 <p className="paragraph ">Start from $125</p>
-                <p className="paragraph ">Accept black & grey, white and color tattoo request. </p>
-                <p className="paragraph ">Accept booking around 2-8 weeks in advance. </p>
+                <p className="paragraph ">
+                  Accept black & grey, white and color tattoo request.{" "}
+                </p>
+                <p className="paragraph ">
+                  Accept booking around 2-8 weeks in advance.{" "}
+                </p>
               </div>
               <div className="divider"></div>
             </div>
