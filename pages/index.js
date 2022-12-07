@@ -16,7 +16,7 @@ export default function Home() {
       >
         <div className="flex flex-col h-full items-center justify-center">
           <img className="object-contain" src="img/miki_logo_black.png" width={250} />
-          <p className="title text-primary">VANCOUVER FINELINE TATOO</p>
+          <p className="title text-primary text-center">VANCOUVER FINELINE TATOO</p>
         </div>
       </ImageParallaxDiv>
 
