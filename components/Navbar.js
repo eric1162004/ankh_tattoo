@@ -22,7 +22,7 @@ const Navbar = () => {
         {/* brand logo */}
         <Link href="/">
           <a className="flex items-center">
-            <img className="object-contain" src="img/logoblack.png" width={120}/>
+            <img className="object-contain" src="img/miki_logo_black.png" width={120}/>
           </a>
         </Link>
         {/* menu toggle button */}

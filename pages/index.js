@@ -15,7 +15,7 @@ export default function Home() {
         speed={-20}
       >
         <div className="flex flex-col h-full items-center justify-center">
-          <img className="object-contain" src="img/logoblack.png" width={250} />
+          <img className="object-contain" src="img/miki_logo_black.png" width={250} />
           <p className="title text-primary">VANCOUVER FINELINE TATOO</p>
         </div>
       </ImageParallaxDiv>
