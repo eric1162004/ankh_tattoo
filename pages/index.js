@@ -11,7 +11,7 @@ export default function Home() {
       <ImageParallaxDiv
         className=""
         backgroundStyle=""
-        image={"img/backgroundWithLogo.jpg"}
+        image={"img/backgroundWithLogo2.jpg"}
         speed={-20}
       >
         <div className="flex flex-col h-full items-center justify-center">
