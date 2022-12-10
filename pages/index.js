@@ -65,8 +65,8 @@ export default function Home() {
 
       {/* Video background */}
       <VideoBackgroundDiv video="video/charge.mov">
-        <div className="flex flex-col h-full justify-center backdrop-blur-sm text-primary">
-          <div className="flex flex-col text-center p-5 gap-3">
+        <div className="flex flex-col  h-full justify-center backdrop-blur-sm text-primary">
+          <div className="flex flex-col md:w-1/2 text-center p-5 gap-3">
             <h1 className="title">Tattoo rate</h1>
             <p className="text-lg">Charge by piece</p>
             <p className="text-5xl">Start from $125</p>
