@@ -25,7 +25,6 @@ export default function Tattoo_faq() {
           </div>
         </div>
       </VideoBackgroundDiv>
-
       <div className="flex justify-center p-5 backdrop-brightness-50 backdrop-opacity-50">
         <div className="md:w-2/3 ">
           {data["faq"].map((item, index) => (
@@ -39,10 +38,9 @@ export default function Tattoo_faq() {
             </div>
           ))}
 
-          {/* Get A Quote */}
-          <GetAQuote className="mb-0 " />
         </div>
       </div>
+
     </div>
   );
 }

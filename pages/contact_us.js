@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Contact_us() {
   return (
-    <div className="flex justify-center m-0 p-5 py-10 backdrop-brightness-50 backdrop-opacity-50 rounded-sm">
+    <div className="flex justify-center h-full items-center m-0 p-5 py-10 backdrop-brightness-50 backdrop-opacity-50 rounded-sm">
       <div className="md:w-2/3">
         {/* Page title */}
         <div className="flex flex-col w-full text-center">

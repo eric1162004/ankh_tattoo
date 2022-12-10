@@ -29,6 +29,7 @@ const Test = () => {
           onClickPrev={() => gotoPrevImg()}
           onClickNext={() => gotoNextImg()}
           onClose={() => setIsOpen()}
+          backdropCloseable={true}
         />
       </div>
     </div>
