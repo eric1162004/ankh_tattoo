@@ -11,12 +11,12 @@ export default function Home() {
       <ImageParallaxDiv
         className=""
         backgroundStyle=""
-        image={"img/backgroundWithLogo2.jpg"}
+        image={"img/background_with_logo_2.jpg"}
         speed={-20}
       >
         <div className="flex flex-col h-full items-center justify-center">
           <img className="object-contain" src="img/miki_logo_black.png" width={250} />
-          <p className="title text-primary text-center">VANCOUVER FINELINE TATOO</p>
+          <p className="title text-center">VANCOUVER FINELINE TATOO</p>
         </div>
       </ImageParallaxDiv>
 
