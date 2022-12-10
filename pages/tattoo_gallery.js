@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import ImgsViewer from "react-images-viewer";
 
 function useViewer() {
@@ -17,10 +17,8 @@ function useViewer() {
 
 export default function Tattoo_gallery({ data }) {
   const collections = ["feature", "script", "color", "geo", "flash"];
-  
-  const viewers = Array(collections.length)
-    .fill()
-    .map(_ => useViewer());
+
+  const viewers = [useViewer(),useViewer(),useViewer(),useViewer(),useViewer()]
 
   const [isOpen, setIsOpen, currImg, setCurrImg, gotoPrevImg, gotoNextImg] = [
     0, 1, 2, 3, 4, 5,
@@ -29,6 +27,8 @@ export default function Tattoo_gallery({ data }) {
   const [images, setImages] = useState();
 
   useEffect(() => {
+    
+
     let images = collections.map(collection => {
       let imageLinks = Array(data[collection])
         .fill(0)
