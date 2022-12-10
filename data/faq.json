@@ -1,40 +1,44 @@
 {
-    "price": [
+    "faq": [
         {
-            "question": "How much does a tattoo cost?",
-            "answer": "The cost can vary and honestly depends on the details, subject matter, and size. All tattoo inquiries are quoted before being charged."
+            "question": "How much do I charge for tattoo?",
+            "answer": "My minimum charge is $125. For customs design, the exact cost would be vary depending on the tattoo idea, size, placement, complexity, and all details. I would read the tattoo request form you filled-in and discuss detail with you in email. Once we settle in all details, I will give you a quote with detail booking policy for booking confirmation.</br></br>For flash tattoo, I have set size and price for each piece. No change for flash design. You make check on my Instagram for most updated available design, in the story highlight bubble named “Flash/ Available”."
         },
         {
-            "question": "How much is the deposit? Is it refundable? Is it able to be transferred to another project if I change my mind?",
-            "answer": "All deposits go towards of the total cost of the tattoo. Once a deposit is placed, our admin will book and schedule your appointment. Please note that we are not able to hold a time slot without a deposit. This deposit is neither refundable nor transferable to another project as it goes to covering the time prepping for the tattoo (administration fee as well as the time designing the tattoo). The only exception to this is in the case of multi session tattoos. If any appointment is cancelled without a 48-hour notice, another deposit will be needed to book another time slot."
+            "question": "How old do I need to be to get a tattoo?",
+            "answer": "You need to be at least 18 years old. For 16 and 17, we require one of your parents to attend the appointment and sign the consent form.  Please make sure to bring photo ID with you. "
         },
         {
-            "question": "At what point does the clock start for a session?",
-            "answer": "For bespoke and flash projects, as soon as a stencil is applied on the skin, the clock starts. For freehand projects, as soon as the drawing process starts, the clock starts."
-        }
-    ],
-    "booking": [
-        {
-            "question": "How does it work with consultation and the design process? Can I book a time to see you before my tattoo day to chat?",
-            "answer": "All bespoke tattoos include a 30 minute zoom video call where we can talk about your design in detail. I will also provide multiple versions and we can make revisions as needed leading up to your appointment."
+            "question": "Before tattoo. What do you need to do to prepare for your tattoo session?",
+            "answer": "<li>Moisturization is the key to ensure your skin is at its healthiest. Moisturizing your skin more often especially around 24 hrs before the appointment.</li><li>Please eat before you come. Don’t be hungry.</li><li>Please shave the area.</li><li>Wear proper clothing to have your tattoo area open, and better wear black color.</li><li>No numbing cream before tattooing. You may take Tylenol, but not Advil or any painkiller included blood thinner.</li><li>Do not drink alcohol 24 hrs before appointment, esp. for long session (>4 hours).</li>"
         },
         {
-            "question": "I want to cancel a tattoo, what are my options?",
-            "answer": "For bespoke tattoos, if art has been started, no refund will be provided but the art will be provided. The art cannot be commercially used unless extra terms and conditions are discussed."
+            "question": "Aftercare. What do you need to do to keep the best result?",
+            "answer": "Moisturize your skin!!Keep your tattoo really well hydrated is crucial as it sootheany annoying itching and irritation, and helps minimize the possibility of cracking, drying out, or bleeding.Use natural /organic oil, non-scented body lotion, or tattoo moisturizer.</br></br>Avoid UV exposure: UV rays from the sun will penetrate the skin and essentially break down the pigments in the tattoo.Then, the tattoo will ultimately appear much lighter and less vibrant. Make sure to apply sunscreen proactively.</br></br>Avoid sweating and Do NOT submerge in water: It disturb natural healing of skin. Treat your new tattoo as open wound and avoid any potential infection."
         },
         {
-            "question": "What happens to no-show and late appointments?",
-            "answer": "For bespoke tattoos, if art has been started, no refund will be provided but the art will be provided. The art cannot be commercially used unless extra terms and conditions are discussed."
-        }
-    ],
-    "info": [
+            "question": "What should I do if I have allergic reaction to Saniderm (second skin)?",
+            "answer": "We provide Saniderm at the end of the session to protect you tattoo. If your body is allergic to Saniderm, you may experience a rash, skin irritation, or other signs of an allergic reaction. If this happens, immediately remove your Saniderm and wash the area with mild soap. If you didn’t remove it soon enough, it might leave a temporary mark near the edge of the area, but it should eventually goes away in a few weeks to few months. "
+        },
         {
-            "question": "What if I need a touchup?",
-            "answer": "No worries! I offer two complementary touch up sessions with no time limit (for life). Just email the shop (inquiries@thenortherntattoo.com) a request. We will book you in for a touch up. Having said this, it is still extremely important that the tattoo is well cared for because fine line tattoos are more delicate and more prone to fallouts if not taken care of."
-        }, 
+            "question": "Can I have old tattoo cover-up?",
+            "answer": "When considering covering previous and unwanted tattoo with a new one, there is a lot of limitation, and sometimes unable to be done. It depends on existing tattoo’s condition, and would be determine on case-by-case basis, including the darkness, healing, size and placement of the old tattoo, and the preference on the new tattoo design."
+        },
         {
-            "question": "What kind of tattoos do you do?",
-            "answer": "I am currently specialized in black and grey fine line tattoos. I am open to any subject matters associated with nature. However, I do not tattoo anything that is designed by another artist unless approved by them, I do not tattoo languages that I do not personally speak, or anything that is hurtful and insulting to others."
+            "question": "What do I need to know about scar or stretch mark cover-up?",
+            "answer": "Scar tissue is generally more painful to tattoo than unscarred skin. And in some cases, it might be extremely painful. Scarred skin is less able to absorb ink and tend to settle more irregularly than unscarred skin, therefore your tattoo might get smudged, discolored or unclear.</br></br>Before tattooing on scar, it’s recommended to wait at least a year until it’s completely healed.For deeper or larger scars, you might have to wait much longer for than that, like 3 or 5 years.</br></br>For people who have or are prone to keloid scars, there’s a higher chance that getting a tattoo to cover your scar will make the scar worse. </br></br>An experienced tattoo artist can help you find a design that works best for your scar. Or, you might want to consider a medical-grade tattoo that better matches your skin tone."
+        },
+        {
+            "question": "What do I need to consider when choosing the tattoo area?",
+            "answer": "Skin stretching. Our skin stretches in every movement, so it’s hard to keep the tattoo in same shape and condition or being straight all the time.</br></br>Tattoos on certain parts of the body can fade faster. Fingers, feet, knees and elbows can be difficult to heal and the skin regenerates faster on those spots, meaning that tattoo won't last as long. Also, they’re more likely to fade due to friction. And they might regularly require touch-up.</br></br>The Abdomen. Your belly grows or shrinks, so will your tattoo. If you’re planning on becoming pregnant or losing a lot of weight, you might want to hold off on your abdomen tattoo until after giving birth or losing weight.</br></br>Pain might be part of your consideration. Everyone has different levels of pain tolerance. In general, the least painful places to get tattooed are those with the most fat, fewest nerve endings, and thickest skin. For first tattoo, the most common area is on arm (further to armpit), not too close to bone and sensitive area."
+        },
+        {
+            "question": "Does fine-line tattoo fade faster or require touch-up?",
+            "answer": "Tattoo is permeant. However, all kinds of tattoos fade and age differently, depends on skin, application, and tattoo placement. Also, aftercare is very important to avoid fading and ink spreading. Most of my tattoo work doesn’t necessarily require touch-up. However, if part of the tattoo gets too light, I provide first touch-up for free within 1 year of initial session."
+        },
+        {
+            "question": "How long does tattootake to heal?",
+            "answer": "3 steps of healing: </br></br>1st to 3rdday. The tattooing process creates tens of thousands of tiny wounds, so it could causes temporary inflammation, redness, swollen, and tenderness. Your Saniderm bandage (second skin) may fill up with fluid, like an ink sac (watery bubble with mixture of blood, liquid and ink). But don’t worry. It is your tattoo weeping plasma, which plays a vital role in tattoo healing. </br></br>1st to 2nd week, top layer of skin peels, flakes or scabs. </br></br>1 month after tattooing, healing is much less visible but still ongoing in the skin. The skin continues to remodel underneath the tattoo for three to six months, after which tattoos are generally considered to be fully healed."
         }
     ]
 }

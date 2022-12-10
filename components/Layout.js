@@ -66,7 +66,7 @@ const Layout = ({ children }) => {
           <img
             ref={instagramRef}
             className="fixed bottom-5 right-5 iconSize md:bottom-14 md:right-10 drop-shadow"
-            src="img/ig_logo.png"
+            src="img/ig_icon.png"
           />
         </a>
       </CSSTransition>
