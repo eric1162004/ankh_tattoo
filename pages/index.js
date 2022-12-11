@@ -48,7 +48,7 @@ export default function Home() {
       {/* My Story Section */}
       <div className="grid grid-cols-1 md:grid-cols-2">
         <img className="" src="img/myStory.jpg" />
-        <div className="flex flex-col justify-center p-5 bg-black text-primary">
+        <div className="flex flex-col justify-center px-5 py-10  bg-black text-primary">
           <p className="title">My Story</p>
           <p className="paragraph">
             I am Miki, a tattoo artist in Ankh tattoo studio. I was born and
@@ -85,21 +85,21 @@ export default function Home() {
       </VideoBackgroundDiv>
 
       {/* Contact and Map */}
-      <div className="grid grid-cols-1 md:grid-cols-2 bg-black p-5 h-1/3 gap-3">
+      <div className="grid grid-cols-1 md:grid-cols-2 bg-black px-5 py-10 h-1/3 gap-3">
         <div className="flex flex-col h-full items-center justify-center grayscale">
           {<Map lat={49.26666} lng={-123.11149} zoom={15} />}
         </div>
-        <div className="flex flex-col h-full items-center justify-center text-center text-primary-light">
+        <div className="flex flex-col h-full items-center gap-1 justify-center text-center text-primary-light">
           <h1 className="title text-2xl my-0 tracking-wider">Contact us</h1>
-          <p>Studio address (By appointment only)</p>
-          <p>326 W 5th Ave, Vancouver BC Studio #12 @ The Beaumont Studio</p>
-          <p>E-mail: miki@grandarc.ca</p>
-          <p>
+          <p className="text-sm">Studio address (By appointment only)</p>
+          <p className="text-sm">326 W 5th Ave, Vancouver BC Studio #12 @ The Beaumont Studio</p>
+          <p className="text-sm">E-mail: miki@grandarc.ca</p>
+          <p className="text-sm">
             Instagram
             <img className="inline" src="img/ig_icon.png" width={20} />:{" "}
             <a href="https://www.instagram.com/ankh.miki">ankh.miki</a>
           </p>
-          <button className="btn btn-accent btn-outline border-2 m-2">
+          <button className="btn btn-accent btn-outline border-2 m-3">
             <a href="https://form.jotform.com/Sheir/tattoo-request-form">
               Tattoo Requestion Form
             </a>

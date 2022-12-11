@@ -30,9 +30,9 @@ export default function Tattoo_faq() {
           {data["faq"].map((item, index) => (
             <div className="collapse collapse-arrow" key={index}>
               <input type="checkbox" />
-              <div className="collapse-title ">{item.question}</div>
+              <div className="collapse-title font-bold underline underline-offset-4">{item.question}</div>
               <div
-                className="collapse-content font-bold"
+                className="collapse-content "
                 dangerouslySetInnerHTML={{ __html: item.answer }}
               />
             </div>

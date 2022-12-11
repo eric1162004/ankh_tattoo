@@ -2,8 +2,8 @@ import React, { useState, useRef, useEffect, useCallback } from "react";
 import { GoogleMap, useJsApiLoader, Marker } from "@react-google-maps/api";
 
 const Map = ({
-  width = "350",
-  height = "350",
+  width = "500",
+  height = "400",
   lat = -3.745,
   lng = -38.523,
   zoom = 12,
