@@ -9,7 +9,7 @@ export default function Contact_us() {
         <div className="flex flex-col h-full items-center justify-center grayscale">
           {<Map lat={49.26666} lng={-123.11149} zoom={15} />}
         </div>
-        <div className="flex flex-col h-full items-center justify-center text-black">
+        <div className="flex flex-col h-full items-center justify-center text-center text-black">
           <h1 className="title text-2xl my-0 tracking-wider">Contact us</h1>
           <p>Studio address (By appointment only)</p>
           <p>326 W 5th Ave, Vancouver BC Studio #12 @ The Beaumont Studio</p>
