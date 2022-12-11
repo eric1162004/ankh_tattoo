@@ -5,7 +5,7 @@ export default function Contact_us() {
   return (
     <>
       {/* Contact and Map */}
-      <div className="grid grid-cols-1 md:grid-cols-2 p-5 h-full gap-5">
+      <div className="grid grid-cols-1 md:grid-cols-2 p-5 h-full gap-5 pt-12">
         <div className="flex flex-col h-full items-center justify-center grayscale overflow-hidden">
           {<Map lat={49.26666} lng={-123.11149} zoom={15}/>}
         </div>
