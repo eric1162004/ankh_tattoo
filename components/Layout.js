@@ -9,7 +9,7 @@ import { useRouter } from "next/router";
 // Allow some global css is defined here.
 
 const Layout = ({ children }) => {
-  const router = useRouter() 
+  const router = useRouter();
   const navRef = useRef();
   const instagramRef = useRef();
   const upArrowRef = useRef();
@@ -33,15 +33,16 @@ const Layout = ({ children }) => {
     <div className="flex flex-col h-screen font-normal bg-transparant">
       {/* Booking now */}
       {displayBookingBanner && (
-        <div className="w-full bg-black text-center text-primary">
+        <div className="grid grid-cols-3 w-full bg-black text-center text-primary px-2">
+          <div></div>
           <a href="https://form.jotform.com/Sheir/tattoo-request-form">
             Booking now
           </a>
           <span
-            className="float-right pr-2"
+            className="place-self-end"
             onClick={() => setDisplayBookingBanner(false)}
           >
-            close
+            x
           </span>
         </div>
       )}
@@ -60,7 +61,9 @@ const Layout = ({ children }) => {
             ref={navRef}
             className="drop-shadow-lg z-50 top-0 absolute w-full"
           >
-            <Navbar darkContext={ router.pathname === "/tattoo_faq" ? true : false} />
+            <Navbar
+              darkContext={router.pathname === "/tattoo_faq" ? true : false}
+            />
           </div>
         </CSSTransition>
 
