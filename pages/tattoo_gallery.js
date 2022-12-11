@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useMemo } from "react";
 import ImgsViewer from "react-images-viewer";
+import LazyLoad from "react-lazy-load";
 
 function useViewer() {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,7 +19,13 @@ function useViewer() {
 export default function Tattoo_gallery({ data }) {
   const collections = ["feature", "script", "color", "geo", "flash"];
 
-  const viewers = [useViewer(),useViewer(),useViewer(),useViewer(),useViewer()]
+  const viewers = [
+    useViewer(),
+    useViewer(),
+    useViewer(),
+    useViewer(),
+    useViewer(),
+  ];
 
   const [isOpen, setIsOpen, currImg, setCurrImg, gotoPrevImg, gotoNextImg] = [
     0, 1, 2, 3, 4, 5,
@@ -27,8 +34,6 @@ export default function Tattoo_gallery({ data }) {
   const [images, setImages] = useState();
 
   useEffect(() => {
-    
-
     let images = collections.map(collection => {
       let imageLinks = Array(data[collection])
         .fill(0)
@@ -60,13 +65,17 @@ export default function Tattoo_gallery({ data }) {
                 {collections[collectionIndex]}
               </h1>
               {collection.map((image, imageIndex) => (
-                <div className="w-full rounded" key={imageIndex}>
-                  <img
-                    className="block object-cover object-center w-full h-full rounded-lg hover:brightness-105"
-                    src={image.src}
-                    key={imageIndex}
-                    onClick={() => onImgClick(imageIndex, collectionIndex)}
-                  />
+                <div
+                  className="w-full rounded"
+                  key={imageIndex}
+                  onClick={() => onImgClick(imageIndex, collectionIndex)}
+                >
+                  <LazyLoad>
+                    <img
+                      className="block object-cover object-center w-full h-full rounded-lg hover:brightness-105"
+                      src={image.src}
+                    />
+                  </LazyLoad>
                 </div>
               ))}
             </div>
