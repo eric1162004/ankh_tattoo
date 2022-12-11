@@ -1,9 +1,10 @@
+import { primary } from "daisyui/src/colors";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useState, useRef } from "react";
 import { CSSTransition } from "react-transition-group";
 
-const Navbar = () => {
+const Navbar = ({ darkContext = true }) => {
   const router = useRouter();
   const checkBoxRef = useRef();
   const menuFlyOutRef = useRef();
@@ -17,18 +18,36 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="z-50 p-2 text-2xl bg-primary sm:py-2 md:text-xl text-black">
+    <nav
+      className={`p-2 text-2xl bg-transparent py-1 md:text-xl ${
+        darkContext ? "text-black" : "text-primary"
+      } `}
+    >
       <div className="flex flex-wrap items-center justify-between md:mx-3">
         {/* brand logo */}
         <Link href="/">
           <a className="flex items-center">
-            <img className="object-contain" src="img/miki_logo_black.png" width={120}/>
+            {darkContext ? (
+              <img
+                className="object-contain"
+                src="img/miki_logo_white.png"
+                width={120}
+              />
+            ) : (
+              <img
+                className="object-contain"
+                src="img/miki_logo_black.png"
+                width={120}
+              />
+            )}
           </a>
         </Link>
         {/* menu toggle button */}
         <label
           data-theme="mytheme"
-          className="btn btn-circle bg-transparent border-0 swap swap-rotate md:hidden"
+          className={`btn btn-circle ${
+            darkContext ? "text-primary" : "text-black"
+          } bg-transparent border-0 swap swap-rotate md:hidden`}
         >
           <input
             ref={checkBoxRef}
@@ -60,7 +79,7 @@ const Navbar = () => {
         <CSSTransition
           in={open}
           nodeRef={menuFlyOutRef}
-          timeout={1000}
+          timeout={200}
           classNames="menu-transition"
           unmountOnExit
           onEnter={() => setOpen(true)}
@@ -68,14 +87,25 @@ const Navbar = () => {
         >
           <div
             ref={menuFlyOutRef}
-            className={`w-full md:block md:w-auto`}
+            className={`w-full h-full 
+            ${
+              darkContext ? "bg-black opacity-80" : "bg-primary opacity-95"
+            }             
+             md:block md:w-auto mt-2`}
             id="mobile-menu"
           >
-            <ul className={`flex flex-col mt-4 md:hidden ${open ? "block" : "hidden"}`}>
+            <ul
+              ref={menuFlyOutRef}
+              className={`flex flex-col mt-4 md:hidden ${
+                open ? "block" : "hidden"
+              }`}
+            >
               {links.map(link => (
                 <li key={link.name}>
                   <a
-                    className="block text-black py-4 pl-3 pr-4 font-normal uppercase text-hover md:p-0"
+                    className={`block ${
+                      darkContext ? "text-white" : "text-black"
+                    } py-4 pl-3 pr-4 font-normal uppercase text-hover md:p-0`}
                     aria-current="page"
                     onClick={() => {
                       setOpen(open => !open);

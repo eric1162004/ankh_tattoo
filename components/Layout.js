@@ -3,24 +3,26 @@ import React, { useState, useRef, useEffect, useCallback } from "react";
 
 import Navbar from "/components/Navbar";
 import Footer from "/components/Footer";
+import { useRouter } from "next/router";
 
 // Layout support sticky navbar and footer using flex
 // Allow some global css is defined here.
 
 const Layout = ({ children }) => {
+  const router = useRouter() 
   const navRef = useRef();
   const instagramRef = useRef();
   const upArrowRef = useRef();
-  const [display, setDisplay] = useState(true);
+  const [navDisplay, setNavDisplay] = useState(true);
   const [displayBookingBanner, setDisplayBookingBanner] = useState(true);
 
   const getPageYOffset = useCallback(() => {
     if (window.pageYOffset > 0) {
-      setDisplay(false);
+      setNavDisplay(false);
     } else {
-      setDisplay(true);
+      setNavDisplay(true);
     }
-  }, [setDisplay]);
+  }, [setNavDisplay]);
 
   useEffect(() => {
     window.addEventListener("scroll", getPageYOffset);
@@ -28,34 +30,40 @@ const Layout = ({ children }) => {
   }, [getPageYOffset]);
 
   return (
-    <div className="flex flex-col h-screen font-normal bg-primary">
+    <div className="flex flex-col h-screen font-normal bg-transparant">
       {/* Booking now */}
       {displayBookingBanner && (
-        <div
-          className="w-full bg-black text-center text-primary "
-        >
-          <a href="https://form.jotform.com/Sheir/tattoo-request-form">Booking now</a>
-          <span className="float-right pr-2" onClick={() => setDisplayBookingBanner(false)}>X</span>
+        <div className="w-full bg-black text-center text-primary">
+          <a href="https://form.jotform.com/Sheir/tattoo-request-form">
+            Booking now
+          </a>
+          <span
+            className="float-right pr-2"
+            onClick={() => setDisplayBookingBanner(false)}
+          >
+            close
+          </span>
         </div>
       )}
 
-      {/* Navbar */}
-      {/* <div className="shrink-0"> */}
-      <CSSTransition
-        in={display}
-        nodeRef={navRef}
-        timeout={300}
-        classNames="nav-transition"
-        unmountOnExit
-      >
-        <div ref={navRef} className="relative top-0 drop-shadow-lg">
-          <Navbar />
-        </div>
-      </CSSTransition>
-      {/* </div> */}
-
       {/* Main Content */}
-      <div className="bg-gradient-to-b from-primary-dark to-primary-light grow">
+      <div className="relative">
+        {/* Navbar */}
+        <CSSTransition
+          in={navDisplay}
+          nodeRef={navRef}
+          timeout={300}
+          classNames="nav-transition"
+          unmountOnExit
+        >
+          <div
+            ref={navRef}
+            className="drop-shadow-lg z-50 top-0 absolute w-full"
+          >
+            <Navbar darkContext={ router.pathname === "/tattoo_faq" ? true : false} />
+          </div>
+        </CSSTransition>
+
         {children}
       </div>
 
@@ -66,7 +74,7 @@ const Layout = ({ children }) => {
 
       {/* instagram icon */}
       <CSSTransition
-        in={display}
+        in={navDisplay}
         nodeRef={instagramRef}
         timeout={300}
         classNames="slide-right-transition"
@@ -83,7 +91,7 @@ const Layout = ({ children }) => {
 
       {/* up arrow icon */}
       <CSSTransition
-        in={!display}
+        in={!navDisplay}
         nodeRef={upArrowRef}
         timeout={300}
         classNames="slide-right-transition"
