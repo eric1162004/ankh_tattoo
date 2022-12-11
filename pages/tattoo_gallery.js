@@ -48,12 +48,12 @@ export default function Tattoo_gallery({ data }) {
   };
 
   return (
-    <div className="container mx-auto divide-y divide-slate-500">
+    <div className="container mx-auto">
       {images &&
         images.map((collection, collectionIndex) => {
           return (
             <div
-              className="grid-cols-3 md:grid-cols-5 p-5 space-y-0 grid gap-1 "
+              className="grid-cols-3 md:grid-cols-5 m-2 p-2 space-y-0 grid gap-1 border-b-2"
               key={collectionIndex}
             >
               <h1 className="title text-center self-center">

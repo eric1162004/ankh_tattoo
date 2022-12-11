@@ -15,15 +15,19 @@ const Map = ({
 
   const [map, setMap] = useState(null);
 
-  const position = { lat, lng }
+  const position = { lat, lng };
 
   const onLoad = useCallback(function callback(map) {
     // This is just an example of getting and using the map instance!!! don't just blindly copy!
     // const bounds = new window.google.maps.LatLngBounds(position);
     // map.fitBounds(bounds);
 
-    // Set the map zoom level 
-    map.setZoom(zoom)
+    // Set the map zoom level
+    map.setZoom(zoom);
+    map.setOptions({
+      fullscreenControl: true,
+      mapTypeControl: false,
+    });
     setMap(map);
   }, []);
 

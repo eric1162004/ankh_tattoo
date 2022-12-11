@@ -48,28 +48,39 @@ export default function Home() {
       {/* My Story Section */}
       <div className="grid grid-cols-1 md:grid-cols-2">
         <img className="" src="img/myStory.jpg" />
-        <div className="flex flex-col justify-center px-5 py-10  bg-black text-primary">
-          <p className="title">My Story</p>
-          <p className="paragraph">
-            I am Miki, a tattoo artist in Ankh tattoo studio. I was born and
-            raised in Hong Kong, and I moved to Vancouver since 2005. From an
-            early age, I have always been passionate about art, drawing and
-            designing. While working in the studio as brows artist, I got a
-            chance to learning tattoo under mentorship of Nancy Liang. With the
-            experience working in detail with machine, I was fascinated and
-            extremely interested in the fine-line tattoo style, which create
-            incredibly detailed minimalistic tattoo. Continuing advancing in
-            past 3 years, I found my passion in micro-realistic style and love
-            working on small dainty tattoo with incredible details and with
-            color as highlight brightening up the piece. I also like to play
-            with geometric design to create perfect line and shape on body.
-          </p>
+
+        <div className=" text-primary ">
+          <ImageParallaxDiv
+            className="h-full "
+            backgroundStyle=""
+            image={"img/myStory2.jpg"}
+            speed={-20}
+          >
+            <div className="h-full flex flex-col items-center justify-center p-5 md:p-20 backdrop-blur-sm backdrop-brightness-50">
+              <p className="title">My Story</p>
+              <p className="paragraph">
+                I am Miki, a tattoo artist in Ankh tattoo studio. I was born and
+                raised in Hong Kong, and I moved to Vancouver since 2005. From
+                an early age, I have always been passionate about art, drawing
+                and designing. While working in the studio as brows artist, I
+                got a chance to learning tattoo under mentorship of Nancy Liang.
+                With the experience working in detail with machine, I was
+                fascinated and extremely interested in the fine-line tattoo
+                style, which create incredibly detailed minimalistic tattoo.
+                Continuing advancing in past 3 years, I found my passion in
+                micro-realistic style and love working on small dainty tattoo
+                with incredible details and with color as highlight brightening
+                up the piece. I also like to play with geometric design to
+                create perfect line and shape on body.
+              </p>
+            </div>
+          </ImageParallaxDiv>
         </div>
       </div>
 
       {/* Video background */}
       <VideoBackgroundDiv video="video/charge.mov">
-        <div className="flex flex-col  h-full justify-center backdrop-blur-sm text-primary">
+        <div className="flex flex-col h-full justify-center backdrop-blur-sm text-primary p-5 md:p-20">
           <div className="flex flex-col md:w-1/2 text-center p-5 gap-3">
             <h1 className="title">Tattoo rate</h1>
             <p className="text-lg">Charge by piece</p>
@@ -86,13 +97,15 @@ export default function Home() {
 
       {/* Contact and Map */}
       <div className="grid grid-cols-1 md:grid-cols-2 bg-black px-5 py-10 h-1/3 gap-3">
-        <div className="flex flex-col h-full items-center justify-center grayscale">
+        <div className="flex flex-col h-full items-center justify-center grayscale overflow-hidden">
           {<Map lat={49.26666} lng={-123.11149} zoom={15} />}
         </div>
-        <div className="flex flex-col h-full items-center gap-1 justify-center text-center text-primary-light">
+        <div className="flex flex-col h-full items-center m-2 gap-1 justify-center text-center text-primary-light">
           <h1 className="title text-2xl my-0 tracking-wider">Contact us</h1>
           <p className="text-sm">Studio address (By appointment only)</p>
-          <p className="text-sm">326 W 5th Ave, Vancouver BC Studio #12 @ The Beaumont Studio</p>
+          <p className="text-sm">
+            326 W 5th Ave, Vancouver BC Studio #12 @ The Beaumont Studio
+          </p>
           <p className="text-sm">E-mail: miki@grandarc.ca</p>
           <p className="text-sm">
             Instagram
