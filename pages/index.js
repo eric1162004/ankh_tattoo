@@ -114,7 +114,7 @@ export default function Home() {
           </p>
           <button className="btn btn-accent btn-outline border-2 m-3">
             <a href="https://form.jotform.com/Sheir/tattoo-request-form">
-              Tattoo Requestion Form
+              Tattoo Request Form
             </a>
           </button>
         </div>

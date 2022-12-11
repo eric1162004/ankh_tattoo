@@ -21,7 +21,7 @@ export default function Contact_us() {
           </p>
           <button className="btn border-2 border-black m-2 text-black bg-transparent mt-4">
             <a href="https://form.jotform.com/Sheir/tattoo-request-form">
-              Tattoo Requestion Form
+              Tattoo Request Form
             </a>
           </button>
         </div>
