@@ -9,10 +9,11 @@ export default function Home() {
     <div className="-mt-10">
       {/* background with logo */}
       <ImageParallaxDiv
-        className=""
+        className="aspect-[0.6/1] md:aspect-[2.3/1]" 
         backgroundStyle=""
         image={"img/background_with_logo_2.jpg"}
         speed={-20}
+        scale={1.1}
       >
         <div className="flex flex-col h-full items-center justify-center">
           <img
@@ -56,7 +57,7 @@ export default function Home() {
             image={"img/myStory2.jpg"}
             speed={-20}
           >
-            <div className="h-full flex flex-col items-center justify-center p-5 md:p-20 backdrop-blur-sm backdrop-brightness-50">
+            <div className="h-full flex flex-col items-center justify-center p-5 md:p-20 backdrop-blur-sm ">
               <p className="title">My Story</p>
               <p className="paragraph">
                 I am Miki, a tattoo artist in Ankh tattoo studio. I was born and
@@ -80,11 +81,11 @@ export default function Home() {
 
       {/* Video background */}
       <VideoBackgroundDiv video="video/charge.mov">
-        <div className="flex flex-col h-full justify-center backdrop-blur-sm text-primary p-5 md:p-20">
-          <div className="flex flex-col md:w-1/2 text-center p-5 gap-3">
-            <h1 className="title">Tattoo rate</h1>
+        <div className="flex flex-col h-full justify-center backdrop-blur-xs text-primary p-5 md:p-20">
+          <div className="flex flex-col md:w-1/2 text-center p-5 gap-3 ">
+            <h1 className="title ">Tattoo rate</h1>
             <p className="text-lg">Charge by piece</p>
-            <p className="text-5xl">Start from $125</p>
+            <p className="text-5xl ">Start from $125</p>
             <p className="text-sm">
               Accept black & grey, white and color tattoo request.{" "}
             </p>

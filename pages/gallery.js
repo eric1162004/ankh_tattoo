@@ -16,7 +16,7 @@ function useViewer() {
   return [isOpen, setIsOpen, currImg, setCurrImg, gotoPrevImg, gotoNextImg];
 }
 
-export default function Tattoo_gallery({ data }) {
+export default function Gallery({ data }) {
   const collections = ["feature", "script", "color", "geo", "flash"];
 
   const viewers = [
@@ -58,7 +58,7 @@ export default function Tattoo_gallery({ data }) {
         images.map((collection, collectionIndex) => {
           return (
             <div
-              className="grid-cols-3 md:grid-cols-5 m-2 p-2 space-y-0 grid gap-1 border-b-2"
+              className="grid-cols-3 md:grid-cols-5 m-2 p-2 space-y-1 grid gap-1"
               key={collectionIndex}
             >
               <h1 className="title text-center self-center">
@@ -70,7 +70,7 @@ export default function Tattoo_gallery({ data }) {
                   key={imageIndex}
                   onClick={() => onImgClick(imageIndex, collectionIndex)}
                 >
-                  <LazyLoad>
+                  <LazyLoad offset={10} onContentVisible={() => {console.log('loaded!')}}>
                     <img
                       className="block object-cover object-center w-full h-full rounded-lg hover:brightness-105"
                       src={image.src}
@@ -82,6 +82,7 @@ export default function Tattoo_gallery({ data }) {
           );
         })}
 
+      {/* Image Viewer Popup */}
       {images &&
         images.map((collection, collectionIndex) => (
           <div key={collectionIndex}>

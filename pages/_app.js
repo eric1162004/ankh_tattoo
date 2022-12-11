@@ -10,8 +10,8 @@ export default function MyApp({ Component, pageProps }) {
     <ParallaxProvider>
       <Layout>
         <Head>
-          <link rel="icon" type="image/x-icon" href="/img/fav_icon.png"></link>
-          <title>Vancouver Tattoo | Miki</title>
+          <link rel="icon" type="image/x-icon" href="/img/miki_logo_white.png"></link>
+          <title>Miki ♥ ANKH ARTIST</title>
         </Head>
         <Component {...pageProps} />
       </Layout>

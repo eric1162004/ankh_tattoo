@@ -12,8 +12,8 @@ const Navbar = ({ darkContext = true }) => {
 
   const links = [
     { name: "MIKI SHEIR", link: "/" },
-    { name: "TATTOO GALLERY", link: "/tattoo_gallery" },
-    { name: "TATTOO FAQ", link: "/tattoo_faq" },
+    { name: "TATTOO GALLERY", link: "/gallery" },
+    { name: "TATTOO FAQ", link: "/faq" },
     { name: "Contact us", link: "/contact_us" },
   ];
 

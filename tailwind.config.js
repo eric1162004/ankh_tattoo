@@ -19,6 +19,9 @@ module.exports = {
       fontFamily: {
         Poppins: "Poppins, sans-serif",
       },
+      backdropBlur: {
+        xs: '2px',
+      }
     },
   },
   plugins: [require("daisyui")],
@@ -29,8 +32,8 @@ module.exports = {
     themes: [
       {
         mytheme: {
-          "primary": "#db8636",
-          "secondary": "#fce91e",
+          "primary": "#EBD8D0",
+          "secondary": "#EBD8D0",
           "accent": "#EBD8D0",
           "neutral": "#EBD8D0",
           "base-100": "#EBD8D0",
