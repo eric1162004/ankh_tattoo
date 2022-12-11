@@ -6,7 +6,7 @@ import Map from "../components/Map";
 
 export default function Home() {
   return (
-    <div className="top-0 absolute">
+    <div className="-mt-10">
       {/* background with logo */}
       <ImageParallaxDiv
         className=""

@@ -33,7 +33,7 @@ const Layout = ({ children }) => {
     <div className="flex flex-col h-screen font-normal bg-transparant">
       {/* Booking now */}
       {displayBookingBanner && (
-        <div className="grid grid-cols-3 w-full bg-black text-center text-primary px-2">
+        <div className="grid grid-cols-3 w-full bg-black text-center text-primary px-2 z-50">
           <div></div>
           <a href="https://form.jotform.com/Sheir/tattoo-request-form">
             Booking now
@@ -48,7 +48,7 @@ const Layout = ({ children }) => {
       )}
 
       {/* Main Content */}
-      <div className="relative">
+      <div className="relative grow">
         {/* Navbar */}
         <CSSTransition
           in={navDisplay}
@@ -68,12 +68,12 @@ const Layout = ({ children }) => {
         </CSSTransition>
 
         {children}
-      </div>
-
       {/* Footer */}
+      </div>
       <div className="shrink-0">
         <Footer />
       </div>
+
 
       {/* instagram icon */}
       <CSSTransition
