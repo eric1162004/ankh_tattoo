@@ -7,12 +7,15 @@ export default function Contact_us() {
       {/* Contact and Map */}
       <div className="grid grid-cols-1 md:grid-cols-2 p-5 h-full gap-5 pt-16">
         <div className="flex flex-col h-full items-center justify-center grayscale overflow-hidden">
-          {<Map lat={49.26666} lng={-123.11149} zoom={15}/>}
+          {<Map lat={49.26666} lng={-123.11149} zoom={15} />}
         </div>
         <div className="flex flex-col h-full items-center justify-center text-center text-black">
           <h1 className="title text-2xl my-0 tracking-wider">Contact us</h1>
           <p>Studio address (By appointment only)</p>
-          <p>326 W 5th Ave, Vancouver BC Studio #12 @ The Beaumont Studio</p>
+          <a href="https://www.google.com/search?q=326+W+5th+Ave">
+            <p>326 W 5th Ave, Vancouver BC Studio #12</p> 
+            <p>@ The Beaumont</p>
+          </a>
           <p>E-mail: miki@grandarc.ca</p>
           <p>
             Instagram
