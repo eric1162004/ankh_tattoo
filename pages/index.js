@@ -94,13 +94,16 @@ export default function Home() {
           <p>Studio address (By appointment only)</p>
           <p>326 W 5th Ave, Vancouver BC Studio #12 @ The Beaumont Studio</p>
           <p>E-mail: miki@grandarc.ca</p>
-          <p>Instagram (icon): ankh.miki</p>
-          <h1 className="title text-2xl my-0 tracking-wider mt-3">
-            Tattoo request form
-          </h1>
-          <a className="text-primary-light">
-            https://form.jotform.com/Sheir/tattoo-request-form
-          </a>
+          <p>
+            Instagram
+            <img className="inline" src="img/ig_icon.png" width={20} />:{" "}
+            <a href="https://www.instagram.com/ankh.miki">ankh.miki</a>
+          </p>
+          <button className="btn btn-accent btn-outline border-2 m-2">
+            <a href="https://form.jotform.com/Sheir/tattoo-request-form">
+              Tattoo Requestion Form
+            </a>
+          </button>
         </div>
       </div>
     </div>

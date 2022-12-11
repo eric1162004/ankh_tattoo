@@ -6,21 +6,24 @@ export default function Contact_us() {
     <>
       {/* Contact and Map */}
       <div className="grid grid-cols-1 md:grid-cols-2 p-5 h-full">
-        <div className="flex flex-col h-full items-center justify-center grayscale">
-          {<Map lat={49.26666} lng={-123.11149} zoom={15} />}
+        <div className="flex flex-col h-full items-center justify-center grayscale overflow-hidden">
+          {<Map lat={49.26666} lng={-123.11149} zoom={15} width={500}/>}
         </div>
         <div className="flex flex-col h-full items-center justify-center text-center text-black">
           <h1 className="title text-2xl my-0 tracking-wider">Contact us</h1>
           <p>Studio address (By appointment only)</p>
           <p>326 W 5th Ave, Vancouver BC Studio #12 @ The Beaumont Studio</p>
           <p>E-mail: miki@grandarc.ca</p>
-          <p>Instagram (icon): ankh.miki</p>
-          <h1 className="title text-2xl my-0 tracking-wider mt-3">
-            Tattoo request form
-          </h1>
-          <a className="">
-            https://form.jotform.com/Sheir/tattoo-request-form
-          </a>
+          <p>
+            Instagram
+            <img className="inline" src="img/ig_icon.png" width={20} />:{" "}
+            <a href="https://www.instagram.com/ankh.miki">ankh.miki</a>
+          </p>
+          <button className="btn border-2 border-white m-2 text-black mt-4">
+            <a href="https://form.jotform.com/Sheir/tattoo-request-form">
+              Tattoo Requestion Form
+            </a>
+          </button>
         </div>
       </div>
     </>
