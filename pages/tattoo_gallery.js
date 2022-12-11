@@ -48,7 +48,7 @@ export default function Tattoo_gallery({ data }) {
   };
 
   return (
-    <div className="container mx-auto pt-12">
+    <div className="container mx-auto pt-16">
       {images &&
         images.map((collection, collectionIndex) => {
           return (
