@@ -104,9 +104,10 @@ export default function Home() {
         <div className="flex flex-col h-full items-center m-2 gap-1 justify-center text-center text-primary-light">
           <h1 className="title text-2xl my-0 tracking-wider">Contact us</h1>
           <p className="text-sm">Studio address (By appointment only)</p>
-          <p className="text-sm">
-            326 W 5th Ave, Vancouver BC Studio #12 @ The Beaumont Studio
-          </p>
+          <a className="text-sm" href="https://www.google.com/search?q=326+W+5th+Ave">
+            <p>326 W 5th Ave, Vancouver BC Studio #12</p> 
+            <p>@ The Beaumont</p>
+          </a>
           <p className="text-sm">E-mail: miki@grandarc.ca</p>
           <p className="text-sm">
             Instagram
