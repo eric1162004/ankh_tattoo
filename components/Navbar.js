@@ -126,7 +126,9 @@ const Navbar = ({ darkContext = true }) => {
           {links.map(link => (
             <li key={link.name}>
               <a
-                className="block py-4 pl-3 pr-4 font-medium text-black uppercase rounded hover:text-slate-300 md:p-0"
+                className={`block py-4 pl-3 pr-4 font-medium ${
+                      darkContext ? "text-white" : "text-black"
+                    } uppercase rounded hover:text-slate-300 md:p-0`}
                 aria-current="page"
                 onClick={() => {
                   router.push(link.link);
