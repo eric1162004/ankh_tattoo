@@ -12,6 +12,7 @@ const Layout = ({ children }) => {
   const instagramRef = useRef();
   const upArrowRef = useRef();
   const [display, setDisplay] = useState(true);
+  const [displayBookingBanner, setDisplayBookingBanner] = useState(true);
 
   const getPageYOffset = useCallback(() => {
     if (window.pageYOffset > 0) {
@@ -28,20 +29,29 @@ const Layout = ({ children }) => {
 
   return (
     <div className="flex flex-col h-screen font-normal bg-primary">
+      {/* Booking now */}
+      {displayBookingBanner && (
+        <div
+          className="w-full bg-black text-center text-primary "
+        >
+          <a href="https://form.jotform.com/Sheir/tattoo-request-form">Booking now</a>
+          <span className="float-right pr-2" onClick={() => setDisplayBookingBanner(false)}>X</span>
+        </div>
+      )}
 
       {/* Navbar */}
       {/* <div className="shrink-0"> */}
-        <CSSTransition
-          in={display}
-          nodeRef={navRef}
-          timeout={300}
-          classNames="nav-transition"
-          unmountOnExit
-        >
-          <div ref={navRef} className="relative top-0 drop-shadow-lg">
-            <Navbar />
-          </div>
-        </CSSTransition>
+      <CSSTransition
+        in={display}
+        nodeRef={navRef}
+        timeout={300}
+        classNames="nav-transition"
+        unmountOnExit
+      >
+        <div ref={navRef} className="relative top-0 drop-shadow-lg">
+          <Navbar />
+        </div>
+      </CSSTransition>
       {/* </div> */}
 
       {/* Main Content */}
