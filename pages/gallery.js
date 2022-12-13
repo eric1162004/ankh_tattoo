@@ -80,7 +80,7 @@ export default function Gallery({ data }) {
               </h1>
               {collection.map((image, imageIndex) => (
                 <div
-                  className="w-full rounded"
+                  className="w-full rounded self-center"
                   key={imageIndex}
                   onClick={() => onImgClick(imageIndex, collectionIndex)}
                 >
