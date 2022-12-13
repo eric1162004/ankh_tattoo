@@ -6,10 +6,10 @@ import Map from "../components/Map";
 
 export default function Home() {
   return (
-    <div className="-mt-10">
+    <div className="">
       {/* background with logo */}
       <ImageParallaxDiv
-        className="aspect-[0.6/1] md:aspect-[2.3/1]" 
+        className="aspect-[0.6/1] md:aspect-[2.3/1]"
         backgroundStyle=""
         image={"img/background_with_logo_2.jpg"}
         speed={-20}
@@ -21,7 +21,7 @@ export default function Home() {
             src="img/miki_logo_black.png"
             width={250}
           />
-          <p className="title text-center">VANCOUVER FINELINE TATOO</p>
+          <p className="title text-center text-sm md:text-xl">VANCOUVER FINELINE TATOO</p>
         </div>
       </ImageParallaxDiv>
 
@@ -31,9 +31,9 @@ export default function Home() {
         image={"img/finelineTattoo.jpg"}
         speed={-20}
       >
-        <div className="text-primary flex flex-col h-full justify-center md:w-1/2 p-5 md:p-20 backdrop-blur-sm backdrop-brightness-50">
+        <div className="text-primary flex flex-col h-full justify-center lg:w-1/2 p-5 lg:p-20 backdrop-blur-sm backdrop-brightness-50">
           <h1 className="title ">Fine-line Tattoo</h1>
-          <p className="paragraph ">
+          <p className="paragraph text-sm md:text-lg">
             Fineline tattoo is subtle, delicate, and thin-line tattoo. Unlike
             traditional tattoos, which create thicker and bolder design,
             fine-line tattoos are created by just a single tattoo needle or
@@ -48,6 +48,7 @@ export default function Home() {
 
       {/* My Story Section */}
       <div className="grid grid-cols-1 md:grid-cols-2">
+      
         <img className="" src="img/myStory.jpg" />
 
         <div className=" text-primary ">
@@ -57,9 +58,9 @@ export default function Home() {
             image={"img/myStory2.jpg"}
             speed={-20}
           >
-            <div className="h-full flex flex-col items-center justify-center p-5 md:p-20 backdrop-blur-sm ">
+            <div className="h-full flex flex-col items-center justify-center p-5 lg:p-20 backdrop-blur-sm ">
               <p className="title">My Story</p>
-              <p className="paragraph">
+              <p className="paragraph text-sm md:text-lg">
                 I am Miki, a tattoo artist in Ankh tattoo studio. I was born and
                 raised in Hong Kong, and I moved to Vancouver since 2005. From
                 an early age, I have always been passionate about art, drawing
@@ -84,12 +85,12 @@ export default function Home() {
         <div className="flex flex-col h-full justify-center backdrop-blur-xs text-primary p-5 md:p-20">
           <div className="flex flex-col md:w-1/2 text-center p-5 gap-3 ">
             <h1 className="title ">Tattoo rate</h1>
-            <p className="text-lg">Charge by piece</p>
-            <p className="text-5xl ">Start from $125</p>
-            <p className="text-sm">
+            <p className="text-lg md:text-xl">Charge by piece</p>
+            <p className="text-4xl md:text-5xl">Start from $125</p>
+            <p className="text-sm md:text-lg">
               Accept black & grey, white and color tattoo request.{" "}
             </p>
-            <p className="text-sm">
+            <p className="text-sm md:text-lg">
               Accept booking around 2-8 weeks in advance.{" "}
             </p>
           </div>
@@ -103,18 +104,21 @@ export default function Home() {
         </div>
         <div className="flex flex-col h-full items-center m-2 gap-1 justify-center text-center text-primary-light">
           <h1 className="title text-2xl my-0 tracking-wider">Contact us</h1>
-          <p className="text-sm">Studio address (By appointment only)</p>
-          <a className="text-sm" href="https://www.google.com/search?q=326+W+5th+Ave">
-            <p>326 W 5th Ave, Vancouver BC Studio #12</p> 
+          <p className="text-sm md:text-lg">Studio address (By appointment only)</p>
+          <a
+            className="text-sm md:text-lg"
+            href="https://www.google.com/search?q=326+W+5th+Ave"
+          >
+            <p>326 W 5th Ave, Vancouver BC Studio #12</p>
             <p>@ The Beaumont</p>
           </a>
-          <p className="text-sm">E-mail: miki@grandarc.ca</p>
-          <p className="text-sm">
+          <p className="text-sm md:text-lg">E-mail: miki@grandarc.ca</p>
+          <p className="text-sm md:text-lg">
             Instagram
             <img className="inline" src="img/ig_icon.png" width={20} />:{" "}
             <a href="https://www.instagram.com/ankh.miki">ankh.miki</a>
           </p>
-          <button className="btn btn-accent btn-outline border-2 m-3">
+          <button className="btn btn-accent btn-outline border-2 m-3 text-sm md:text-lg">
             <a href="https://form.jotform.com/Sheir/tattoo-request-form">
               Tattoo Request Form
             </a>

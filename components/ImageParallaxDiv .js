@@ -19,7 +19,7 @@ function ImageParallaxDiv({
         expanded={expanded}
         scale={[1,scale]}
       />
-      <ParallaxBannerLayer>{children}</ParallaxBannerLayer>
+      <ParallaxBannerLayer speed={-speed}>{children}</ParallaxBannerLayer>
     </ParallaxBanner>
   );
 }
