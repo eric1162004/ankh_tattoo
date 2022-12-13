@@ -16,7 +16,7 @@ export default function Home() {
         speed={-20}
         scale={1.1}
       >
-        <div className="flex flex-col h-full items-center justify-center animate__animated animate__fadeInUp">
+        <div className="flex flex-col h-full items-center justify-center animate__animated animate__fadeInUp animate__slow">
           <img
             className="object-contain"
             src="img/miki_logo_black.png"
@@ -49,8 +49,9 @@ export default function Home() {
 
       {/* My Story Section */}
       <div className="grid grid-cols-1 md:grid-cols-2">
-      
-        <img className="" src="img/myStory.jpg" />
+      <AnimationOnScroll duration={0.5} animateIn="animate__fadeIn" >
+        <img src="img/myStory.jpg" />
+      </AnimationOnScroll>
 
         <div className=" text-primary ">
           <ImageParallaxDiv
@@ -87,7 +88,7 @@ export default function Home() {
           <div className="flex flex-col md:w-1/2 text-center p-5 gap-3 ">
             <h1 className="title ">Tattoo rate</h1>
             <p className="text-lg md:text-xl">Charge by piece</p>
-            <AnimationOnScroll animateIn="animate__bounceIn">
+            <AnimationOnScroll animateIn="animate__bounceIn" animateOut="animate__fadeOut">
             <p className="text-4xl md:text-5xl">Start from $125</p>
             </AnimationOnScroll>
             <p className="text-sm md:text-lg">
