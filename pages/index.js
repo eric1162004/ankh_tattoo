@@ -16,13 +16,15 @@ export default function Home() {
         speed={-20}
         scale={1.1}
       >
-        <div className="flex flex-col h-full items-center justify-center animate__animated animate__fadeInUp animate__slow">
+        <div className="flex flex-col h-full items-center justify-center">
+        <AnimationOnScroll duration={1} animateIn="animate__fadeInUp" >
           <img
             className="object-contain"
             src="img/miki_logo_black.png"
             width={250}
           />
           <p className="title text-center text-sm md:text-xl">VANCOUVER FINELINE TATOO</p>
+        </AnimationOnScroll>
         </div>
       </ImageParallaxDiv>
 
