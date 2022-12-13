@@ -27,6 +27,7 @@ const Map = ({
     map.setOptions({
       fullscreenControl: true,
       mapTypeControl: false,
+      keyboardShortcuts: false
     });
     setMap(map);
   }, []);
