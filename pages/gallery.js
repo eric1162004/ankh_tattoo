@@ -32,9 +32,21 @@ export default function Gallery({ data }) {
   ];
 
   const [images, setImages] = useState();
+  const [resizedImages, setResizedImages] = useState();
 
   useEffect(() => {
     let images = collections.map(collection => {
+      let imageLinks = Array(data[collection])
+        .fill(0)
+        .map((_, i) => ({
+          src: `img/gallery/${collection}/${i + 1}.jpg`,
+        }));
+      return imageLinks;
+    });
+
+    setImages(images);
+
+    let resizedImages = collections.map(collection => {
       let imageLinks = Array(data[collection])
         .fill(0)
         .map((_, i) => ({
@@ -43,19 +55,18 @@ export default function Gallery({ data }) {
       return imageLinks;
     });
 
-    setImages(images);
+    setResizedImages(resizedImages);
   }, []);
 
   const onImgClick = (imageIndex, collectionIndex) => {
-    console.log(viewers);
     viewers[collectionIndex][setIsOpen](!viewers[collectionIndex][isOpen]);
     viewers[collectionIndex][setCurrImg](imageIndex);
   };
 
   return (
     <div className="container mx-auto pt-16">
-      {images &&
-        images.map((collection, collectionIndex) => {
+      {resizedImages &&
+        resizedImages.map((collection, collectionIndex) => {
           return (
             <div
               className="grid-cols-3 md:grid-cols-5 m-2 p-2 space-y-1 grid gap-1"
@@ -70,7 +81,7 @@ export default function Gallery({ data }) {
                   key={imageIndex}
                   onClick={() => onImgClick(imageIndex, collectionIndex)}
                 >
-                  <LazyLoad offset={10} onContentVisible={() => {console.log('loaded!')}}>
+                  <LazyLoad offset={10}>
                     <img
                       className="block object-cover object-center w-full h-full rounded-lg hover:brightness-105"
                       src={image.src}
