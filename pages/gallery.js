@@ -38,7 +38,7 @@ export default function Gallery({ data }) {
       let imageLinks = Array(data[collection])
         .fill(0)
         .map((_, i) => ({
-          src: `img/gallery/${collection}/${i + 1}.jpg`,
+          src: `img/gallery_resized/${collection}/${i + 1}.jpg`,
         }));
       return imageLinks;
     });
