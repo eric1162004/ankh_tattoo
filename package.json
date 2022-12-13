@@ -10,9 +10,11 @@
   },
   "dependencies": {
     "@react-google-maps/api": "^2.17.1",
+    "animate.css": "^4.1.1",
     "daisyui": "^2.31.0",
     "next": "12.3.1",
     "react": "18.2.0",
+    "react-animation-on-scroll": "^5.1.0",
     "react-dom": "18.2.0",
     "react-images-viewer": "^1.7.1",
     "react-lazy-load": "^4.0.1",

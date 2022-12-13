@@ -3,6 +3,7 @@ import React from "react";
 import VideoBackgroundDiv from "../components/VideoBackgroundDiv";
 import ImageParallaxDiv from "../components/ImageParallaxDiv ";
 import Map from "../components/Map";
+import { AnimationOnScroll } from "react-animation-on-scroll";
 
 export default function Home() {
   return (
@@ -15,7 +16,7 @@ export default function Home() {
         speed={-20}
         scale={1.1}
       >
-        <div className="flex flex-col h-full items-center justify-center">
+        <div className="flex flex-col h-full items-center justify-center animate__animated animate__fadeInUp">
           <img
             className="object-contain"
             src="img/miki_logo_black.png"
@@ -86,7 +87,9 @@ export default function Home() {
           <div className="flex flex-col md:w-1/2 text-center p-5 gap-3 ">
             <h1 className="title ">Tattoo rate</h1>
             <p className="text-lg md:text-xl">Charge by piece</p>
+            <AnimationOnScroll animateIn="animate__bounceIn">
             <p className="text-4xl md:text-5xl">Start from $125</p>
+            </AnimationOnScroll>
             <p className="text-sm md:text-lg">
               Accept black & grey, white and color tattoo request.{" "}
             </p>

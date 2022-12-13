@@ -3,7 +3,7 @@ import { ParallaxProvider } from "react-scroll-parallax";
 
 import Layout from "../components/Layout";
 import "../styles/globals.css";
-
+import "animate.css"
 
 export default function MyApp({ Component, pageProps }) {
   return (
