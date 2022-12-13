@@ -17,14 +17,18 @@ export default function Home() {
         scale={1.1}
       >
         <div className="flex flex-col h-full items-center justify-center">
-        <AnimationOnScroll duration={1} animateIn="animate__fadeInUp" >
-          <img
-            className="object-contain"
-            src="img/miki_logo_black.png"
-            width={250}
-          />
-          <p className="title text-center text-sm md:text-xl">VANCOUVER FINELINE TATOO</p>
-        </AnimationOnScroll>
+          <AnimationOnScroll duration={1} animateIn="animate__fadeInUp">
+            <div className="flex flex-col h-full items-center justify-center">
+              <img
+                className="object-contain"
+                src="img/miki_logo_black.png"
+                width={250}
+              />
+              <p className="title text-center text-sm md:text-xl">
+                VANCOUVER FINELINE TATOO
+              </p>
+            </div>
+          </AnimationOnScroll>
         </div>
       </ImageParallaxDiv>
 
@@ -51,9 +55,9 @@ export default function Home() {
 
       {/* My Story Section */}
       <div className="grid grid-cols-1 md:grid-cols-2">
-      <AnimationOnScroll duration={0.5} animateIn="animate__fadeIn" >
-        <img src="img/myStory.jpg" />
-      </AnimationOnScroll>
+        <AnimationOnScroll duration={0.5} animateIn="animate__fadeIn">
+          <img src="img/myStory.jpg" />
+        </AnimationOnScroll>
 
         <div className=" text-primary ">
           <ImageParallaxDiv
@@ -90,8 +94,11 @@ export default function Home() {
           <div className="flex flex-col md:w-1/2 text-center p-5 gap-3 ">
             <h1 className="title ">Tattoo rate</h1>
             <p className="text-lg md:text-xl">Charge by piece</p>
-            <AnimationOnScroll animateIn="animate__bounceIn" animateOut="animate__fadeOut">
-            <p className="text-4xl md:text-5xl">Start from $125</p>
+            <AnimationOnScroll
+              animateIn="animate__bounceIn"
+              animateOut="animate__fadeOut"
+            >
+              <p className="text-4xl md:text-5xl">Start from $125</p>
             </AnimationOnScroll>
             <p className="text-sm md:text-lg">
               Accept black & grey, white and color tattoo request.{" "}
@@ -110,7 +117,9 @@ export default function Home() {
         </div>
         <div className="flex flex-col h-full items-center m-2 gap-1 justify-center text-center text-primary-light">
           <h1 className="title text-2xl my-0 tracking-wider">Contact us</h1>
-          <p className="text-sm md:text-lg">Studio address (By appointment only)</p>
+          <p className="text-sm md:text-lg">
+            Studio address (By appointment only)
+          </p>
           <a
             className="text-sm md:text-lg"
             href="https://www.google.com/search?q=326+W+5th+Ave"
