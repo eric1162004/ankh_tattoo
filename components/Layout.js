@@ -33,17 +33,15 @@ const Layout = ({ children }) => {
     <div className="flex flex-col h-screen font-normal bg-transparant">
       {/* Booking now */}
       {displayBookingBanner && (
-        <div className="grid grid-cols-3 w-full bg-black text-center text-primary px-2 z-50">
+        <div className="grid grid-cols-3 w-full bg-black text-center text-primary px-2 z-50 content-center">
           <div></div>
-          <a href="https://form.jotform.com/Sheir/tattoo-request-form">
-            Book now
+          <a className="place-self-center" href="https://form.jotform.com/Sheir/tattoo-request-form">
+            <img src="img/book_now.png" width={130}/>
           </a>
           <span
-            className="place-self-end"
+            className="place-self-end self-center text-lg px-5"
             onClick={() => setDisplayBookingBanner(false)}
-          >
-            x
-          </span>
+          >x</span>
         </div>
       )}
 
