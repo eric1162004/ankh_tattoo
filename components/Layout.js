@@ -36,7 +36,7 @@ const Layout = ({ children }) => {
         <div className="grid grid-cols-3 w-full bg-black text-center text-primary px-2 z-50">
           <div></div>
           <a href="https://form.jotform.com/Sheir/tattoo-request-form">
-            Booking now
+            Book now
           </a>
           <span
             className="place-self-end"
@@ -68,12 +68,12 @@ const Layout = ({ children }) => {
         </CSSTransition>
 
         {children}
+
       {/* Footer */}
       </div>
       <div className="shrink-0">
         <Footer />
       </div>
-
 
       {/* instagram icon */}
       <CSSTransition

@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useMemo } from "react";
 import ImgsViewer from "react-images-viewer";
 import LazyLoad from "react-lazy-load";
+import { AnimationOnScroll } from "react-animation-on-scroll";
 
 function useViewer() {
   const [isOpen, setIsOpen] = useState(false);
@@ -73,7 +74,9 @@ export default function Gallery({ data }) {
               key={collectionIndex}
             >
               <h1 className="title text-center self-center">
+            <AnimationOnScroll duration={1} animateIn="animate__fadeInDown" animateOnce={true}>
                 {collections[collectionIndex]}
+            </AnimationOnScroll>
               </h1>
               {collection.map((image, imageIndex) => (
                 <div
@@ -81,7 +84,7 @@ export default function Gallery({ data }) {
                   key={imageIndex}
                   onClick={() => onImgClick(imageIndex, collectionIndex)}
                 >
-                  <LazyLoad offset={10}>
+                  <LazyLoad offset={5}>
                     <img
                       className="block object-cover object-center w-full h-full rounded-lg hover:brightness-105"
                       src={image.src}

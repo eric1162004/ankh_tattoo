@@ -58,7 +58,7 @@
 
 /* This fires as soon as the element enters the DOM*/
 .slide-right-transition-enter {
-  right: -500px;
+  right: -10px;
   color: transparent;
   opacity: 0;
 }
@@ -67,7 +67,7 @@
   right:10px;
   opacity: 1;
   transition: all 50ms;
-  transition-timing-function: linear;
+  transition-timing-function: ease-in;
 }
 /* This fires as soon as the this.state.showList is false */
 .slide-right-transition-exit {
@@ -76,8 +76,8 @@
 }
 /* fires as element leaves the DOM*/
 .slide-right-transition-exit-active {
-  right: -500px;
+  right: -10px;
   opacity: 0;
   transition: all 50ms;
-  transition-timing-function: linear;
+  transition-timing-function: ease-in;
 }
