@@ -134,6 +134,7 @@ export default function Home() {
               <a
                 href="https://form.jotform.com/Sheir/tattoo-request-form"
                 target="_blank"
+                rel="noreferrer"
               >
                 Tattoo Request Form
               </a>
