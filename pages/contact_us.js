@@ -6,11 +6,8 @@ export default function Contact_us() {
   return (
     <div className="max-h-screen overflow-hidden">
       {/* Contact and Map */}
-      <div className="grid grid-cols-1 md:grid-cols-2 justify-center items-center p-5 w-full h-full md:gap-28 top-10 md:top-0 z-10 absolute overflow-scroll text-sm md:text-base">
-        <div className="flex flex-col md:items-end md:justify-center grayscale overflow-hidden  md:mt-0">
-          {<Map lat={49.26666} lng={-123.11149} zoom={15} />}
-        </div>
-        <div className="flex flex-col h-full md:items-start md:justify-center  text-primary">
+      <div className="grid grid-cols-1 justify-center items-center p-5 w-full h-full md:top-0 z-10 absolute overflow-scroll text-sm md:text-base">
+        <div className="flex flex-col md:flex-row md:items-center md:justify-center  text-primary">
           <div className="text-center backdrop-brightness-50 p-5 md:p-16">
             <h1 className="title text-2xl my-0 tracking-wider">Contact us</h1>
             <p>Studio address</p>
@@ -38,6 +35,9 @@ export default function Contact_us() {
                 Tattoo Request Form
               </a>
             </button>
+          </div>
+          <div className=" grayscale overflow-hidden md:m-10">
+            {<Map lat={49.26666} lng={-123.11149} zoom={15} />}
           </div>
         </div>
       </div>
