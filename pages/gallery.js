@@ -73,10 +73,14 @@ export default function Gallery({ data }) {
               className="grid-cols-3 md:grid-cols-5 m-2 p-2 space-y-1 grid gap-1"
               key={collectionIndex}
             >
-              <h1 className="title text-center self-center">
-            <AnimationOnScroll duration={1} animateIn="animate__fadeInDown" animateOnce={true}>
-                {collections[collectionIndex]}
-            </AnimationOnScroll>
+              <h1 className="title text-center self-center skew-x-1">
+                <AnimationOnScroll
+                  duration={1}
+                  animateIn="animate__fadeInDown"
+                  animateOnce={true}
+                >
+                  {collections[collectionIndex]}
+                </AnimationOnScroll>
               </h1>
               {collection.map((image, imageIndex) => (
                 <div
@@ -86,7 +90,7 @@ export default function Gallery({ data }) {
                 >
                   <LazyLoad offset={5}>
                     <img
-                      className="block object-cover object-center w-full h-full rounded-lg hover:brightness-105"
+                      className="block object-cover object-center w-full h-full rounded-lg hover:brightness-90 hover:contrast-125 shadow-red-200 shadow-lg"
                       src={image.src}
                     />
                   </LazyLoad>

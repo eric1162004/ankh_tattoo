@@ -51,7 +51,7 @@ const Layout = ({ children }) => {
               target="_blank"
               rel="noreferrer"
             >
-              <img src="img/book_now.png" width={130} />
+              <img src="img/book_now.png" width={140} />
             </a>
             <span
               className="place-self-end self-center text-lg px-5"
