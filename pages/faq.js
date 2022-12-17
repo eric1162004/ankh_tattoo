@@ -13,7 +13,7 @@ export default function Faq() {
         video="video/faq.mov"
       >
         <div className="backdrop-brightness-50 md:px-32 text-primary ">
-          <div className="flex flex-col pt-28 justify-center items-center p-5 ">
+          <div className="flex flex-col pt-28 justify-start items-center p-5 ">
             <h1 className="title">Frequently Asked Question</h1>
             <p className="paragraph">
               Tattoo is permanent and it’s a big decision and commitment in

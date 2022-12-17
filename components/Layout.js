@@ -59,7 +59,7 @@ const Layout = ({ children }) => {
             ref={navRef}
             className="drop-shadow-lg z-50 top-0 absolute w-full backdrop-opacity-10 bg-white/20"
           >
-            <Navbar darkContext={router.pathname === "/faq" ? true : false} />
+            <Navbar darkContext={router.pathname === "/faq" || router.pathname === "/contact_us" ? true : false} />
           </div>
         </CSSTransition>
 
