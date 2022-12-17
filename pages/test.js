@@ -3,49 +3,117 @@ import { AnimationOnScroll } from "react-animation-on-scroll";
 
 const Test = () => {
   return (
-    <div className="">
-          <h2>Some Text</h2>
-          <h2>Some Text</h2>
-          <h2>Some Text</h2>
-          <h2>Some Text</h2>
-          <h2>Some Text</h2>
-          <h2>Some Text</h2>
-          <h2>Some Text</h2>
-          <h2>Some Text</h2>
-          <h2>Some Text</h2>
-          <h2>Some Text</h2>
-          <h2>Some Text</h2>
-          <h2>Some Text</h2>
-          <h2>Some Text</h2>
-          <h2>Some Text</h2>
-          <h2>Some Text</h2>
-          <h2>Some Text</h2>
-          <h2>Some Text</h2>
-          <h2>Some Text</h2>
-          <h2>Some Text</h2>
-          <h2>Some Text</h2>
-          <h2>Some Text</h2>
-          <h2>Some Text</h2>
-          <h2>Some Text</h2>
-          <h2>Some Text</h2>
-          <h1 class="animate__animated animate__bounce">An animated element</h1>
-      <AnimationOnScroll animateIn="animate__bounceIn">
-        <div className="z-50">
-          <h2>Some Text</h2>
-          <h2>Some Text</h2>
-          <h2>Some Text</h2>
-          <h2>Some Text</h2>
-          <h2>Some Text</h2>
-          <h2>Some Text</h2>
-          <h2>Some Text</h2>
-          <h2>Some Text</h2>
-          <h2>Some Text</h2>
-          <h2>Some Text</h2>
-          <h2>Some Text</h2>
-          <h2>Some Text</h2>
-          <h2>Some Text</h2>
-        </div>
-      </AnimationOnScroll>
+    <div className={""}>
+      <video
+        style={{ position: "fixed" }}
+        className="object-cover w-full h-full"
+        src="video/faq.mov"
+        playsInline
+        autoPlay
+        muted
+        loop
+      ></video>
+      <div className="w-full h-full overflow-scroll scrollbar-hide" style={{ position: "fixed" }}>
+        <h1>
+          djsdkahsjxhassssssssssssssssssssssssssssssssssssssssssssssssssssss
+        </h1>
+        <h1>
+          djsdkahsjxhassssssssssssssssssssssssssssssssssssssssssssssssssssss
+        </h1>
+        <h1>
+          djsdkahsjxhassssssssssssssssssssssssssssssssssssssssssssssssssssss
+        </h1>
+        <h1>
+          djsdkahsjxhassssssssssssssssssssssssssssssssssssssssssssssssssssss
+        </h1>
+        <h1>
+          djsdkahsjxhassssssssssssssssssssssssssssssssssssssssssssssssssssss
+        </h1>
+        <h1>
+          djsdkahsjxhassssssssssssssssssssssssssssssssssssssssssssssssssssss
+        </h1>
+        <h1>
+          djsdkahsjxhassssssssssssssssssssssssssssssssssssssssssssssssssssss
+        </h1>
+        <h1>
+          djsdkahsjxhassssssssssssssssssssssssssssssssssssssssssssssssssssss
+        </h1>
+        <h1>
+          djsdkahsjxhassssssssssssssssssssssssssssssssssssssssssssssssssssss
+        </h1>
+        <h1>
+          djsdkahsjxhassssssssssssssssssssssssssssssssssssssssssssssssssssss
+        </h1>
+        <h1>
+          djsdkahsjxhassssssssssssssssssssssssssssssssssssssssssssssssssssss
+        </h1>
+        <h1>
+          djsdkahsjxhassssssssssssssssssssssssssssssssssssssssssssssssssssss
+        </h1>
+        <h1>
+          djsdkahsjxhassssssssssssssssssssssssssssssssssssssssssssssssssssss
+        </h1>
+        <h1>
+          djsdkahsjxhassssssssssssssssssssssssssssssssssssssssssssssssssssss
+        </h1>
+        <h1>
+          djsdkahsjxhassssssssssssssssssssssssssssssssssssssssssssssssssssss
+        </h1>
+        <h1>
+          djsdkahsjxhassssssssssssssssssssssssssssssssssssssssssssssssssssss
+        </h1>
+        <h1>
+          djsdkahsjxhassssssssssssssssssssssssssssssssssssssssssssssssssssss
+        </h1>
+        <h1>
+          djsdkahsjxhassssssssssssssssssssssssssssssssssssssssssssssssssssss
+        </h1>
+        <h1>
+          djsdkahsjxhassssssssssssssssssssssssssssssssssssssssssssssssssssss
+        </h1>
+        <h1>
+          djsdkahsjxhassssssssssssssssssssssssssssssssssssssssssssssssssssss
+        </h1>
+        <h1>
+          djsdkahsjxhassssssssssssssssssssssssssssssssssssssssssssssssssssss
+        </h1>
+        <h1>
+          djsdkahsjxhassssssssssssssssssssssssssssssssssssssssssssssssssssss
+        </h1>
+        <h1>
+          djsdkahsjxhassssssssssssssssssssssssssssssssssssssssssssssssssssss
+        </h1>
+        <h1>
+          djsdkahsjxhassssssssssssssssssssssssssssssssssssssssssssssssssssss
+        </h1>
+        <h1>
+          djsdkahsjxhassssssssssssssssssssssssssssssssssssssssssssssssssssss
+        </h1>
+        <h1>
+          djsdkahsjxhassssssssssssssssssssssssssssssssssssssssssssssssssssss
+        </h1>
+        <h1>
+          djsdkahsjxhassssssssssssssssssssssssssssssssssssssssssssssssssssss
+        </h1>
+        <h1>
+          djsdkahsjxhassssssssssssssssssssssssssssssssssssssssssssssssssssss
+        </h1>
+        <h1>
+          djsdkahsjxhassssssssssssssssssssssssssssssssssssssssssssssssssssss
+        </h1>
+        <h1>
+          djsdkahsjxhassssssssssssssssssssssssssssssssssssssssssssssssssssss
+        </h1>
+        <h1>
+          djsdkahsjxhassssssssssssssssssssssssssssssssssssssssssssssssssssss
+        </h1>
+        <h1>
+          djsdkahsjxhassssssssssssssssssssssssssssssssssssssssssssssssssssss
+        </h1>
+        <h1>
+          djsdkahsjxhassssssssssssssssssssssssssssssssssssssssssssssssssssss
+        </h1>
+      </div>
     </div>
   );
 };
