@@ -49,6 +49,8 @@ const Layout = ({ children }) => {
             <a
               className="place-self-center"
               href="https://form.jotform.com/Sheir/tattoo-request-form"
+              target="_blank"
+              rel="noreferrer"
             >
               <img src="img/book_now.png" width={130} />
             </a>
