@@ -90,7 +90,7 @@ export default function Gallery({ data }) {
                 >
                   <LazyLoad offset={5}>
                     <img
-                      className="block object-cover object-center w-full h-full rounded-lg hover:brightness-90 hover:contrast-125 shadow-red-200 shadow-lg"
+                      className="block object-cover object-center w-full h-full rounded-lg hover:brightness-90 hover:contrast-125 "
                       src={image.src}
                     />
                   </LazyLoad>
