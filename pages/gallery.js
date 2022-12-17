@@ -18,7 +18,7 @@ function useViewer() {
 }
 
 export default function Gallery({ data }) {
-  const collections = ["feature", "script", "color", "geo", "flash"];
+  const collections = ["feature", "script", "color", "geometric", "flash"];
 
   const viewers = [
     useViewer(),
@@ -120,8 +120,8 @@ export async function getServerSideProps() {
     feature: 7,
     script: 15,
     color: 10,
-    geo: 14,
-    flash: 11,
+    geometric: 14,
+    flash: 10,
   };
 
   return {

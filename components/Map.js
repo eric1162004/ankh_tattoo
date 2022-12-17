@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect, useCallback } from "react";
 import { GoogleMap, useJsApiLoader, Marker } from "@react-google-maps/api";
 
 const Map = ({
-  width = "500",
+  width = "400",
   height = "400",
   lat = -3.745,
   lng = -38.523,

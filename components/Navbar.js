@@ -105,7 +105,7 @@ const Navbar = ({ darkContext = true }) => {
                   <a
                     className={`block ${
                       darkContext ? "text-white" : "text-black"
-                    } py-4 pl-3 pr-4 font-normal uppercase text-hover md:p-0`}
+                    } py-4 pl-3 pr-4 font-bold text-sm uppercase text-hover md:p-0  text-right`}
                     aria-current="page"
                     onClick={() => {
                       setOpen(open => !open);
@@ -122,11 +122,11 @@ const Navbar = ({ darkContext = true }) => {
         </CSSTransition>
 
         {/* menuFlyout for desktop view */}
-        <ul className="hidden md:block md:flex mt-4 md:flex-row md:space-x-8 md:mt-0 text-base md:text-sm">
+        <ul className="hidden md:block md:flex mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm">
           {links.map(link => (
             <li key={link.name}>
               <a
-                className={`block py-4 pl-3 pr-4 font-medium ${
+                className={`block py-4 pl-3 pr-4 font-bold text-sm ${
                       darkContext ? "text-white" : "text-black"
                     } uppercase rounded hover:text-slate-300 md:p-0`}
                 aria-current="page"
