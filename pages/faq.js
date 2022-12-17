@@ -17,8 +17,8 @@ export default function Faq() {
         loop
       ></video>
 
-      <div className="backdrop-brightness-50 md:px-32 text-primary pb-10">
-        <div className="flex flex-col pt-16 md:pt-28 p-5">
+      <div className="backdrop-brightness-50 md:px-32 text-primary pb-10 px-5">
+        <div className="flex flex-col pt-16 md:py-16 md:pt-28 px-5">
           <h1 className="title">Frequently Asked Question</h1>
           <p className="paragraph text-base md:text-lg">
             Tattoo is permanent and it’s a big decision and commitment in life.
@@ -31,7 +31,7 @@ export default function Faq() {
         <div className="">
           {data["faq"].map((item, index) => (
             <div
-              className="collapse collapse-arrow backdrop-opacity-50 backdrop-blur-lg mx-2"
+              className="collapse collapse-arrow"
               key={index}
             >
               <input type="checkbox" />
@@ -39,7 +39,7 @@ export default function Faq() {
                 {item.question}
               </div>
               <div
-                className="collapse-content "
+                className="collapse-content"
                 dangerouslySetInnerHTML={{ __html: item.answer }}
               />
             </div>
