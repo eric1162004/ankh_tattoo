@@ -113,7 +113,7 @@ export default function Home() {
       {/* Contact and Map */}
       <div className="grid grid-cols-1 md:grid-cols-2 bg-black px-5 py-10 h-1/3 md:gap-40">
         <div className="flex flex-col h-full items-center md:items-end grayscale overflow-hidden ">
-          {<Map lat={49.26666} lng={-123.11149} zoom={15} />}
+          {<Map lat={49.26666} lng={-123.11149} zoom={15} height={50} width={50} />}
         </div>
         <div className="flex flex-col h-full items-center md:items-start m-2 gap-1 justify-center ">
           <div className="text-center text-sm md:text-lg text-primary-light">

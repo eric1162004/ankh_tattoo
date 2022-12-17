@@ -12,7 +12,7 @@ function VideoBackgroundDiv({ children, video, height=80, className = "" }) {
         loop
       ></video>
 
-      <div className="absolute w-full h-full overflow-auto">{children}</div>
+      <div className="absolute w-full h-full overflow-auto scrollbar-hide">{children}</div>
     </div>
   );
 }

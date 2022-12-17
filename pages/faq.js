@@ -12,7 +12,7 @@ export default function Faq() {
         height={100}
         video="video/faq.mov"
       >
-        <div className="backdrop-brightness-50 md:px-32 text-primary ">
+        <div className="backdrop-brightness-50 md:px-32 text-primary pb-10">
           <div className="flex flex-col pt-16 md:pt-28 p-5">
             <h1 className="title">Frequently Asked Question</h1>
             <p className="paragraph text-base md:text-lg">
