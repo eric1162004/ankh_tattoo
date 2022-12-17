@@ -11,6 +11,7 @@ import { useRouter } from "next/router";
 const Layout = ({ children }) => {
   const router = useRouter();
   const navRef = useRef();
+  const bookingNowRef = useRef();
   const instagramRef = useRef();
   const upArrowRef = useRef();
   const [navDisplay, setNavDisplay] = useState(true);
@@ -33,19 +34,34 @@ const Layout = ({ children }) => {
     <div className="flex flex-col h-screen font-normal bg-transparant">
       {/* Booking now */}
       {displayBookingBanner && (
-        <div className="grid grid-cols-3 w-full bg-black text-center text-primary px-2 z-50 content-center">
-          <div></div>
-          <a className="place-self-center" href="https://form.jotform.com/Sheir/tattoo-request-form">
-            <img src="img/book_now.png" width={130}/>
-          </a>
-          <span
-            className="place-self-end self-center text-lg px-5"
-            onClick={() => setDisplayBookingBanner(false)}
-          >x</span>
-        </div>
+        <CSSTransition
+          in={navDisplay}
+          nodeRef={bookingNowRef}
+          timeout={300}
+          classNames="nav-transition"
+          unmountOnExit
+        >
+          <div
+            ref={bookingNowRef}
+            className="grid grid-cols-3 w-full bg-black text-center text-primary px-2 z-50 content-center"
+          >
+            <div></div>
+            <a
+              className="place-self-center"
+              href="https://form.jotform.com/Sheir/tattoo-request-form"
+            >
+              <img src="img/book_now.png" width={130} />
+            </a>
+            <span
+              className="place-self-end self-center text-lg px-5"
+              onClick={() => setDisplayBookingBanner(false)}
+            >
+              x
+            </span>
+          </div>
+        </CSSTransition>
       )}
 
-      {/* Main Content */}
       <div className="relative grow">
         {/* Navbar */}
         <CSSTransition
@@ -59,14 +75,20 @@ const Layout = ({ children }) => {
             ref={navRef}
             className="drop-shadow-lg z-50 top-0 absolute w-full backdrop-opacity-10 bg-white/20"
           >
-            <Navbar darkContext={router.pathname === "/faq" || router.pathname === "/contact_us" ? true : false} />
+            <Navbar
+              darkContext={
+                router.pathname === "/faq" || router.pathname === "/contact_us"
+                  ? true
+                  : false
+              }
+            />
           </div>
         </CSSTransition>
 
+        {/* Main Content */}
         {children}
-
-        {/* Footer */}
       </div>
+      {/* Footer */}
       <div className="shrink-0 z-50">
         <Footer />
       </div>
