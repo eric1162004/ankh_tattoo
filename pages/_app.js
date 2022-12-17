@@ -4,6 +4,7 @@ import { ParallaxProvider } from "react-scroll-parallax";
 import Layout from "../components/Layout";
 import "../styles/globals.css";
 import "animate.css"
+import "react-responsive-carousel/lib/styles/carousel.min.css"; 
 
 export default function MyApp({ Component, pageProps }) {
   return (

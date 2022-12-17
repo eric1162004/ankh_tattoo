@@ -31,13 +31,13 @@ const Navbar = ({ darkContext = true }) => {
               <img
                 className="object-contain"
                 src="img/miki_logo_white.png"
-                width={120}
+                width={130}
               />
             ) : (
               <img
                 className="object-contain"
                 src="img/miki_logo_black.png"
-                width={120}
+                width={130}
               />
             )}
           </a>
