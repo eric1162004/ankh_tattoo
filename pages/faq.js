@@ -1,7 +1,6 @@
 import React from "react";
 
 import data from "../data/faq.json";
-import VideoBackgroundDiv from "../components/VideoBackgroundDiv";
 
 export default function Faq() {
   return (
@@ -17,8 +16,8 @@ export default function Faq() {
         loop
       ></video>
 
-      <div className="backdrop-brightness-50 md:px-32 text-primary pb-10 px-5">
-        <div className="flex flex-col pt-20 md:py-16 md:pt-28 px-5">
+      <div className="backdrop-brightness-50 md:px-32 text-primary pb-10 px-5 ">
+        <div className="flex flex-col pt-24 py-10 md:py-20 md:pt-36 px-5 ">
           <h1 className="title">Frequently Asked Question</h1>
           <p className="paragraph text-base md:text-lg">
             Tattoo is permanent and it’s a big decision and commitment in life.
@@ -28,12 +27,9 @@ export default function Faq() {
             your concern.
           </p>
         </div>
-        <div className="">
+        <div className="rounded-sm backdrop-blur-sm bg-white/20 p-1 md:p-2">
           {data["faq"].map((item, index) => (
-            <div
-              className="collapse collapse-arrow"
-              key={index}
-            >
+            <div className="collapse collapse-arrow" key={index}>
               <input type="checkbox" />
               <div className="collapse-title font-bold underline underline-offset-4">
                 {item.question}

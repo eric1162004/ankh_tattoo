@@ -13,7 +13,6 @@ const Layout = ({ children }) => {
   const navRef = useRef();
   const bookingNowRef = useRef();
   const instagramRef = useRef();
-  const upArrowRef = useRef();
   const [navDisplay, setNavDisplay] = useState(true);
   const [displayBookingBanner, setDisplayBookingBanner] = useState(true);
 

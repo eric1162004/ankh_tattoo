@@ -37,7 +37,15 @@ export default function Contact_us() {
             </button>
           </div>
           <div className="flex flex-col justify-center items-center grayscale md:m-10 overflow-hidden pb-8 md:pb-0">
-            {<Map lat={49.26666} lng={-123.11149} zoom={15} height={50} width={50}/>}
+            {
+              <Map
+                lat={49.26666}
+                lng={-123.11149}
+                zoom={15}
+                height={50}
+                width={50}
+              />
+            }
           </div>
         </div>
       </div>
