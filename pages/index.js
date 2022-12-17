@@ -40,7 +40,7 @@ export default function Home() {
       >
         <div className="text-primary flex flex-col h-full justify-center lg:w-1/2 p-5 lg:p-20 backdrop-blur-sm backdrop-brightness-50">
           <h1 className="title ">Fine-line Tattoo</h1>
-          <p className="paragraph text-sm md:text-lg">
+          <p className="paragraph text-base md:text-lg">
             Fineline tattoo is subtle, delicate, and thin-line tattoo. Unlike
             traditional tattoos, which create thicker and bolder design,
             fine-line tattoos are created by just a single tattoo needle or
@@ -68,7 +68,7 @@ export default function Home() {
           >
             <div className="h-full flex flex-col items-center justify-center p-5 lg:p-20 backdrop-blur-sm ">
               <p className="title">My Story</p>
-              <p className="paragraph text-sm md:text-lg">
+              <p className="paragraph text-base md:text-lg">
                 I am Miki, a tattoo artist in Ankh tattoo studio. I was born and
                 raised in Hong Kong, and I moved to Vancouver since 2005. From
                 an early age, I have always been passionate about art, drawing
