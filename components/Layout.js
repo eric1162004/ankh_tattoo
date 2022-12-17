@@ -67,13 +67,13 @@ const Layout = ({ children }) => {
 
         {/* Footer */}
       </div>
-      <div className="shrink-0">
+      <div className="shrink-0 z-50">
         <Footer />
       </div>
 
       {/* instagram icon */}
 
-      <a href="https://www.instagram.com/ankh.miki">
+      <a className="z-50" href="https://www.instagram.com/ankh.miki">
         <img
           ref={instagramRef}
           className="fixed bottom-5 right-5 iconSize md:bottom-14 md:right-10 drop-shadow"
