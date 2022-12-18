@@ -76,10 +76,14 @@ export default function Gallery({ data }) {
               <h1 className="title text-center self-center skew-x-1">
                 {collections[collectionIndex]}
               </h1>
-              <AnimationOnScroll animateOnce={true} duration={1} animateIn="animate__fadeInDown">
-              <p className="paragraph text-center px-4">
-                {data[collections[collectionIndex]].description}
-              </p>
+              <AnimationOnScroll
+                animateOnce={true}
+                duration={1}
+                animateIn="animate__fadeInDown"
+              >
+                <p className="paragraph text-center px-4">
+                  {data[collections[collectionIndex]].description}
+                </p>
               </AnimationOnScroll>
 
               <div className="grid-cols-3 md:grid-cols-5 m-2 p-2 space-y-1 grid gap-1">
@@ -104,9 +108,9 @@ export default function Gallery({ data }) {
         })}
 
       {/* For more see Ig */}
-      <div className="flex justify-center p-10">
+      <div className="flex justify-center p-10 ">
         <p className="title">See more...</p>
-        <InstagramIcon className="w-12 inline-block" />
+          <InstagramIcon className="w-12 inline-block animate__animated animate__pulse animate__slower animate__infinite" />
       </div>
 
       {/* Image Viewer Popup */}
