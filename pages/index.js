@@ -23,6 +23,7 @@ export default function Home() {
                 className="object-contain"
                 src="img/miki_logo_black.png"
                 width={250}
+                alt="miki logo"
               />
               <p className="title text-center text-sm md:text-xl">
                 VANCOUVER FINELINE TATOO
@@ -56,7 +57,7 @@ export default function Home() {
       {/* My Story Section */}
       <div className="grid grid-cols-1 md:grid-cols-2">
         <AnimationOnScroll duration={0.5} animateIn="animate__fadeIn">
-          <img className="contrast-125" src="img/myStory.jpg" />
+          <img className="contrast-125" src="img/myStory.jpg" alt="my story image"/>
         </AnimationOnScroll>
 
         <div className=" text-primary ">
@@ -66,7 +67,7 @@ export default function Home() {
             image={"img/myStory2.jpg"}
             speed={-20}
           >
-            <div className="h-full flex flex-col items-center justify-center p-5 lg:p-20 backdrop-blur-sm ">
+            <div className="h-full flex flex-col items-center justify-center p-5 lg:p-20 backdrop-blur-md ">
               <p className="title">My Story</p>
               <p className="paragraph text-base md:text-lg">
                 I am Miki, a tattoo artist in Ankh tattoo studio. I was born and
@@ -135,7 +136,7 @@ export default function Home() {
             <p>E-mail: miki@grandarc.ca</p>
             <p>
               Instagram
-              <img className="inline" src="img/ig_icon.png" width={20} />:{" "}
+              <img className="inline" src="img/ig_icon.png" width={20} alt="instagram icon"/>:{" "}
               <a href="https://www.instagram.com/ankh.miki">ankh.miki</a>
             </p>
             <button className="btn btn-accent btn-outline border-2 m-3 ">

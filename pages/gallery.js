@@ -2,6 +2,7 @@ import React, { useState, useEffect, useMemo } from "react";
 import ImgsViewer from "react-images-viewer";
 import LazyLoad from "react-lazy-load";
 import { AnimationOnScroll } from "react-animation-on-scroll";
+import InstagramIcon from "./../components/InstagramIcon";
 
 function useViewer() {
   const [isOpen, setIsOpen] = useState(false);
@@ -35,9 +36,11 @@ export default function Gallery({ data }) {
   const [images, setImages] = useState();
   const [resizedImages, setResizedImages] = useState();
 
+  console.log(images);
+
   useEffect(() => {
     let images = collections.map(collection => {
-      let imageLinks = Array(data[collection])
+      let imageLinks = Array(data[collection].count)
         .fill(0)
         .map((_, i) => ({
           src: `img/gallery/${collection}/${i + 1}.jpg`,
@@ -48,7 +51,7 @@ export default function Gallery({ data }) {
     setImages(images);
 
     let resizedImages = collections.map(collection => {
-      let imageLinks = Array(data[collection])
+      let imageLinks = Array(data[collection].count)
         .fill(0)
         .map((_, i) => ({
           src: `img/gallery_resized/${collection}/${i + 1}.jpg`,
@@ -69,36 +72,43 @@ export default function Gallery({ data }) {
       {resizedImages &&
         resizedImages.map((collection, collectionIndex) => {
           return (
-            <div
-              className="grid-cols-3 md:grid-cols-5 m-2 p-2 space-y-1 grid gap-1"
-              key={collectionIndex}
-            >
+            <div className="pt-5">
               <h1 className="title text-center self-center skew-x-1">
-                <AnimationOnScroll
-                  duration={1}
-                  animateIn="animate__fadeInDown"
-                  animateOnce={true}
-                >
-                  {collections[collectionIndex]}
-                </AnimationOnScroll>
+                {collections[collectionIndex]}
               </h1>
-              {collection.map((image, imageIndex) => (
-                <div
-                  className="w-full rounded self-center"
-                  key={imageIndex}
-                  onClick={() => onImgClick(imageIndex, collectionIndex)}
-                >
-                  <LazyLoad offset={5}>
-                    <img
-                      className="block object-cover object-center w-full h-full rounded-lg hover:brightness-90 hover:contrast-125 "
-                      src={image.src}
-                    />
-                  </LazyLoad>
-                </div>
-              ))}
+              <p className="paragraph text-center">
+                {data[collections[collectionIndex]].description}
+              </p>
+
+              <div
+                className="grid-cols-3 md:grid-cols-5 m-2 p-2 space-y-1 grid gap-1"
+                key={collectionIndex}
+              >
+                {collection.map((image, imageIndex) => (
+                  <div
+                    className="w-full rounded self-center"
+                    key={imageIndex}
+                    onClick={() => onImgClick(imageIndex, collectionIndex)}
+                  >
+                    <LazyLoad offset={5}>
+                      <img
+                        className="block object-cover object-center w-full h-full rounded-lg hover:brightness-90 hover:contrast-125 "
+                        src={image.src}
+                        alt={`${collections[collectionIndex]} image`}
+                      />
+                    </LazyLoad>
+                  </div>
+                ))}
+              </div>
             </div>
           );
         })}
+
+      {/* For more see Ig */}
+      <div className="flex justify-center p-10">
+        <p className="title">See more...</p>
+        <InstagramIcon className="w-12 inline-block" />
+      </div>
 
       {/* Image Viewer Popup */}
       {images &&
@@ -120,12 +130,31 @@ export default function Gallery({ data }) {
 }
 
 export async function getServerSideProps() {
-  let data = {
-    feature: 7,
-    script: 15,
-    color: 10,
-    geometric: 14,
-    flash: 10,
+  const data = {
+    feature: {
+      description: "These are one of my favorite tattoos!",
+      count: 7,
+    },
+    script: {
+      description:
+        "Script being done in fine-line tattoo is very clean and precise! I can tattoo in any language and any choice of font! From specific handwriting, copy of signature, Roman numerals, custom Chinese calligraphy, to wide-range of font choices e.g., calligraphy, typewriter, curly etc.",
+      count: 6,
+    },
+    color: {
+      description:
+        "Love color tattoos! Adding color to tattoos can change the whole effect, brighten up the picture, and make the tattoo design come to life! There are different styles of color tattoo, and fine-line tattoo works very well with partially saturated coloring, lining, soft shading, and watercolor etc.",
+      count: 6,
+    },
+    geometric: {
+      description:
+        "Geometric tattoos symbolize balance, symmetry, stability, intelligence, mystery etc. It combines and connects the use of lines, circles, squares, triangles, and different shapes and patterns to form beautiful and intricate designs. As a perfectionist, I enjoy tattooing smooth lines and perfect shapes in geometric designs.",
+      count: 6,
+    },
+    flash: {
+      description:
+        "Pre-made design. If you do not have an idea for a custom design, you can choose from these flash designs, with set size and price. Only one copy, first come first serve! I will update new designs from time to time. You may also find the most updated available design on my Instagram @ankh.miki",
+      count: 10,
+    },
   };
 
   return {

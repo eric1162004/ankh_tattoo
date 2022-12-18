@@ -3,6 +3,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import { useState, useRef } from "react";
 import { CSSTransition } from "react-transition-group";
+import InstagramIcon from './InstagramIcon';
 
 const Navbar = ({ darkContext = true }) => {
   const router = useRouter();
@@ -29,13 +30,15 @@ const Navbar = ({ darkContext = true }) => {
           <a className="flex items-center">
             {darkContext ? (
               <img
-                className="object-contain w-24 md:w-28"
+                className="object-contain w-28"
                 src="img/miki_logo_white.png"
+                alt="miki logo white"
               />
             ) : (
               <img
-                className="object-contain w-24 md:w-28"
+                className="object-contain w-28"
                 src="img/miki_logo_black.png"
+                alt="miki logo "
               />
             )}
           </a>
@@ -100,7 +103,7 @@ const Navbar = ({ darkContext = true }) => {
             >
               {links.map(link => (
                 <li key={link.name}>
-                  <a
+                  <p
                     className={`block ${
                       darkContext ? "text-white" : "text-black"
                     } py-4 pl-3 pr-4 font-bold text-sm uppercase text-hover md:p-0`}
@@ -112,18 +115,19 @@ const Navbar = ({ darkContext = true }) => {
                     }}
                   >
                     {link.name}
-                  </a>
+                  </p>
                 </li>
               ))}
+              <InstagramIcon className="w-10 p-1" /> 
             </ul>
           </div>
         </CSSTransition>
 
         {/* menuFlyout for desktop view */}
-        <ul className="hidden md:block md:flex mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm">
+        <ul className="hidden md:block md:flex mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm items-center ">
           {links.map(link => (
             <li key={link.name}>
-              <a
+              <p
                 className={`block py-4 pl-3 pr-4 font-bold text-sm ${
                   darkContext ? "text-white" : "text-black"
                 } uppercase rounded hover:text-slate-300 md:p-0`}
@@ -133,9 +137,12 @@ const Navbar = ({ darkContext = true }) => {
                 }}
               >
                 {link.name}
-              </a>
+              </p>
             </li>
           ))}
+          <li>
+          <InstagramIcon className="w-10 inline-block" />
+          </li> 
         </ul>
       </div>
     </nav>

@@ -27,11 +27,11 @@ export default function Faq() {
             your concern.
           </p>
         </div>
-        <div className="rounded-sm backdrop-blur-sm bg-white/20 p-1 md:p-2">
+        <div className=" p-1 md:p-2">
           {data["faq"].map((item, index) => (
-            <div className="collapse collapse-arrow" key={index}>
+            <div className="collapse collapse-arrow rounded-sm backdrop-blur-md bg-white/30 my-5" key={index}>
               <input type="checkbox" />
-              <div className="collapse-title font-bold underline underline-offset-4">
+              <div className="collapse-title font-bold">
                 {item.question}
               </div>
               <div

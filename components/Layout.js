@@ -4,6 +4,7 @@ import React, { useState, useRef, useEffect, useCallback } from "react";
 import Navbar from "/components/Navbar";
 import Footer from "/components/Footer";
 import { useRouter } from "next/router";
+import InstagramIcon from "./InstagramIcon";
 
 // Layout support sticky navbar and footer using flex
 // Allow some global css is defined here.
@@ -12,7 +13,6 @@ const Layout = ({ children }) => {
   const router = useRouter();
   const navRef = useRef();
   const bookingNowRef = useRef();
-  const instagramRef = useRef();
   const [navDisplay, setNavDisplay] = useState(true);
   const [displayBookingBanner, setDisplayBookingBanner] = useState(true);
 
@@ -45,14 +45,17 @@ const Layout = ({ children }) => {
             className="grid grid-cols-3 w-full bg-black text-center text-primary px-2 z-50 content-center"
           >
             <div></div>
-            <a
-              className="place-self-center"
-              href="https://form.jotform.com/Sheir/tattoo-request-form"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img src="img/book_now.png" width={140} />
-            </a>
+            <div className="flex justify-center items-center">
+              <a
+                className="place-self-center"
+                href="https://form.jotform.com/Sheir/tattoo-request-form"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src="img/book_now.png" width={140} alt="tattoo request form"/>
+              </a>
+              <InstagramIcon className="w-10 inline-block" />
+            </div>
             <span
               className="place-self-end self-center text-lg px-5"
               onClick={() => setDisplayBookingBanner(false)}
@@ -93,16 +96,6 @@ const Layout = ({ children }) => {
       <div className="shrink-0 z-50">
         <Footer />
       </div>
-
-      {/* instagram icon */}
-
-      <a className="z-50" href="https://www.instagram.com/ankh.miki">
-        <img
-          ref={instagramRef}
-          className="fixed bottom-5 right-5 iconSize md:bottom-14 md:right-10 drop-shadow"
-          src="img/ig_icon.png"
-        />
-      </a>
     </div>
   );
 };

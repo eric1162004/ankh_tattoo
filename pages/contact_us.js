@@ -23,7 +23,7 @@ export default function Contact_us() {
             <p>E-mail: miki@grandarc.ca</p>
             <p>
               Instagram
-              <img className="inline" src="img/ig_icon.png" width={20} />:{" "}
+              <img className="inline" src="img/ig_icon.png" width={20} alt="instagram icon"/>:{" "}
               <a href="https://www.instagram.com/ankh.miki">ankh.miki</a>
             </p>
             <button className="btn border-2 border-primary m-2 text-primary bg-transparent mt-4 z-50">
@@ -50,7 +50,7 @@ export default function Contact_us() {
         </div>
       </div>
       <div className="blur-sm">
-        <Carousel
+        {/* <Carousel
           interval={3000}
           transitionTime={1000}
           autoPlay
@@ -61,20 +61,21 @@ export default function Contact_us() {
           showIndicators={false}
           swipeable={false}
           dynamicHeight={true}
-        >
-          <div>
+        > */}
+          {/* <div>
             <img
               className="min-h-screen object-cover"
               src="img/contact_us_1.jpg"
             />
-          </div>
+          </div> */}
           <div>
             <img
               className="min-h-screen object-cover"
               src="img/contact_us_2.jpg"
+              alt="Fine line Tattoo Studio image"
             />
           </div>
-          <div>
+          {/* <div>
             <img
               className="min-h-screen object-cover"
               src="img/contact_us_3.jpg"
@@ -85,8 +86,8 @@ export default function Contact_us() {
               className="min-h-screen object-cover"
               src="img/contact_us_4.jpg"
             />
-          </div>
-        </Carousel>
+          </div> */}
+        {/* </Carousel> */}
       </div>
     </div>
   );
