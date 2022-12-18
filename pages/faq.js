@@ -16,7 +16,7 @@ export default function Faq() {
         loop
       ></video>
 
-      <div className="backdrop-brightness-50 md:px-32 text-primary pb-10 px-5 ">
+      <div className="backdrop-brightness-50 md:px-32 text-primary pb-10 px-5 backdrop-blur-xs">
         <div className="flex flex-col pt-24 py-10 md:py-20 md:pt-36 px-5 ">
           <h1 className="title">Frequently Asked Question</h1>
           <p className="paragraph text-base md:text-lg">
@@ -29,7 +29,7 @@ export default function Faq() {
         </div>
         <div className=" p-1 md:p-2">
           {data["faq"].map((item, index) => (
-            <div className="collapse collapse-arrow rounded-sm backdrop-blur-md bg-white/30 my-5" key={index}>
+            <div className="collapse collapse-arrow rounded-sm backdrop-blur-md bg-white/60 my-5 text-black" key={index}>
               <input type="checkbox" />
               <div className="collapse-title font-bold">
                 {item.question}
