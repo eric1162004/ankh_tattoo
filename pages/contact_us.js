@@ -1,6 +1,5 @@
 import React from "react";
 import Map from "../components/Map";
-import { Carousel } from "react-responsive-carousel";
 
 export default function Contact_us() {
   return (
@@ -8,8 +7,21 @@ export default function Contact_us() {
       {/* Contact and Map */}
       <div className="grid grid-cols-1 justify-center items-center p-5 w-full h-full top-10 md:top-0 z-10 absolute text-sm md:text-base overflow-scroll scrollbar-hide">
         <div className="flex flex-col md:flex-row md:items-center md:justify-center text-primary">
-          <div className="flex flex-col justify-center text-center backdrop-brightness-50 p-5 md:p-5 md:w-[50vh] md:h-[50vh] mb-2 md:mb-0">
-            <h1 className="title text-2xl my-0 tracking-wider">Contact us</h1>
+          <div className="flex flex-col justify-center text-center backdrop-brightness-50 p-5 md:p-5 md:w-[50vh] md:h-[50vh] mb-2 md:mb-0 md:text-lg">
+            <h1 className="title text-2xl my-0 tracking-wider mb-2">
+              Contact us
+            </h1>
+            <div className="flex flex-col justify-center items-center grayscale overflow-hidden pb-2 inline-bloc md:hidden">
+              {
+                <Map
+                  lat={49.26666}
+                  lng={-123.11149}
+                  zoom={15}
+                  height={30}
+                  width={30}
+                />
+              }
+            </div>
             <p>Studio address</p>
             <p>(By appointment only)</p>
             <a
@@ -23,8 +35,13 @@ export default function Contact_us() {
             <p>E-mail: miki@grandarc.ca</p>
             <p>
               Instagram
-              <img className="inline" src="img/ig_icon.png" width={20} alt="instagram icon"/>:{" "}
-              <a href="https://www.instagram.com/ankh.miki">ankh.miki</a>
+              <img
+                className="inline"
+                src="img/ig_icon.png"
+                width={20}
+                alt="instagram icon"
+              />
+              : <a href="https://www.instagram.com/ankh.miki">ankh.miki</a>
             </p>
             <button className="btn border-2 border-primary m-2 text-primary bg-transparent mt-4 z-50">
               <a
@@ -36,7 +53,7 @@ export default function Contact_us() {
               </a>
             </button>
           </div>
-          <div className="flex flex-col justify-center items-center grayscale md:m-10 overflow-hidden pb-8 md:pb-0">
+          <div className="flex flex-col justify-center items-center grayscale md:m-10 overflow-hidden pb-8 md:pb-0 hidden md:inline-block">
             {
               <Map
                 lat={49.26666}
@@ -49,45 +66,15 @@ export default function Contact_us() {
           </div>
         </div>
       </div>
+      {/* Background */}
       <div className="blur-sm">
-        {/* <Carousel
-          interval={3000}
-          transitionTime={1000}
-          autoPlay
-          infiniteLoop
-          showArrows={false}
-          showStatus={false}
-          showThumbs={false}
-          showIndicators={false}
-          swipeable={false}
-          dynamicHeight={true}
-        > */}
-          {/* <div>
-            <img
-              className="min-h-screen object-cover"
-              src="img/contact_us_1.jpg"
-            />
-          </div> */}
-          <div>
-            <img
-              className="min-h-screen object-cover"
-              src="img/contact_us_2.jpg"
-              alt="Fine line Tattoo Studio image"
-            />
-          </div>
-          {/* <div>
-            <img
-              className="min-h-screen object-cover"
-              src="img/contact_us_3.jpg"
-            />
-          </div>
-          <div>
-            <img
-              className="min-h-screen object-cover"
-              src="img/contact_us_4.jpg"
-            />
-          </div> */}
-        {/* </Carousel> */}
+        <div>
+          <img
+            className="min-h-screen object-cover"
+            src="img/contact_us_2.jpg"
+            alt="Fine line Tattoo Studio image"
+          />
+        </div>
       </div>
     </div>
   );
