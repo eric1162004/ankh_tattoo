@@ -72,7 +72,7 @@ export default function Gallery({ data }) {
       {resizedImages &&
         resizedImages.map((collection, collectionIndex) => {
           return (
-            <div className="pt-5">
+            <div className="pt-5" key={collectionIndex}>
               <h1 className="title text-center self-center skew-x-1">
                 {collections[collectionIndex]}
               </h1>
@@ -80,10 +80,7 @@ export default function Gallery({ data }) {
                 {data[collections[collectionIndex]].description}
               </p>
 
-              <div
-                className="grid-cols-3 md:grid-cols-5 m-2 p-2 space-y-1 grid gap-1"
-                key={collectionIndex}
-              >
+              <div className="grid-cols-3 md:grid-cols-5 m-2 p-2 space-y-1 grid gap-1">
                 {collection.map((image, imageIndex) => (
                   <div
                     className="w-full rounded self-center"
