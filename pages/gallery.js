@@ -36,8 +36,6 @@ export default function Gallery({ data }) {
   const [images, setImages] = useState();
   const [resizedImages, setResizedImages] = useState();
 
-  console.log(images);
-
   useEffect(() => {
     let images = collections.map(collection => {
       let imageLinks = Array(data[collection].count)
