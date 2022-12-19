@@ -12,7 +12,7 @@ export default function MyApp({ Component, pageProps }) {
       <Layout>
         <Head>
           <link rel="icon" type="image/x-icon" href="/img/miki_logo_white.png"></link>
-          <title>Miki ♥ ANKH ARTIST</title>
+          <title>VANCOUVER FINELINE TATTOO｜Miki S｜ Ankh Artist</title>
         </Head>
         <Component {...pageProps} />
       </Layout>

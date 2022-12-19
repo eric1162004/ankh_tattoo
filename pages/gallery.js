@@ -151,7 +151,7 @@ export async function getServerSideProps() {
     geometric: {
       description:
         "Geometric tattoos symbolize balance, symmetry, stability, intelligence, mystery etc. It combines and connects the use of lines, circles, squares, triangles, and different shapes and patterns to form beautiful and intricate designs. As a perfectionist, I enjoy tattooing smooth lines and perfect shapes in geometric designs.",
-      count: 6,
+      count: 7,
     },
     flash: {
       description:
