@@ -95,7 +95,7 @@ export default function Gallery({ data }) {
                       <img
                         className="block object-cover object-center w-full h-full rounded-lg hover:brightness-90 hover:contrast-125 "
                         src={image.src}
-                        alt={`${collections[collectionIndex]} image`}
+                        alt={`Vancouver fineline tattoo - ${collections[collectionIndex]} image`}
                       />
                     </LazyLoad>
                   </div>
