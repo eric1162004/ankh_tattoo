@@ -52,7 +52,7 @@ const Layout = ({ children }) => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <img src="img/book_now.png" width={140} alt="tattoo request form"/>
+                <img src="img/book_now.webp" width={140} alt="tattoo request form"/>
               </a>
               <InstagramIcon className="w-10 inline-block" />
             </div>
