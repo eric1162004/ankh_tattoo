@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 import VideoBackgroundDiv from "../components/VideoBackgroundDiv";
 import ImageParallaxDiv from "../components/ImageParallaxDiv ";
@@ -12,22 +13,22 @@ export default function Home() {
       <ImageParallaxDiv
         className="aspect-[0.6/1] md:aspect-[2.3/1]"
         backgroundStyle=""
-        image={"img/background_with_logo_2.jpg"}
+        image={"img/background_with_logo_2.webp"}
         speed={-20}
         scale={1.1}
       >
         <div className="flex flex-col h-full items-center justify-center">
           <AnimationOnScroll duration={1} animateIn="animate__fadeInUp">
             <div className="flex flex-col h-full items-center justify-center">
-              <img
-                className="object-contain"
-                src="img/miki_logo_black.png"
+              <Image
+                src="/img/miki_logo_black.png"
+                alt="Vancouver fineline tattoo"
                 width={250}
-                alt="miki logo"
+                height={120}
               />
-              <p className="title text-center text-sm md:text-xl">
+              <h1 className="title text-center text-sm md:text-xl">
                 VANCOUVER FINELINE TATOO
-              </p>
+              </h1>
             </div>
           </AnimationOnScroll>
         </div>
@@ -36,7 +37,7 @@ export default function Home() {
       {/* Fine Line Tatoo */}
       <ImageParallaxDiv
         backgroundStyle="brightness-90"
-        image={"img/finelineTattoo.jpg"}
+        image={"img/finelineTattoo.webp"}
         speed={-20}
       >
         <div className="text-primary flex flex-col h-full justify-center lg:w-1/2 p-5 lg:p-20 backdrop-blur-sm backdrop-brightness-50">
@@ -57,18 +58,22 @@ export default function Home() {
       {/* My Story Section */}
       <div className="grid grid-cols-1 md:grid-cols-2">
         <AnimationOnScroll duration={0.5} animateIn="animate__fadeIn">
-          <img className="contrast-125" src="img/myStory.jpg" alt="my story image"/>
+          <img
+            className="contrast-125"
+            src="img/myStory.webp"
+            alt="my story image"
+          />
         </AnimationOnScroll>
 
         <div className=" text-primary ">
           <ImageParallaxDiv
             className="h-full "
             backgroundStyle=""
-            image={"img/myStory2.jpg"}
+            image={"img/myStory2.webp"}
             speed={-20}
           >
             <div className="h-full flex flex-col items-center justify-center p-5 lg:p-20 backdrop-blur-md ">
-              <p className="title">My Story</p>
+              <h1 className="title">My Story</h1>
               <p className="paragraph text-base md:text-lg">
                 I am Miki, a tattoo artist in Ankh tattoo studio. I was born and
                 raised in Hong Kong, and I moved to Vancouver since 2005. From
@@ -136,8 +141,13 @@ export default function Home() {
             <p>E-mail: miki@grandarc.ca</p>
             <p>
               Instagram
-              <img className="inline" src="img/ig_icon.png" width={20} alt="instagram icon"/>:{" "}
-              <a href="https://www.instagram.com/ankh.miki">ankh.miki</a>
+              <img
+                className="inline"
+                src="img/ig_icon.png"
+                width={20}
+                alt="instagram icon"
+              />
+              : <a href="https://www.instagram.com/ankh.miki">ankh.miki</a>
             </p>
             <button className="btn btn-accent btn-outline border-2 m-3 ">
               <a
