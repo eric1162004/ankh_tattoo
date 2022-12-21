@@ -31,9 +31,9 @@ export default function Faq() {
           {data["faq"].map((item, index) => (
             <div className="collapse collapse-arrow rounded-sm backdrop-blur-md bg-white/60 my-5 text-black" key={index}>
               <input type="checkbox" />
-              <div className="collapse-title font-bold">
+              <h1 className="collapse-title font-bold">
                 {item.question}
-              </div>
+              </h1>
               <div
                 className="collapse-content"
                 dangerouslySetInnerHTML={{ __html: item.answer }}
