@@ -95,7 +95,7 @@ export default function Home() {
       </div>
 
       {/* Video background */}
-      <VideoBackgroundDiv video="video/charge.mov">
+      <VideoBackgroundDiv video="video/charge.mp4">
         <div className="flex flex-col h-full justify-center backdrop-blur-xs text-primary p-5 md:p-20">
           <div className="flex flex-col md:w-1/2 text-center p-5 gap-3 ">
             <h1 className="title ">Tattoo rate</h1>

@@ -9,7 +9,7 @@ export default function Faq() {
       <video
         style={{ position: "fixed" }}
         className="object-cover w-full h-full"
-        src="video/faq.mov"
+        src="video/faq.mp4"
         playsInline
         autoPlay
         muted
