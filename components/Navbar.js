@@ -106,7 +106,7 @@ const Navbar = ({ darkContext = true }) => {
                   <p
                     className={`block ${
                       darkContext ? "text-white" : "text-black"
-                    } py-4 pl-3 pr-4 font-bold text-sm uppercase text-hover md:p-0`}
+                    } py-4 pl-3 pr-4 font-bold text-sm uppercase text-hover md:p-0 select-none`}
                     aria-current="page"
                     onClick={() => {
                       setOpen(open => !open);
@@ -130,7 +130,7 @@ const Navbar = ({ darkContext = true }) => {
               <p
                 className={`block py-4 pl-3 pr-4 font-bold text-sm ${
                   darkContext ? "text-white" : "text-black"
-                } uppercase rounded hover:text-slate-300 md:p-0`}
+                } uppercase rounded hover:text-slate-300 md:p-0 select-none`}
                 aria-current="page"
                 onClick={() => {
                   router.push(link.link);
