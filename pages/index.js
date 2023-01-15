@@ -27,7 +27,7 @@ export default function Home() {
                 height={120}
               />
               <h1 className="title text-center text-sm md:text-xl">
-                VANCOUVER FINELINE TATOO
+                VANCOUVER FINELINE TATTOO
               </h1>
             </div>
           </AnimationOnScroll>
