@@ -61,7 +61,7 @@
   right: -10px;
   color: transparent;
   opacity: 0;
-}
+} 
 /* This is where we can add the transition*/
 .slide-right-transition-enter-active {
   right:10px;
