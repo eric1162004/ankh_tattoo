@@ -2,6 +2,7 @@ import React, { useState, useEffect, useMemo } from "react";
 import ImgsViewer from "react-images-viewer";
 import LazyLoad from "react-lazy-load";
 import InstagramIcon from "../components/InstagramIcon";
+import { AnimationOnScroll } from "react-animation-on-scroll";
 
 import { useViewer } from "../hooks/useViewer";
 
@@ -61,6 +62,10 @@ export default function Tattoo_revamp({ data }) {
               <h1 className="title text-center self-center skew-x-1">
                 TATTOO REVAMP
               </h1>
+              <AnimationOnScroll
+                animateOnce={true}
+                duration={1}
+                animateIn="animate__fadeInDown">
               <h1 className="subtitle text-center self-center skew-x-1">
                 Revamp Your Tattoo with Skin Tone Ink!
               </h1>
@@ -94,6 +99,7 @@ export default function Tattoo_revamp({ data }) {
                 Say goodbye to tattoo imperfections and hello to a revitalized
                 design. Contact us today to discuss your tattoo revamp!
               </p>
+              <AnimationOnScroll/>
 
               <div className="grid-cols-3 md:grid-cols-5 m-2 p-2 space-y-1 grid gap-1">
                 {collection.map((image, imageIndex) => (
