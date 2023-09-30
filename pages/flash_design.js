@@ -61,16 +61,22 @@ export default function Flash_design({ data }) {
             <div className="pt-5" key={collectionIndex}>
               <h1 className="title text-center self-center skew-x-1">
                 {/* {collections[collectionIndex]} */}
-                {(collections[collectionIndex] === "birthflowerseries") ? "Birth Flower Series" : (collections[collectionIndex] === "zodiacseries") ? "Zodiac Series" : (collections[collectionIndex] === "flash") ? "Flash" : null}
+                {collections[collectionIndex] === "birthflowerseries"
+                  ? "Birth Flower Series"
+                  : collections[collectionIndex] === "zodiacseries"
+                  ? "Zodiac Series"
+                  : collections[collectionIndex] === "flash"
+                  ? "Flash"
+                  : null}
               </h1>
               <AnimationOnScroll
                 animateOnce={true}
                 duration={1}
                 animateIn="animate__fadeInDown"
               >
-              <p className="paragraph text-center px-4">
-                {data[collections[collectionIndex]].description}
-              </p>
+                <p className="paragraph text-center px-4">
+                  {data[collections[collectionIndex]].description}
+                </p>
               </AnimationOnScroll>
 
               <div className="grid-cols-3 md:grid-cols-5 m-2 p-2 space-y-1 grid gap-1">
@@ -140,5 +146,3 @@ export async function getServerSideProps() {
     props: { data },
   };
 }
-
-

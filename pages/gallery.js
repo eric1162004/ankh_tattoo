@@ -137,12 +137,12 @@ export async function getServerSideProps() {
     color: {
       description:
         "Love color tattoos! Adding color to tattoos can change the whole effect, brighten up the picture, and make the tattoo design come to life! There are different styles of color tattoo, and fine-line tattoo works very well with partially saturated coloring, lining, soft shading, and watercolor etc.",
-      count: 4,
+      count: 7,
     },
     geometric: {
       description:
         "Geometric tattoos symbolize balance, symmetry, stability, intelligence, mystery etc. It combines and connects the use of lines, circles, squares, triangles, and different shapes and patterns to form beautiful and intricate designs. As a perfectionist, I enjoy tattooing smooth lines and perfect shapes in geometric designs.",
-      count: 6,
+      count: 9,
     }
   };
 
