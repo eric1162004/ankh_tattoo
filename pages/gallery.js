@@ -4,7 +4,7 @@ import LazyLoad from "react-lazy-load";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import InstagramIcon from "./../components/InstagramIcon";
 
-import { getFileCount } from "../untilities/files";
+// import { getFileCount } from "../untilities/files";
 import { useViewer } from "../hooks/useViewer";
 
 export default function Gallery({ data }) {
@@ -123,27 +123,27 @@ export async function getServerSideProps() {
   const data = {
     feature: {
       description: "These are one of my favorite tattoos!",
-      count: await getFileCount("feature"),
+      count: 7,
     },
     flower: {
       description:
         "A flower tattoo is a common and beautiful design. It usually shows one or more detailed flowers, each with its own meaning. Flower tattoos can look realistic or artistic, and they can represent love, growth, or other personal ideas. Different types of flowers can change the tattoo's meaning and style. Overall, flower tattoos are a timeless way to express yourself through body art.",
-      count: await getFileCount("flower"),
+      count: 9,
     },
     script: {
       description:
         "Script being done in fine-line tattoo is very clean and precise! I can tattoo in any language and any choice of font! From specific handwriting, copy of signature, Roman numerals, custom Chinese calligraphy, to wide-range of font choices e.g., calligraphy, typewriter, curly etc.",
-      count: await getFileCount("script"),
+      count: 7,
     },
     color: {
       description:
         "Love color tattoos! Adding color to tattoos can change the whole effect, brighten up the picture, and make the tattoo design come to life! There are different styles of color tattoo, and fine-line tattoo works very well with partially saturated coloring, lining, soft shading, and watercolor etc.",
-      count: await getFileCount("color"),
+      count: 4,
     },
     geometric: {
       description:
         "Geometric tattoos symbolize balance, symmetry, stability, intelligence, mystery etc. It combines and connects the use of lines, circles, squares, triangles, and different shapes and patterns to form beautiful and intricate designs. As a perfectionist, I enjoy tattooing smooth lines and perfect shapes in geometric designs.",
-      count: await getFileCount("geometric"),
+      count: 6,
     }
   };
 
