@@ -60,7 +60,8 @@ export default function Flash_design({ data }) {
           return (
             <div className="pt-5" key={collectionIndex}>
               <h1 className="title text-center self-center skew-x-1">
-                {collections[collectionIndex]}
+                {/* {collections[collectionIndex]} */}
+                {(collections[collectionIndex] === "birthflowerseries") ? "Birth Flower Series" : (collections[collectionIndex] === "zodiacseries") ? "Zodiac Series" : (collections[collectionIndex] === "flash") ? "Flash" : null}
               </h1>
               <AnimationOnScroll
                 animateOnce={true}
@@ -139,3 +140,5 @@ export async function getServerSideProps() {
     props: { data },
   };
 }
+
+
