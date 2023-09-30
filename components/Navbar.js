@@ -14,8 +14,10 @@ const Navbar = ({ darkContext = true }) => {
   const links = [
     { name: "MIKI SHEIR", link: "/" },
     { name: "TATTOO GALLERY", link: "/gallery" },
+    { name: "TATTOO REVAMP", link: "/tattoo_revamp" },
+    { name: "FLASH DESIGN", link: "/flash_design" },
     { name: "TATTOO FAQ", link: "/faq" },
-    { name: "Contact us", link: "/contact_us" },
+    { name: "Contact us", link: "/contact_us" }, 
   ];
 
   return (

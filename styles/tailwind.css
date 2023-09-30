@@ -4,13 +4,16 @@
 
 @layer components {
   .font-normal {
-    @apply text-black text-base md:text-base 
+    @apply text-black text-base md:text-base;
   }
   .text-hover {
-    hover:text-slate-300
+    hover: text-slate-300;
   }
   .title {
     @apply text-xl md:text-2xl my-2 capitalize font-bold tracking-widest;
+  }
+  .subtitle {
+    @apply text-lg md:text-lg my-2 capitalize font-bold tracking-widest;
   }
   .paragraph {
     @apply md:leading-loose;
@@ -19,6 +22,6 @@
     @apply text-4xl md:text-4xl capitalize font-bold;
   }
   .iconSize {
-    @apply w-10 h-10 md:w-11 md:h-11
+    @apply w-10 h-10 md:w-11 md:h-11;
   }
 }

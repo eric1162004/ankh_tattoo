@@ -4,22 +4,11 @@ import LazyLoad from "react-lazy-load";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import InstagramIcon from "./../components/InstagramIcon";
 
-function useViewer() {
-  const [isOpen, setIsOpen] = useState(false);
-  const [currImg, setCurrImg] = useState(0);
-
-  const gotoPrevImg = () => {
-    setCurrImg(currImg - 1);
-  };
-  const gotoNextImg = () => {
-    setCurrImg(currImg + 1);
-  };
-
-  return [isOpen, setIsOpen, currImg, setCurrImg, gotoPrevImg, gotoNextImg];
-}
+import { getFileCount } from "../untilities/files";
+import { useViewer } from "../hooks/useViewer";
 
 export default function Gallery({ data }) {
-  const collections = ["feature", "script", "color", "geometric", "flash"];
+  const collections = ["feature", "flower", "script", "color", "geometric"];
 
   const viewers = [
     useViewer(),
@@ -108,7 +97,7 @@ export default function Gallery({ data }) {
       {/* For more see Ig */}
       <div className="flex justify-center p-10 ">
         <p className="title">See more...</p>
-          <InstagramIcon className="w-12 inline-block animate__animated animate__pulse animate__slower animate__infinite" />
+        <InstagramIcon className="w-12 inline-block animate__animated animate__pulse animate__slower animate__infinite" />
       </div>
 
       {/* Image Viewer Popup */}
@@ -134,28 +123,28 @@ export async function getServerSideProps() {
   const data = {
     feature: {
       description: "These are one of my favorite tattoos!",
-      count: 7,
+      count: await getFileCount("feature"),
+    },
+    flower: {
+      description:
+        "A flower tattoo is a common and beautiful design. It usually shows one or more detailed flowers, each with its own meaning. Flower tattoos can look realistic or artistic, and they can represent love, growth, or other personal ideas. Different types of flowers can change the tattoo's meaning and style. Overall, flower tattoos are a timeless way to express yourself through body art.",
+      count: await getFileCount("flower"),
     },
     script: {
       description:
         "Script being done in fine-line tattoo is very clean and precise! I can tattoo in any language and any choice of font! From specific handwriting, copy of signature, Roman numerals, custom Chinese calligraphy, to wide-range of font choices e.g., calligraphy, typewriter, curly etc.",
-      count: 6,
+      count: await getFileCount("script"),
     },
     color: {
       description:
         "Love color tattoos! Adding color to tattoos can change the whole effect, brighten up the picture, and make the tattoo design come to life! There are different styles of color tattoo, and fine-line tattoo works very well with partially saturated coloring, lining, soft shading, and watercolor etc.",
-      count: 6,
+      count: await getFileCount("color"),
     },
     geometric: {
       description:
         "Geometric tattoos symbolize balance, symmetry, stability, intelligence, mystery etc. It combines and connects the use of lines, circles, squares, triangles, and different shapes and patterns to form beautiful and intricate designs. As a perfectionist, I enjoy tattooing smooth lines and perfect shapes in geometric designs.",
-      count: 7,
-    },
-    flash: {
-      description:
-        "Pre-made design. If you do not have an idea for a custom design, you can choose from these flash designs, with set size and price. Only one copy, first come first serve! I will update new designs from time to time. You may also find the most updated available design on my Instagram @ankh.miki",
-      count: 10,
-    },
+      count: await getFileCount("geometric"),
+    }
   };
 
   return {

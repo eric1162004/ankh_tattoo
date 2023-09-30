@@ -104,7 +104,7 @@ export default function Home() {
               animateIn="animate__bounceIn"
               animateOut="animate__fadeOut"
             >
-              <p className="text-4xl md:text-5xl">Start from $125</p>
+              <p className="text-4xl md:text-5xl">Start from $150</p>
             </AnimationOnScroll>
             <p className="text-sm md:text-lg">
               Accept black & grey, white and color tattoo request.{" "}
