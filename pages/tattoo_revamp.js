@@ -89,7 +89,7 @@ export default function Tattoo_revamp({ data }) {
                 Case-By-Case Assessment:
               </h1>
               <p className="paragraph text-center px-4">
-                We carefully evaluate each tattoo to determine if it's suitable
+                We carefully evaluate each tattoo to determine if it’s suitable
                 for a revamp. While we can work wonders in most cases, some
                 tattoos may be too dark or intricate for this process. <br></br>
                 Say goodbye to tattoo imperfections and hello to a revitalized
