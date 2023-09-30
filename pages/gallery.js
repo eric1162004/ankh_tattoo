@@ -4,7 +4,6 @@ import LazyLoad from "react-lazy-load";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import InstagramIcon from "./../components/InstagramIcon";
 
-// import { getFileCount } from "../untilities/files";
 import { useViewer } from "../hooks/useViewer";
 
 export default function Gallery({ data }) {

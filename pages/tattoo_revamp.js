@@ -3,7 +3,6 @@ import ImgsViewer from "react-images-viewer";
 import LazyLoad from "react-lazy-load";
 import InstagramIcon from "../components/InstagramIcon";
 
-// import { getFileCount } from "../untilities/files";
 import { useViewer } from "../hooks/useViewer";
 
 export default function Tattoo_revamp({ data }) {
