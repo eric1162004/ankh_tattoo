@@ -4,7 +4,6 @@ import LazyLoad from "react-lazy-load";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import InstagramIcon from "./../components/InstagramIcon";
 
-import { getFileCount } from "../untilities/files";
 import { useViewer } from "../hooks/useViewer";
 
 export default function Flash_design({ data }) {
@@ -123,16 +122,16 @@ export async function getServerSideProps() {
   const data = {
     birthflowerseries: {
       description: "",
-      count: getFileCount("birthflowerseries"),
+      count: 8,
     },
     zodiacseries: {
       description: "",
-      count: getFileCount("zodiacseries"),
+      count: 18,
     },
     flash: {
       description:
         "Pre-made design. If you do not have an idea for a custom design, you can choose from these flash designs, with set size and price. Only one copy, first come first serve! I will update new designs from time to time. You may also find the most updated available design on my Instagram @ankh.miki",
-      count: getFileCount("flash"),
+      count: 5,
     },
   };
 
