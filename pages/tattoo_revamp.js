@@ -146,7 +146,7 @@ export async function getServerSideProps() {
   const data = {
     revamp: {
       description: "",
-      count: await getFileCount("revamp"),
+      count: 9,
     },
   };
 
