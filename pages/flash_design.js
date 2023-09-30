@@ -68,9 +68,9 @@ export default function Flash_design({ data }) {
                 duration={1}
                 animateIn="animate__fadeInDown"
               > */}
-                <p className="paragraph text-center px-4">
-                  {data[collections[collectionIndex]].description}
-                </p>
+              <p className="paragraph text-center px-4">
+                {data[collections[collectionIndex]].description}
+              </p>
               {/* </AnimationOnScroll> */}
 
               <div className="grid-cols-3 md:grid-cols-5 m-2 p-2 space-y-1 grid gap-1">
@@ -122,13 +122,11 @@ export default function Flash_design({ data }) {
 export async function getServerSideProps() {
   const data = {
     birthflowerseries: {
-      description:
-        "",
+      description: "",
       count: 8,
     },
     zodiacseries: {
-      description:
-        "",
+      description: "",
       count: 18,
     },
     flash: {
