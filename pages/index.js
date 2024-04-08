@@ -151,7 +151,7 @@ export default function Home() {
                 src="img/ig_icon.png"
                 width={20}
                 alt="instagram icon"
-              />
+              /> miki.s_tattoo
             </a>
           </p>
           <button className="btn btn-accent btn-outline border-2 m-3 ">
