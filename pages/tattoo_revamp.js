@@ -58,8 +58,8 @@ export default function Tattoo_revamp({ data }) {
       {resizedImages &&
         resizedImages.map((collection, collectionIndex) => {
           return (
-            <div className="pt-5" key={collectionIndex}>
-              <h1 className="title text-center self-center skew-x-1">
+            <div className="pt-5 mx-2" key={collectionIndex}>
+              <h1 className="title text-center self-center skew-x-1 my-5">
                 TATTOO REVAMP
               </h1>
               <AnimationOnScroll

@@ -3,7 +3,7 @@ import Map from "../components/Map";
 
 export default function Contact_us() {
   return (
-    <div className="max-h-screen overflow-hidden">
+    <div>
       {/* Contact and Map */}
       <div className="grid grid-cols-1 justify-center items-center p-5 w-full h-full top-10 md:top-0 z-10 absolute text-base overflow-scroll scrollbar-hide">
         <div className="flex flex-col md:flex-row md:items-center md:justify-center text-primary">
@@ -74,14 +74,12 @@ export default function Contact_us() {
         </div>
       </div>
       {/* Background */}
-      <div className="blur-sm">
-        <div>
+      <div className="blur-sm absolute w-full h-full">
           <img
-            className="min-w-full"
+            className="w-full h-full object-left object-cover"
             src="img/contact_us.jpg"
             alt="Fine line Tattoo Studio image"
           />
-        </div>
       </div>
     </div>
   );
