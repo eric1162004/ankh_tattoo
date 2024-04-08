@@ -32,13 +32,13 @@ const Navbar = ({ darkContext = true }) => {
           <a className="flex items-center">
             {darkContext ? (
               <img
-                className="object-contain w-28"
+                className="object-contain w-32"
                 src="img/miki_logo_white.png"
                 alt="miki logo white"
               />
             ) : (
               <img
-                className="object-contain w-28"
+                className="object-contain w-32"
                 src="img/miki_logo_black.png"
                 alt="miki logo "
               />

@@ -23,8 +23,8 @@ export default function Home() {
               <Image
                 src="/img/miki_logo_black.png"
                 alt="Vancouver fineline tattoo"
-                width={250}
-                height={120}
+                width={400}
+                height={200}
               />
               <h1 className="title text-center text-sm md:text-xl">
                 VANCOUVER FINELINE TATTOO
@@ -130,37 +130,41 @@ export default function Home() {
           }
         </div> */}
         {/* <div className="flex flex-col h-full items-center md:items-start m-2 gap-1 justify-center "> */}
-          <div className="text-center text-sm md:text-lg text-primary-light">
-            <h1 className="title text-2xl my-0 tracking-wider">Contact us</h1>
-            <p>Vancouver, BC</p>
-            <p>(By appointment only)</p>
-            {/* <a href="https://www.google.com/search?q=326+W+5th+Ave">
+        <div className="text-center text-sm md:text-lg text-primary-light">
+          <h1 className="title text-2xl my-0 tracking-wider">Contact us</h1>
+          <p>Vancouver, BC</p>
+          <p>(By appointment only)</p>
+          {/* <a href="https://www.google.com/search?q=326+W+5th+Ave">
               <p>326 W 5th Ave, Vancouver BC </p>
               <p>Studio #12 @ The Beaumont</p>
             </a> */}
-            <p>E-mail: miki.s.tattooart@gmail.com</p>
-            <p>
-              <a href="https://www.instagram.com/miki.s_tattoo">
-                Instagram
-                <img
-                  className="inline"
-                  src="img/ig_icon.png"
-                  width={20}
-                  alt="instagram icon"
-                />
-              </a>
-            </p>
-            <button className="btn btn-accent btn-outline border-2 m-3 ">
-              <a
-                href="https://form.jotform.com/Sheir/tattoo-request-form"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Tattoo Request Form
-              </a>
-            </button>
-          </div>
+          <p>E-mail: miki.s.tattooart@gmail.com</p>
+          <p>
+            <a
+              href="https://www.instagram.com/miki.s_tattoo"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Instagram
+              <img
+                className="inline"
+                src="img/ig_icon.png"
+                width={20}
+                alt="instagram icon"
+              />
+            </a>
+          </p>
+          <button className="btn btn-accent btn-outline border-2 m-3 ">
+            <a
+              href="https://form.jotform.com/Sheir/tattoo-request-form"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Tattoo Request Form
+            </a>
+          </button>
         </div>
+      </div>
       {/* </div> */}
     </div>
   );

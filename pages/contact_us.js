@@ -35,16 +35,21 @@ export default function Contact_us() {
               <p>Studio #12 @ The Beaumont</p>
             </a> */}
             <p>E-mail: miki.s.tattooart@gmail.com</p>
-            <a href="https://www.instagram.com/miki.s_tattoo/"><p>
-              Instagram
-              <img
-                className="inline"
-                src="img/ig_icon.png"
-                width={20}
-                alt="instagram icon"
-              />
-
-            </p></a>
+            <a
+              href="https://www.instagram.com/miki.s_tattoo/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <p>
+                Instagram
+                <img
+                  className="inline"
+                  src="img/ig_icon.png"
+                  width={20}
+                  alt="instagram icon"
+                />
+              </p>
+            </a>
             <button className="btn border-2 border-primary m-2 text-primary bg-transparent mt-4 z-50">
               <a
                 href="https://form.jotform.com/Sheir/tattoo-request-form"
