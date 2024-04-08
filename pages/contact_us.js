@@ -47,7 +47,7 @@ export default function Contact_us() {
                   src="img/ig_icon.png"
                   width={20}
                   alt="instagram icon"
-                />
+                /> miki.s_tattoo
               </p>
             </a>
             <button className="btn border-2 border-primary m-2 text-primary bg-transparent mt-4 z-50">
