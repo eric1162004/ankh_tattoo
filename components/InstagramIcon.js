@@ -2,7 +2,7 @@ const InstagramIcon = props => {
   return (
     <a
       {...props}
-      href="https://www.instagram.com/ankh.miki"
+      href="https://www.instagram.com/miki.s_tattoo/"
       target="_blank"
       rel="noreferrer"
     >

@@ -75,7 +75,7 @@ export default function Home() {
             <div className="h-full flex flex-col items-center justify-center p-5 lg:p-20 backdrop-blur-md ">
               <h1 className="title">My Story</h1>
               <p className="paragraph text-base md:text-lg">
-                I am Miki, a tattoo artist in Ankh tattoo studio. I was born and
+                I am Miki, a tattoo artist in Vancouver BC. I was born and
                 raised in Hong Kong, and I moved to Vancouver since 2005. From
                 an early age, I have always been passionate about art, drawing
                 and designing. While working in the studio as brows artist, I
@@ -117,8 +117,8 @@ export default function Home() {
       </VideoBackgroundDiv>
 
       {/* Contact and Map */}
-      <div className="grid grid-cols-1 md:grid-cols-2 bg-black px-5 py-10 h-1/3 md:gap-40">
-        <div className="flex flex-col h-full items-center md:items-end grayscale overflow-hidden ">
+      <div className="grid grid-cols-1 md:grid-cols-1 bg-black px-5 py-10 h-1/3 md:gap-40">
+        {/* <div className="flex flex-col h-full items-center md:items-end grayscale overflow-hidden ">
           {
             <Map
               lat={49.26666}
@@ -128,26 +128,27 @@ export default function Home() {
               width={50}
             />
           }
-        </div>
-        <div className="flex flex-col h-full items-center md:items-start m-2 gap-1 justify-center ">
+        </div> */}
+        {/* <div className="flex flex-col h-full items-center md:items-start m-2 gap-1 justify-center "> */}
           <div className="text-center text-sm md:text-lg text-primary-light">
             <h1 className="title text-2xl my-0 tracking-wider">Contact us</h1>
-            <p>Studio address</p>
+            <p>Vancouver, BC</p>
             <p>(By appointment only)</p>
-            <a href="https://www.google.com/search?q=326+W+5th+Ave">
+            {/* <a href="https://www.google.com/search?q=326+W+5th+Ave">
               <p>326 W 5th Ave, Vancouver BC </p>
               <p>Studio #12 @ The Beaumont</p>
-            </a>
-            <p>E-mail: miki@grandarc.ca</p>
+            </a> */}
+            <p>E-mail: miki.s.tattooart@gmail.com</p>
             <p>
-              Instagram
-              <img
-                className="inline"
-                src="img/ig_icon.png"
-                width={20}
-                alt="instagram icon"
-              />
-              : <a href="https://www.instagram.com/ankh.miki">ankh.miki</a>
+              <a href="https://www.instagram.com/miki.s_tattoo">
+                Instagram
+                <img
+                  className="inline"
+                  src="img/ig_icon.png"
+                  width={20}
+                  alt="instagram icon"
+                />
+              </a>
             </p>
             <button className="btn btn-accent btn-outline border-2 m-3 ">
               <a
@@ -160,7 +161,7 @@ export default function Home() {
             </button>
           </div>
         </div>
-      </div>
+      {/* </div> */}
     </div>
   );
 }

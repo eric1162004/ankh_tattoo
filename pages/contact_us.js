@@ -11,7 +11,7 @@ export default function Contact_us() {
             <h1 className="title text-2xl my-0 tracking-wider mb-2">
               Contact us
             </h1>
-            <div className="flex flex-col justify-center items-center grayscale overflow-hidden pb-2 inline-bloc md:hidden">
+            {/* <div className="flex flex-col justify-center items-center grayscale overflow-hidden pb-2 inline-bloc md:hidden">
               {
                 <Map
                   lat={49.26666}
@@ -21,19 +21,21 @@ export default function Contact_us() {
                   width={40}
                 />
               }
-            </div>
-            <p>Studio address</p>
+            </div> */}
+            <p>Guest Artist</p>
+            <p>based in</p>
+            <p>Vancouver, BC</p>
             <p>(By appointment only)</p>
-            <a
+            {/* <a
               href="https://www.google.com/search?q=326+W+5th+Ave"
               target="_blank"
               rel="noreferrer"
             >
               <p>326 W 5th Ave, Vancouver BC </p>
               <p>Studio #12 @ The Beaumont</p>
-            </a>
-            <p>E-mail: miki@grandarc.ca</p>
-            <p>
+            </a> */}
+            <p>E-mail: miki.s.tattooart@gmail.com</p>
+            <a href="https://www.instagram.com/miki.s_tattoo/"><p>
               Instagram
               <img
                 className="inline"
@@ -41,8 +43,8 @@ export default function Contact_us() {
                 width={20}
                 alt="instagram icon"
               />
-              : <a href="https://www.instagram.com/ankh.miki">ankh.miki</a>
-            </p>
+
+            </p></a>
             <button className="btn border-2 border-primary m-2 text-primary bg-transparent mt-4 z-50">
               <a
                 href="https://form.jotform.com/Sheir/tattoo-request-form"
@@ -54,7 +56,7 @@ export default function Contact_us() {
             </button>
           </div>
           <div className="flex flex-col justify-center items-center grayscale md:m-10 overflow-hidden pb-8 md:pb-0 hidden md:inline-block">
-            {
+            {/* {
               <Map
                 lat={49.26666}
                 lng={-123.11149}
@@ -62,7 +64,7 @@ export default function Contact_us() {
                 height={50}
                 width={50}
               />
-            }
+            } */}
           </div>
         </div>
       </div>
@@ -70,8 +72,8 @@ export default function Contact_us() {
       <div className="blur-sm">
         <div>
           <img
-            className="min-h-screen object-cover"
-            src="img/contact_us_2.jpg"
+            className="min-w-full"
+            src="img/contact_us.jpg"
             alt="Fine line Tattoo Studio image"
           />
         </div>

@@ -81,7 +81,7 @@ const Layout = ({ children }) => {
           >
             <Navbar
               darkContext={
-                router.pathname === "/faq" || router.pathname === "/contact_us"
+                router.pathname === "/faq"
                   ? true
                   : false
               }
