@@ -25,7 +25,7 @@ export default function Tattoo_revamp({ data }) {
   const [resizedImages, setResizedImages] = useState();
 
   useEffect(() => {
-    let images = collections.map(collection => {
+    let images = collections.map((collection) => {
       let imageLinks = Array(data[collection].count)
         .fill(0)
         .map((_, i) => ({
@@ -36,7 +36,7 @@ export default function Tattoo_revamp({ data }) {
 
     setImages(images);
 
-    let resizedImages = collections.map(collection => {
+    let resizedImages = collections.map((collection) => {
       let imageLinks = Array(data[collection].count)
         .fill(0)
         .map((_, i) => ({
@@ -59,51 +59,51 @@ export default function Tattoo_revamp({ data }) {
         resizedImages.map((collection, collectionIndex) => {
           return (
             <div className="pt-5 mx-2" key={collectionIndex}>
-              <h1 className="title text-center self-center skew-x-1 my-5">
-                TATTOO REVAMP
-              </h1>
-              <AnimationOnScroll
-                animateOnce={true}
-                duration={1}
-                animateIn="animate__fadeInDown"
-              >
-                <h1 className="subtitle text-center self-center skew-x-1">
-                  Revamp Your Tattoo with Skin Tone Ink!
+                <h1 className="title text-center self-center skew-x-1 my-5">
+                  TATTOO REVAMP
                 </h1>
-                <p className="paragraph text-center px-4">
-                  Is your old tattoo looking faded or messy? Our tattoo revamp
-                  service is here to help. We use specialized skin tone ink to
-                  discreetly cover blown-out or bold lines, restoring your
-                  tattoo to its former glory.
-                </p>
-                <h1 className="subtitle text-center self-center skew-x-1">
-                  What We Offer:
-                </h1>
-                <p className="paragraph text-center px-4">
-                  Clean & Readable Results: Our skilled artists focus on making
-                  your tattoo clean and easily readable once again.
-                </p>
-                <h1 className="subtitle text-center self-center skew-x-1">
-                  Excellent Retention:
-                </h1>
-                <p className="paragraph text-center px-4">
-                  We ensure your revamped tattoo stays vibrant over time with
-                  expert touch-ups and guidance on proper care.
-                </p>
-                <h1 className="subtitle text-center self-center skew-x-1">
-                  Case-By-Case Assessment:
-                </h1>
-                <p className="paragraph text-center px-4">
-                  We carefully evaluate each tattoo to determine if it’s
-                  suitable for a revamp. While we can work wonders in most
-                  cases, some tattoos may be too dark or intricate for this
-                  process. <br></br>
-                  Say goodbye to tattoo imperfections and hello to a revitalized
-                  design. Contact us today to discuss your tattoo revamp!
-                </p>
-              </AnimationOnScroll>
-
-              <div className="grid-cols-3 md:grid-cols-5 m-2 p-2 space-y-1 grid gap-1">
+                <AnimationOnScroll
+                  animateOnce={true}
+                  duration={1}
+                  animateIn="animate__fadeInDown"
+                >
+                  <h1 className="subtitle text-center self-center skew-x-1">
+                    Revamp Your Tattoo with Skin Tone Ink!
+                  </h1>
+                  <p className="paragraph text-center px-4">
+                    Is your old tattoo looking faded or messy? Our tattoo revamp
+                    service is here to help. We use specialized skin tone ink to
+                    discreetly cover blown-out or bold lines, restoring your
+                    tattoo to its former glory.
+                  </p>
+                  <h1 className="subtitle text-center self-center skew-x-1">
+                    What We Offer:
+                  </h1>
+                  <p className="paragraph text-center px-4">
+                    Clean & Readable Results: Our skilled artists focus on
+                    making your tattoo clean and easily readable once again.
+                  </p>
+                  <h1 className="subtitle text-center self-center skew-x-1">
+                    Excellent Retention:
+                  </h1>
+                  <p className="paragraph text-center px-4">
+                    We ensure your revamped tattoo stays vibrant over time with
+                    expert touch-ups and guidance on proper care.
+                  </p>
+                  <h1 className="subtitle text-center self-center skew-x-1">
+                    Case-By-Case Assessment:
+                  </h1>
+                  <p className="paragraph text-center px-4">
+                    We carefully evaluate each tattoo to determine if it’s
+                    suitable for a revamp. While we can work wonders in most
+                    cases, some tattoos may be too dark or intricate for this
+                    process. <br></br>
+                    Say goodbye to tattoo imperfections and hello to a
+                    revitalized design. Contact us today to discuss your tattoo
+                    revamp!
+                  </p>
+                </AnimationOnScroll>
+              <div className="grid-cols-3 md:grid-cols-4 m-2 mt-6 p-2 space-y-1 grid gap-7">
                 {collection.map((image, imageIndex) => (
                   <div
                     className="w-full rounded self-center"
@@ -125,7 +125,7 @@ export default function Tattoo_revamp({ data }) {
         })}
 
       {/* For more see Ig */}
-      <div className="flex justify-center p-10 ">
+      <div className="flex justify-center p-10">
         <p className="title">See more...</p>
         <InstagramIcon className="w-12 inline-block animate__animated animate__pulse animate__slower animate__infinite" />
       </div>
