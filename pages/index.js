@@ -26,7 +26,7 @@ export default function Home() {
                 width={400}
                 height={200}
               />
-              <h1 className="title text-center text-sm md:text-xl">
+              <h1 className="title -mt-4 text-center text-sm md:text-xl">
                 VANCOUVER FINELINE TATTOO
               </h1>
             </div>
