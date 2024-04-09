@@ -138,7 +138,7 @@ export async function getServerSideProps() {
     flash: {
       description:
         "Pre-made design. If you do not have an idea for a custom design, you can choose from these flash designs, with set size and price. Only one copy, first come first serve! I will update new designs from time to time. You may also find the most updated available design on my Instagram @ankh.miki",
-      count: 5,
+      count: 12,
     },
   };
 

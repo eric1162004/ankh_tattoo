@@ -153,7 +153,7 @@ export async function getServerSideProps() {
   const data = {
     revamp: {
       description: "",
-      count: 9,
+      count: 14,
     },
   };
 
