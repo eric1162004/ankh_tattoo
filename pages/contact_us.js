@@ -11,17 +11,6 @@ export default function Contact_us() {
             <h1 className="title text-2xl my-0 tracking-wider mb-2">
               Contact us
             </h1>
-            {/* <div className="flex flex-col justify-center items-center grayscale overflow-hidden pb-2 inline-bloc md:hidden">
-              {
-                <Map
-                  lat={49.26666}
-                  lng={-123.11149}
-                  zoom={15}
-                  height={40}
-                  width={40}
-                />
-              }
-            </div> */}
             <p>Guest Artist</p>
             <p>based in</p>
             <p>Vancouver, BC</p>
@@ -59,17 +48,6 @@ export default function Contact_us() {
                 Tattoo Request Form
               </a>
             </button>
-          </div>
-          <div className="flex flex-col justify-center items-center grayscale md:m-10 overflow-hidden pb-8 md:pb-0 hidden md:inline-block">
-            {/* {
-              <Map
-                lat={49.26666}
-                lng={-123.11149}
-                zoom={15}
-                height={50}
-                width={50}
-              />
-            } */}
           </div>
         </div>
       </div>
