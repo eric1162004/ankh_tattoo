@@ -18,7 +18,6 @@ export default function Document() {
         ></meta>
         <meta property="og:site_name" content="Vancouver Fineline Tattoo｜Miki S"></meta>
         <meta property="og:title" content="Vancouver Fineline Tattoo｜Miki S"></meta>
-        <title>Vancouver Fineline Tattoo｜Miki S</title>
       </Head>
       <body>
         <Main />
