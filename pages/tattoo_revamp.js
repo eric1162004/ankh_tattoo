@@ -62,11 +62,11 @@ export default function Tattoo_revamp({ data }) {
                 <h1 className="title text-center self-center skew-x-1 my-5">
                   TATTOO REVAMP
                 </h1>
-                <AnimationOnScroll
+                {/* <AnimationOnScroll
                   animateOnce={true}
                   duration={1}
                   animateIn="animate__fadeInDown"
-                >
+                > */}
                   <h1 className="subtitle text-center self-center skew-x-1">
                     Revamp Your Tattoo with Skin Tone Ink!
                   </h1>
@@ -102,7 +102,7 @@ export default function Tattoo_revamp({ data }) {
                     revitalized design. Contact us today to discuss your tattoo
                     revamp!
                   </p>
-                </AnimationOnScroll>
+                {/* </AnimationOnScroll> */}
               <div className="grid-cols-3 md:grid-cols-4 m-2 mt-6 p-2 space-y-1 grid gap-7">
                 {collection.map((image, imageIndex) => (
                   <div
