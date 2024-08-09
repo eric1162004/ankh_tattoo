@@ -7,7 +7,7 @@ import InstagramIcon from "./../components/InstagramIcon";
 import { useViewer } from "../hooks/useViewer";
 
 export default function Gallery({ data }) {
-  const collections = ["feature", "flower", "script", "color", "geometric"];
+  const collections = ["feature", "script", "color", "geometric"];
 
   const viewers = [
     useViewer(),
@@ -122,17 +122,12 @@ export async function getServerSideProps() {
   const data = {
     feature: {
       description: "These are one of my favorite tattoos!",
-      count: 8,
-    },
-    flower: {
-      description:
-        "A flower tattoo is a common and beautiful design. It usually shows one or more detailed flowers, each with its own meaning. Flower tattoos can look realistic or artistic, and they can represent love, growth, or other personal ideas. Different types of flowers can change the tattoo's meaning and style. Overall, flower tattoos are a timeless way to express yourself through body art.",
-      count: 9,
+      count: 10,
     },
     script: {
       description:
         "Script being done in fine-line tattoo is very clean and precise! I can tattoo in any language and any choice of font! From specific handwriting, copy of signature, Roman numerals, custom Chinese calligraphy, to wide-range of font choices e.g., calligraphy, typewriter, curly etc.",
-      count: 7,
+      count: 8,
     },
     color: {
       description:
@@ -142,7 +137,7 @@ export async function getServerSideProps() {
     geometric: {
       description:
         "Geometric tattoos symbolize balance, symmetry, stability, intelligence, mystery etc. It combines and connects the use of lines, circles, squares, triangles, and different shapes and patterns to form beautiful and intricate designs. As a perfectionist, I enjoy tattooing smooth lines and perfect shapes in geometric designs.",
-      count: 11,
+      count: 10,
     }
   };
 

@@ -7,7 +7,13 @@ import InstagramIcon from "./../components/InstagramIcon";
 import { useViewer } from "../hooks/useViewer";
 
 export default function Flash_design({ data }) {
-  const collections = ["birthflowerseries", "zodiacseries", "flash"];
+  const collections = [
+    "flash",
+    "realismanimal",
+    "zodiacseries",
+    "birthflowerseries",
+    "others",
+  ];
 
   const viewers = [
     useViewer(),
@@ -25,7 +31,7 @@ export default function Flash_design({ data }) {
   const [resizedImages, setResizedImages] = useState();
 
   useEffect(() => {
-    let images = collections.map(collection => {
+    let images = collections.map((collection) => {
       let imageLinks = Array(data[collection].count)
         .fill(0)
         .map((_, i) => ({
@@ -36,7 +42,7 @@ export default function Flash_design({ data }) {
 
     setImages(images);
 
-    let resizedImages = collections.map(collection => {
+    let resizedImages = collections.map((collection) => {
       let imageLinks = Array(data[collection].count)
         .fill(0)
         .map((_, i) => ({
@@ -59,14 +65,18 @@ export default function Flash_design({ data }) {
         resizedImages.map((collection, collectionIndex) => {
           return (
             <div className="pt-5" key={collectionIndex}>
-              <h1 className="title text-center self-center skew-x-1">
+              <h1 className={`title text-center self-center skew-x-1 ${collections[collectionIndex] === "flash" && "text-3xl pt-4"}`}>
                 {/* {collections[collectionIndex]} */}
-                {collections[collectionIndex] === "birthflowerseries"
-                  ? "Birth Flower Series"
+                {collections[collectionIndex] === "realismanimal"
+                  ? "Realism Animal Series"
                   : collections[collectionIndex] === "zodiacseries"
                   ? "Zodiac Series"
+                  : collections[collectionIndex] === "birthflowerseries"
+                  ? "Birth Flower Series"
                   : collections[collectionIndex] === "flash"
                   ? "Flash"
+                  : collections[collectionIndex] === "others"
+                  ? "Others"
                   : null}
               </h1>
               <AnimationOnScroll
@@ -74,9 +84,13 @@ export default function Flash_design({ data }) {
                 duration={1}
                 animateIn="animate__fadeInDown"
               >
-                <p className="paragraph text-center px-4">
+                {/* <p className="paragraph text-center px-4">
                   {data[collections[collectionIndex]].description}
-                </p>
+                </p> */}
+                <div
+                className="paragraph text-center px-4"
+                dangerouslySetInnerHTML={{ __html: data[collections[collectionIndex]].description }}
+              />
               </AnimationOnScroll>
 
               <div className="grid-cols-3 md:grid-cols-5 m-2 p-2 space-y-1 grid gap-1">
@@ -131,14 +145,22 @@ export async function getServerSideProps() {
       description: "",
       count: 8,
     },
+    realismanimal: {
+      description: "",
+      count: 7,
+    },
     zodiacseries: {
       description: "",
       count: 18,
     },
     flash: {
       description:
-        "Pre-made design. If you do not have an idea for a custom design, you can choose from these flash designs, with set size and price. Only one copy, first come first serve! I will update new designs from time to time. You may also find the most updated available design on my Instagram @ankh.miki",
-      count: 12,
+        "Pre-made design. If you do not have an idea for a custom design, you can choose from these flash designs, with set size and price.<Br/> ONLY ONE COPY, FIRST COME FIRST SERVE!<Br/> I will update new designs from time to time. You may also find the most updated available design on my Instagram @miki.s_tattoo",
+      count: 0,
+    },
+    others: {
+      description: "",
+      count: 7,
     },
   };
 

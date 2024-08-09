@@ -28,6 +28,9 @@ export default function Home() {
               <h1 className="title -mt-4 text-center text-sm md:text-xl">
                 VANCOUVER FINELINE TATTOO
               </h1>
+              <h1 className="title p-0 text-center text-sm md:text-xl">
+                Micro-Realism & Geometry
+              </h1>
             </div>
           </AnimationOnScroll>
         </div>
