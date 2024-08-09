@@ -59,7 +59,7 @@ export default function Gallery({ data }) {
         resizedImages.map((collection, collectionIndex) => {
           return (
             <div className="pt-5" key={collectionIndex}>
-              <h1 className="title text-center self-center skew-x-1">
+              <h1 className="title text-center self-center skew-x-1 my-5">
                 {collections[collectionIndex]}
               </h1>
               <AnimationOnScroll

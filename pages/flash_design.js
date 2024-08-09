@@ -65,7 +65,7 @@ export default function Flash_design({ data }) {
         resizedImages.map((collection, collectionIndex) => {
           return (
             <div className="pt-5" key={collectionIndex}>
-              <h1 className={`title text-center self-center skew-x-1 ${collections[collectionIndex] === "flash" && "text-3xl pt-4"}`}>
+              <h1 className={`title text-center self-center skew-x-1 ${collections[collectionIndex] === "flash" && "text-2xl md:text-3xl pt-4"}`}>
                 {/* {collections[collectionIndex]} */}
                 {collections[collectionIndex] === "realismanimal"
                   ? "Realism Animal Series"
