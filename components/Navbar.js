@@ -12,7 +12,7 @@ const Navbar = ({ darkContext = true }) => {
   const [open, setOpen] = useState(false);
 
   const links = [
-    { name: "MIKI SHEIR", link: "/" },
+    { name: "HOME", link: "/" },
     { name: "TATTOO GALLERY", link: "/gallery" },
     { name: "TATTOO REVAMP", link: "/tattoo_revamp" },
     { name: "FLASH DESIGN", link: "/flash_design" },
